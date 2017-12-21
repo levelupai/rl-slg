@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<PowerStation_Tab>
+<TResHead version="4">
+    <Magic>1397052237 </Magic>
+    <Version>4 </Version>
+    <Unit>20 </Unit>
+    <Count>20 </Count>
+    <MetalibHash>9d3517492d2db0c9810684b4bbd8bec9</MetalibHash>
+    <ResVersion>0 </ResVersion>
+    <CreateTime>2016-10-17 17:46:03</CreateTime>
+    <ResEncording>UTF-8</ResEncording>
+</TResHead>
+<PowerStation version="1">
+    <ps_id>201 </ps_id>
+    <ps_eregain>8 </ps_eregain>
+    <ps_maxe>2000 </ps_maxe>
+    <ps_eregainp>8 </ps_eregainp>
+    <ps_maxep>2000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>202 </ps_id>
+    <ps_eregain>16 </ps_eregain>
+    <ps_maxe>4000 </ps_maxe>
+    <ps_eregainp>8 </ps_eregainp>
+    <ps_maxep>2000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>203 </ps_id>
+    <ps_eregain>24 </ps_eregain>
+    <ps_maxe>6000 </ps_maxe>
+    <ps_eregainp>8 </ps_eregainp>
+    <ps_maxep>2000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>204 </ps_id>
+    <ps_eregain>40 </ps_eregain>
+    <ps_maxe>10000 </ps_maxe>
+    <ps_eregainp>16 </ps_eregainp>
+    <ps_maxep>4000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>205 </ps_id>
+    <ps_eregain>60 </ps_eregain>
+    <ps_maxe>15000 </ps_maxe>
+    <ps_eregainp>20 </ps_eregainp>
+    <ps_maxep>5000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>206 </ps_id>
+    <ps_eregain>80 </ps_eregain>
+    <ps_maxe>20000 </ps_maxe>
+    <ps_eregainp>20 </ps_eregainp>
+    <ps_maxep>5000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>207 </ps_id>
+    <ps_eregain>100 </ps_eregain>
+    <ps_maxe>25000 </ps_maxe>
+    <ps_eregainp>20 </ps_eregainp>
+    <ps_maxep>5000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>208 </ps_id>
+    <ps_eregain>120 </ps_eregain>
+    <ps_maxe>30000 </ps_maxe>
+    <ps_eregainp>20 </ps_eregainp>
+    <ps_maxep>5000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>209 </ps_id>
+    <ps_eregain>160 </ps_eregain>
+    <ps_maxe>40000 </ps_maxe>
+    <ps_eregainp>40 </ps_eregainp>
+    <ps_maxep>10000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>210 </ps_id>
+    <ps_eregain>200 </ps_eregain>
+    <ps_maxe>50000 </ps_maxe>
+    <ps_eregainp>40 </ps_eregainp>
+    <ps_maxep>10000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>211 </ps_id>
+    <ps_eregain>240 </ps_eregain>
+    <ps_maxe>60000 </ps_maxe>
+    <ps_eregainp>40 </ps_eregainp>
+    <ps_maxep>10000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>212 </ps_id>
+    <ps_eregain>320 </ps_eregain>
+    <ps_maxe>80000 </ps_maxe>
+    <ps_eregainp>80 </ps_eregainp>
+    <ps_maxep>20000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>213 </ps_id>
+    <ps_eregain>400 </ps_eregain>
+    <ps_maxe>100000 </ps_maxe>
+    <ps_eregainp>80 </ps_eregainp>
+    <ps_maxep>20000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>214 </ps_id>
+    <ps_eregain>480 </ps_eregain>
+    <ps_maxe>120000 </ps_maxe>
+    <ps_eregainp>80 </ps_eregainp>
+    <ps_maxep>20000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>215 </ps_id>
+    <ps_eregain>600 </ps_eregain>
+    <ps_maxe>150000 </ps_maxe>
+    <ps_eregainp>120 </ps_eregainp>
+    <ps_maxep>30000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>216 </ps_id>
+    <ps_eregain>800 </ps_eregain>
+    <ps_maxe>200000 </ps_maxe>
+    <ps_eregainp>200 </ps_eregainp>
+    <ps_maxep>50000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>217 </ps_id>
+    <ps_eregain>1000 </ps_eregain>
+    <ps_maxe>250000 </ps_maxe>
+    <ps_eregainp>200 </ps_eregainp>
+    <ps_maxep>50000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>218 </ps_id>
+    <ps_eregain>1200 </ps_eregain>
+    <ps_maxe>300000 </ps_maxe>
+    <ps_eregainp>200 </ps_eregainp>
+    <ps_maxep>50000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>219 </ps_id>
+    <ps_eregain>1400 </ps_eregain>
+    <ps_maxe>350000 </ps_maxe>
+    <ps_eregainp>200 </ps_eregainp>
+    <ps_maxep>50000 </ps_maxep>
+</PowerStation>
+<PowerStation version="1">
+    <ps_id>220 </ps_id>
+    <ps_eregain>1600 </ps_eregain>
+    <ps_maxe>400000 </ps_maxe>
+    <ps_eregainp>200 </ps_eregainp>
+    <ps_maxep>50000 </ps_maxep>
+</PowerStation>
+</PowerStation_Tab>

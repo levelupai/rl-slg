@@ -1,0 +1,3920 @@
+syntax = "proto2";
+message Position {
+	optional int32 k = 1;
+	optional int32 s = 2;
+	optional float x = 3;
+	optional float y = 4;
+}
+
+message DBItemInfo
+{
+	optional int32 item_id=1;         //物品id
+	optional int32 item_num=2;        //物品数量
+}
+
+message ArmyDesc {
+	optional int32 soldier_type=1;      //部队类型，设计图纸 inst_id
+	optional int32 soldier_num=2;       //部队数量
+	optional uint64 total_hp = 3;		//总血量
+	optional uint64 total_shiled = 4;   //能量
+	optional int32 full_soldier = 5;    //满血船的数量
+	optional int32 shiled = 6;
+	optional uint32 shiled_time = 7;
+	optional uint64 per_hp = 8;
+}
+
+message ArmyShowInfo {
+	optional int32 id=1;         //所属玩家
+	optional string name=2;      //玩家名字
+	optional int32 type=3;       //什么样的部队，1表示侦查，2表示攻击，3表示采集,4表示协防,5表示驻守，6表示集结，
+								 //7表示集结出征,8表示资源帮助, 9侦察 11表示英雄释放, 12表示打怪，13表示探索
+								 //14、个人建造 15、个人升级 16、个人维修 17、联盟建造 18、联盟升级 19、联盟维修 20、个人建造帮助
+	optional Position from=4;    //出发地
+	optional Position target=5;  //目的地
+	optional int32 begin_time=6;
+	optional int32 total_time=7;
+	optional int32 inst_id=8;
+	optional string index=9;
+	optional int32 status=10;	//1表示移动中，2表示悬停中，3表示采集中，4表示战斗中，5表示建筑中,6表示在家里，7、探索中 8 重力井
+	optional int32 param=11;	//如果是建筑，表示建筑id
+	optional int32 ani_param = 12; //怪物id
+	optional int32 union_id = 13;
+	optional int32 end_time = 14;  //真实的结束时间
+	optional int64 hp = 15;
+	optional string fleet_name = 16;
+	optional int64 power = 17;
+	optional int64 total_hp = 18;
+	optional string target_army = 19;
+	optional string fight_army = 20;
+	optional int64 fight_area = 21;
+	optional Position refer_pos = 22;	//涉及到的位置
+	optional int32 army_show = 23; //18位2进制
+	optional int32 speed_percent = 24;
+	optional int64 fight_pos = 25;
+	optional int32 end_begin_time = 26;
+	optional int32 shield_show = 27;
+	optional int32 dir = 28;
+	optional uint64 begin_hp = 29;
+}
+
+message ArmySource {
+	optional int32 type=1;       //金鹰铜铁
+	optional int32 num=2;
+}
+
+message ArmyInfo {
+	optional ArmyShowInfo show_info=1;
+	repeated ArmyDesc army_desc=2;
+	repeated ArmySource army_source=3;
+	optional int32 hero_inst_id = 4;
+	repeated int32 sys_id_list = 5;
+	optional Position true_from=6;    //真实出发地
+	optional Position true_target=7;  //真实目的地
+	optional int32 ftl_speed = 8;
+	optional int32 sol_speed = 9;
+	optional int32 ftl_cd = 10;
+}
+
+enum CityStatusType {
+	PROTECT = 1;     //保护状态
+	HEROPRISON = 2;  //有英雄被关押
+}
+
+message CityStatus {
+	optional int32 type = 1;          //buff类型
+	optional int32 begintime = 2;     //开始时间
+	optional int32 lasttime = 3;      //持续时间
+}
+
+message OutArmySourceInfo
+{
+	optional ArmyInfo army_info = 1;
+	optional int32 begintime = 2;      //开始采集时间
+	optional int32 getnum = 3;         //预计采集数量
+	optional int32 getspeed = 4;      //采集速度
+	optional int32 got = 5;           //已采集数量
+	optional int32 param = 6;         //增援时表示对方的uin，采集时表示矿的类型
+}
+
+enum MapNodeType {
+	CITY = 1;             //城市
+	MINE = 2;             //矿
+	ARMY = 3;             //军队
+	CAMP = 4;             //驻军
+	MONSTER = 5;          //怪物
+}
+
+message MapCityStatus
+{
+	optional int32 type = 1;
+	optional uint32 end_time = 2;
+}
+
+message MapCityNode {
+	optional Position position = 1;
+	optional int32 id = 2;				//玩家id
+	optional string name = 3;
+	optional string unionname = 4;
+	optional int32 level = 5;
+	repeated MapCityStatus status = 6;
+	optional int32 base_k = 7;
+	optional int32 union_id = 8;
+	repeated int32 prison_hero = 9;
+	optional MapCityStatus attack_status = 10;
+	optional uint64 hp = 11;			//空间站血量
+	optional uint64 hp_max = 12;		//总血量
+	optional int64 fight_area = 13;			//不为0表示战斗状态
+	optional string fight_army = 14;
+	optional int64	fight_power = 15;	//战斗力
+	optional int32 speed = 16;
+	optional uint32 begin_time = 17;
+}
+
+message MapUnionCityNode {
+	optional Position position = 1;
+	optional int32 union_id = 2;				//玩家id
+	optional string unionnick = 3;				//简称
+	optional string unionname = 4;				//全称
+	optional int32 level = 5;
+	optional int32 status = 6;                  //0表示建造中，1表示已完成
+	repeated MapCityStatus city_status = 7;
+}
+
+message MapCenterNode {
+	optional Position position = 1;
+	optional int32 status = 2;		//1表示争夺中，2表示占领中
+	optional uint32 status_end_time = 3;   //状态结束时间
+	optional int32 union_id = 4;
+	repeated int32 prison_hero = 5;
+	optional int32 user_id = 6;
+	optional uint32 concer_end_time = 7;
+	optional int32 pvp_nebula = 8;	//副本pvp
+}
+
+message TitleInfo
+{
+	optional int32 title_id = 1;
+	optional int32 own = 2;
+}
+
+message CenterData
+{
+	optional Position position = 1;
+	optional int32 status = 2;		//1表示争夺中，2表示占领中
+	optional uint32 status_end_time = 3;   //状态结束时间
+	optional int32 union_id = 4;
+	repeated ArmyInfo army_list = 5;    //驻扎队伍
+	repeated TitleInfo title_list = 6;		//官职列表
+	optional ArmyInfo main_army = 7;
+	optional int32 hero_id = 8;
+	optional string hero_name = 9;
+}
+
+message BossSorceInfo
+{
+	optional int32 user = 1;
+	optional int32 last_time = 2;
+}
+
+message BossUserData
+{
+	optional Position position = 1;
+	optional int32 status = 2;		//1表示争夺中，2表示占领中
+	optional uint32 status_end_time = 3;   //状态结束时间
+	optional int32 union_id = 4;		//所属联盟
+	repeated ArmyInfo army_list = 5;    //驻扎队伍
+	repeated TitleInfo user_title_list = 6;		//官职列表
+	repeated TitleInfo country_title_list = 7;  //国家列表
+	repeated BossSorceInfo socre_info = 8;		//占领排名
+	optional uint32 union_got_time = 9;		//攻占时间
+	optional ArmyInfo main_army = 10;
+	optional int32 hero_id = 11;
+	optional string hero_name = 12;
+}
+
+message MapSouceNode {
+	optional Position position = 1;
+	optional int32 type = 2;           //待定义，为0表示删除
+	optional int32 level = 3;          //
+	optional int32 status = 4;         //0、空闲 1表示正在采集中 2、 3、 4、占领中
+	optional int32 id = 5;             //采集的玩家id
+	optional int32 armyinst = 6;       //采集的军队索引
+	optional int32 leftnum = 7;        //开始采集时的剩余数量
+	optional int32 begintime = 8;      //开始采集时间
+	optional int32 getnum = 9;         //预计采集数量
+	optional int32 getspeed = 10;      //采集速度
+	optional int32 got = 11;           //已采集数量
+	repeated int32 prison_hero = 12;   //
+	optional int32 from_monster_id  = 13; //客户端在本地给它赋值，只会在以前是怪，现在是矿的情况下赋值一次
+	optional int32 born_time = 14; //矿的产生时间（怪被打死的时间）
+	optional int32 union_id = 15;
+}
+
+message MapCampNode {
+	optional Position position = 1;
+	optional int32 id = 2;				//玩家id
+	optional string name = 3;
+	optional string unionname = 4;
+	optional int32 armyinst = 5;       //军队索引
+	repeated int32 prison_hero = 6;
+}
+
+message MapMonsterNode {
+	optional uint64 inst_id = 1;
+	repeated ArmyDesc army_desc_list = 2;
+}
+
+message FightArmyWeapon
+{
+	optional int32 index = 1;	//部队类型二进制下标/3   0-5表示不同舰船的下标，比如0表示炮艇，5表示无畏级
+	optional int64 weapon = 2;	//武器二进制,读表
+}
+
+message FightArmyInfo
+{
+	optional string army_base = 1;		//部队index
+	repeated FightArmyWeapon weapon_list = 2;
+}
+
+message FightArmyListBase {
+	repeated FightArmyInfo army_base_list = 1;
+	repeated int32 fight_index = 2; 	//跟哪些团伙打，表示army_list数组下标
+	repeated int32 build_index = 3;     //在攻击哪些建筑，表示build_list数组下标
+}
+
+message FightBuildListBase
+{
+	optional Position build_base_list = 1;
+	optional int32 weapon = 2;	//武器二进制,读表
+	repeated int32 fight_index = 3; 	//跟哪些团伙打，表示army_list数组下标
+}
+
+message MapFightAreaNode {
+	optional uint64 inst = 1;
+	optional Position pos = 2;
+	repeated FightArmyListBase army_list = 3;
+	repeated FightBuildListBase build_list = 4;
+}
+
+message BigMapInfo
+{
+	optional int32 open_k = 1;
+	optional uint32 open_time = 2;
+	optional int32 member_num = 3;
+}
+
+message SSEventFightServer
+{
+	repeated int32 server = 1;
+}
+
+message FightServerInfo
+{
+	optional int32 event_type = 1;
+	optional uint32 begin_time = 2;
+	optional uint32 end_time = 3;
+	repeated SSEventFightServer fight_server = 4;
+}
+
+message SysIfuInfo {
+	optional int32 union_id = 1; 	//联盟
+	optional float value = 2;
+}
+
+message SysArmyInfo {
+	optional int32 union_id = 1;
+	optional int32 army_num = 2;
+	optional int32 jump_num = 3;   //正在跳跃到该星系的部队
+}
+
+message SysSrcInfo
+{
+	optional int32 type = 1;
+	optional int32 num = 2;
+}
+
+message SysUnionInfo
+{
+	optional int32 union_id = 1;
+	optional int32 user_num = 2;
+}
+
+message SysRadarInfo
+{
+	repeated SysSrcInfo source_list = 1;
+	repeated SysSrcInfo moster_list = 2;
+	repeated SysUnionInfo union_list = 3;
+	optional int32 union_build_num = 4;
+}
+
+message MapSysInfo {
+	optional int32 inst = 1;
+	repeated SysIfuInfo ifu_info = 2;
+	optional int32 is_full = 3;
+	repeated SysArmyInfo army_info_list = 4;
+	optional int32 fight_area_num = 5;   //战争区域数量
+	optional int32 base_monster_inst = 6;	//每个星系怪物id
+	optional int32 build_union = 7;   	//不为0表示占领恒星的联盟id
+	optional int32 explore_id = 8;		//正在被探索行星，按位存行星id
+	optional SysRadarInfo radar_info = 9;
+	optional int32 union_id = 10;	//谁占领这个星系
+}
+
+message UserSimpleInfo
+{
+	optional int32 uin = 1;
+	optional string name = 2;
+	optional uint64 score = 3;
+	optional int32 kill = 4;
+	optional int32 union_id = 5;
+	optional int32 vip = 6;				//VIP等级
+	optional int32 server = 7;			//服务器
+	optional int32 title_id = 8;
+	optional int32 boss_title_id = 9;
+	optional int32 user_pic = 10;
+	optional uint32 last_login_time = 11;
+	optional int32 rank = 12;			//军阶
+	optional int32 online_flag = 13;	//1、在线，0、下线
+	optional int32 user_level = 14;		//玩家等级
+	optional int32 device_type = 15;
+}
+
+message UnionSimpleInfo
+{
+	optional int32 union_id = 1;			//联盟id，唯一
+	optional string union_name = 2;			//联盟名字
+	optional string union_nick = 3;			//联盟简称
+	optional string union_boss_name = 4;	//联盟盟主
+	optional int32 union_member_num = 5;
+	optional uint64 union_score = 6;
+	optional uint64 union_exp = 7;
+	optional string notice = 8;				//联盟滚动条
+	optional UnionIconInfo union_icon_info = 9;			//联盟图标
+	optional int32 word = 10;
+	optional int32 union_kill_num = 11;		//联盟杀敌数
+    optional int32 union_boss_id = 12;      //联盟老大的ID
+	optional int32 union_server = 13;
+	optional int32 limit_score = 14;
+	optional int32 open_flag = 15;
+}
+
+message DBBaseInfo
+{
+	optional int32 uin=1;                   //玩家id
+	optional string user_name=2;            //玩家名字
+	optional int32 user_pic = 3;			//玩家头像
+	optional int32 level = 4;				//等级
+	optional uint64 xp = 5;					//经验
+	optional uint64 score = 6;				//实力
+    optional uint64 mineral = 7;			//矿物
+	optional uint64 energy = 8;				//能源
+	optional uint64 crystal = 9;			//泰拉多水晶
+	optional uint64 alloy = 10;				//克瑞姆合金
+	optional uint64 credits = 11;			//银河帝国信用点
+	optional uint64 power = 12;				//折跃能量
+	optional uint32 energy_charge_time = 13;	//上次能源结算时间
+	optional uint32 mineral_charge_time = 14;	//上次矿物结算时间
+	optional uint32 power_charge_time = 15;		//上次折跃结算时间
+	optional int32 fleet_num = 16;			//舰队数量
+	optional int32 engin_ship_num = 17;		//工程船数量
+	optional int32 base_k = 18;				//所在服
+	optional Position position = 19;		//所在位置
+	optional int32 vip = 20;
+	optional uint32 last_login_time = 21;
+	optional int32 union_join_flag = 22;	//是否加入过联盟， 1表示加入过
+	optional int32 title_id = 23;			//头衔
+	optional uint32 move_time = 24;			//传送时间
+	optional int32 hp = 25;
+	optional uint32 charge_time = 26;		//血量回复
+	repeated int32 step_list = 27;			//新手引导step list
+	optional uint32 first_pay_time = 28;
+	optional int32 pay_count = 29;
+	optional int32 max_pay_money = 30;
+	optional int32 push_type = 31;
+	optional int32 device_type = 32;
+	optional int32 max_long_login = 33;
+	optional uint32 total_login_time = 34;
+	optional int32 total_login_count = 35;
+	repeated int32 sign_in_list = 36;
+	optional uint32 sign_time = 37;
+}
+
+message DBBaseCount
+{
+	optional int32 fight_count = 1;				//战斗次数
+	optional int32 fight_win_count = 2;			//战斗胜利次数
+	optional int32 build_ship_num = 3;			//造船数量
+	optional int32 destory_ship_num = 4;		//摧毁船数量
+	optional int32 lose_ship_num = 5;			//被摧毁船数量
+	optional int32 destory_space_station = 6;	//击毁空间站数量
+	optional uint64 gather_source_num = 7;		//采集资源总数
+	optional int32 kill_corsair_num = 8;		//击杀星际海盗数量
+	optional int32 kill_void_creature_num = 9;	//击杀虚空生物数量
+	optional int32 play_total_time = 10;		//游戏总时间
+	optional int32 beattacked_num = 11;			//被攻击次数
+	optional int32 bedefeated_num = 12;			//被击败次数
+}
+
+message DBItemPack
+{
+	repeated DBItemInfo item_list=1;  //物品集合
+}
+
+message PayInfo
+{
+	optional string orderserial = 1;
+	optional int32 product_id = 2;
+	optional uint32 create_time = 3;
+	optional int32 pay_type = 4;		//1是苹果，2是安卓
+}
+
+message DBPay
+{
+	optional PayInfo ios_pay_info_list = 1;
+	optional PayInfo google_pay_info_list = 2;
+	repeated int32 product_id = 3;
+	optional int32 normal_points = 4;	//永久累计积分
+	optional int32 normal_level = 5;	//永久已累计奖励
+	optional int32 act_id = 6;			//活动id
+	optional int32 act_points = 7;		//活动累计积分
+	optional int32 act_level = 8;		//活动已累计奖励
+	repeated int32 product_level = 9;
+	optional PayInfo windows_pay_info_list = 10;
+}
+
+message InstanceSrcInfo
+{
+	optional int32 type = 1;
+	optional int32 getspeed = 2;
+	optional int32 begin_time = 3;
+	optional int32 left_num = 4;
+	optional Position pos = 5;
+	optional int32 from_monster_id = 6;
+}
+
+message DBInstance
+{
+	optional int32 col = 1;			//坐标
+	optional int32 row = 2;
+	optional int32 instance_id = 3;		//副本id [135]_5_[instance_id].xml
+	optional int32 instance_param = 4;	//副本参数，第几波怪
+	repeated ArmyInfo monster_node_list = 5;	//怪物列表
+	repeated int32 done_instance = 6;		//已完成副本
+	optional int32 map_inst_id = 7;
+	repeated InstanceSrcInfo source_info = 8;
+}
+
+message DBStore
+{
+	optional DBBaseInfo base_info=1;           		//基础信息
+	optional DBProgress progress_info = 2;			//进度条
+	optional DBBuilding building_info=3;       		//建筑信息
+	optional DBShipPlanningInfo plan_info = 4;		//设计图
+	optional DBArmyDesc army_info = 5;				//军队信息
+	optional DBHeroInfo hero_info = 6;
+	optional DBUnionUserData union_user_info = 7;	//联盟系统
+	optional DBExBuilding ex_build_info = 8;
+	optional DBExploreInfo explore_info = 9;
+	optional DBBaseCount base_count = 10;			//个人数据统计
+	optional DBMail db_mail = 11;					//邮件
+	optional DBItemPack pack_info = 12;				//背包信息
+	optional DBPrison prision = 13;					//监狱
+	optional DBRadar db_radar = 14;
+	optional DBDefence db_defence = 15;
+	optional DBBookmarkInfo bookmark_info = 16;
+	optional DBAchieveInfo db_achieve_info = 17;
+	optional DBCardInfo db_card_info = 18;
+	optional DBPay pay = 19;
+	optional DBInstance instance_monster = 20;
+	optional DBGameEventInfo game_event_info = 21;
+	optional DBMissionData mission_info = 22;
+}
+
+message CUserData
+{
+	optional DBBaseInfo base_info=1;		   		//基础信息
+	optional DBProgress progress_info = 2;			//进度条
+	optional DBBuilding building_info=3;       		//建筑信息
+	optional DBShipPlanningInfo plan_info = 4;		//设计图
+	optional CityCount city_count = 5;				//数据统计
+	optional DBArmyDesc army_info = 6;				//军队信息
+	optional DBHeroInfo hero_info = 7;				//英雄信息
+	optional DBUnionUserData union_user_info = 8;	//联盟系统
+	optional DBExBuilding ex_build_info = 9;		//个人建筑
+	optional DBExploreInfo explore_info = 10;		//探索
+	optional DBBaseCount base_count = 11;			//个人数据统计
+	optional DBMail db_mail = 12;					//邮件
+	optional DBItemPack pack_info = 13;				//背包信息
+	optional DBPrison prision = 14;					//监狱
+	optional DBRadar db_radar = 15;
+	optional DBDefence db_defence = 16;
+	optional DBBookmarkInfo bookmark_info = 17;
+	optional DBAchieveInfo db_achieve_info = 18;
+	optional DBCardInfo db_card_info = 19;
+	optional DBPay pay = 20;
+	optional DBInstance instance_monster = 21;
+	optional DBGameEventInfo game_event_info = 22;
+	optional DBMissionData mission_info = 23;
+}
+
+message CityCount
+{
+	optional int32 mineral_recover = 1;     		//资源回复速度
+	optional int32 energy_recover = 2;
+	optional int32 jump_power_recover = 3;
+	optional uint64 city_score = 4;          		//战斗力
+	optional uint64 mineral_max = 5;
+	optional uint64 energy_max = 6;
+	optional uint64 jump_power_max = 7;
+	optional int32 building_speed_percent = 8;   	//万分比
+	optional int32 mineral_speed_percent = 9;    	//资源产出加速
+	optional int32 energy_speed_percent = 10;    	//资源产出加速
+	optional int32 jump_power_speed_percent = 11; 	//资源产出加速
+	optional uint64 upkeep = 12;                   	//能量每小时消耗
+	optional uint64 reseach_score = 13; 			//研发实力
+	optional uint64 army_score = 14; 				//军队实力
+	optional uint64 building_score = 15; 			//建筑实力
+	optional uint64 hero_score = 16; 				//英雄实力
+	optional int32 city_cap = 17;					//城市的带兵数
+	optional uint64 m_upkeep = 18;					//矿物每小时消耗
+	optional uint64 army_upkeep = 19;
+	optional uint64 army_mupkeep = 20;
+}
+
+message SourceChangeInfo
+{
+    optional uint64 mineral = 1;				//矿物
+	optional uint64 energy = 2;					//能源
+	optional uint64 jump_power = 3;				//折跃能量
+	optional uint32 energy_charge_time = 4;		//上次能源结算时间
+	optional uint32 mineral_charge_time = 5;	//上次矿物结算时间
+	optional uint32 power_charge_time = 6;		//上次折跃结算时间
+	optional uint64 score = 7;					//实力
+	optional uint64 crystal = 8;				//泰拉多水晶
+	optional uint64 alloy = 9;					//克瑞姆合金
+	optional int32 mineral_recover = 10;     	//资源回复速度
+	optional int32 energy_recover = 11;
+	optional int32 jump_power_recover = 12;
+	optional uint64 mineral_max = 13;
+	optional uint64 energy_max = 14;
+	optional uint64 jump_power_max = 15;
+	optional int32 mineral_speed_percent = 16;    	//资源产出加速
+	optional int32 energy_speed_percent = 17;    	//资源产出加速
+	optional int32 jump_power_speed_percent = 18; 	//资源产出加速
+	optional uint64 upkeep = 19;                   	//能量每小时消耗
+	optional uint64 m_upkeep = 20;					//矿物每小时消耗
+}
+
+enum ProgressType {
+	DeleteProgress = 0;
+	BuildProgress = 1;
+	TraningProgrss = 2;
+	RepairProgrss = 3;
+	ReseacheProgress = 4;
+}
+
+message ProgressInfo
+{
+	optional int32 progress_inst = 1;          //进度条索引
+	optional uint32 begin = 2;                 //开始时间
+	optional uint32 totaltime = 3;             //持续时间
+	optional ProgressType type = 4;            //进度条类型
+	optional int32 speedtime = 5;              //加速时间
+	optional string param = 6;                 //对应不同type有不同含义
+	optional int32 helpflag = 7;			   //1表示已帮助
+	optional int32 stop_flag = 8;				//1、暂停
+	optional uint32 stop_time = 9;				//暂停时间
+}
+
+message ExploreInfo
+{
+	optional int32 inst_id = 1;
+	optional Position pos = 2;
+	optional int32 id = 3;			//事件id
+	optional uint32 begin_time = 4;	//开始时间
+	optional uint32 end_time = 5;	//结束时间
+	optional int32 succ_flag = 6;	//0、成功，1、失败
+	optional int32 status = 7;		//0、探索中，1、暂停中(持续24小时) 2、已完成，未领取 3、结束（同一星球24内只能被探索一次） 4、被拉入战斗状态
+}
+
+message DBExploreInfo
+{
+	optional int32 base_inst = 1;
+	optional int32 explore_time = 2;		//探索次数
+	optional uint32 charge_time = 3;		//结算时间
+	repeated ExploreInfo explore_list = 4;
+}
+
+message DBProgress
+{
+	optional int32 base_inst = 1;
+	repeated ProgressInfo progress_info = 2;   //进度条表
+}
+
+enum AwardType
+{
+	AWARD_RES = 1;		//资源产出加速
+	AWARD_ITEM = 2;		//道具
+	AWARD_UEXP = 3;		//联盟经验
+	AWARD_EXP = 4;		//个人经验
+	AWARD_VIP = 5;		//vip 点数
+	AWARD_CASH = 6;
+}
+
+message AwardInfo
+{
+	optional AwardType type = 1;	//类型
+	optional int32 id = 2;			//物品和有效
+	optional int32 param = 3;       //数值
+}
+
+message HeroInfo
+{
+	optional int32 hero_inst_id = 1;
+	optional int32 hero_id = 2;
+	optional int32 hero_exp = 3;
+	optional int32 hero_level = 4;
+	optional int32 name_id = 5;		//名id
+	optional int32 family_id = 6;	//姓id
+	optional int32 pic_id = 7;		//头像id
+	optional int32 status = 8;		//0表示空闲，1、工作中 2、表示被捕中
+	optional int32 fleet_id = 9;    //所属舰队id
+	optional int32 param = 10;		//0、未招募 1、已招募
+	repeated int32 skill_id = 11;	//特性
+	optional int32 prison_uin = 12;	//被谁逮捕
+}
+
+message DBHeroInfo
+{
+	optional int32 base_inst = 1;
+	optional uint32 refreash_time = 2;
+	optional int32 hero_max = 3;		//将军上限
+	repeated HeroInfo hero_list = 4;
+	repeated HeroInfo refreash_hero_list = 5;
+}
+
+message DBPrisonInfo
+{
+	optional int32 inst_id = 1;
+	optional int32 hero_inst_id = 2;
+	optional int32 hero_id = 3;
+	optional int32 hero_level = 4;
+	optional int32 uin = 5; 		//所属玩家
+	optional int32 name_id = 6;		//名id
+	optional int32 family_id = 7;	//姓id
+	optional int32 pic_id = 8;		//头像id
+	repeated int32 skill_id = 9;	//特性
+}
+
+message DBPrison
+{
+	repeated DBPrisonInfo hero_list_ = 1;
+	optional int32 level = 2;
+	optional int32 base_inst = 3;
+}
+
+message UnionCount
+{
+	optional int32 control_time = 1;		//联盟对遗迹的占领总时间
+	optional int32 kill_num = 2;			//消灭的部队数量
+	optional int32 dead_num = 3;
+	optional int32 distory_num = 4;
+	optional int32 win_num = 5;
+	optional int32 lose_num = 6;
+	optional int32 union_win_num = 7;
+	optional int32 union_lose_num = 8;
+	optional int32 prison_hero_num = 9;
+	optional int32 kill_hero_num = 10;
+	optional int32 escape_hero_num = 11;
+	optional int32 lose_hero_num = 12;
+	optional int32 help_times = 13;
+	optional int32 rank_gift_times = 14;
+	optional int32 connect_source_num = 15;
+	optional int32 open_gift_num = 16;
+	optional int32 kill_monster_num = 17;
+	optional uint64 destory_trap_num = 18;
+	optional uint64 get_source = 19;
+	optional uint64 kill_army_num = 20;
+	optional uint64 dead_army_num = 21;
+}
+
+message HelpUserInfo
+{
+	optional int32 uin = 1;
+	optional int32 army_inst_id = 2;
+}
+
+message UnionProtectArmy
+{
+	optional int32 uin = 1;
+	optional int32 army_inst = 2;
+	optional uint64 power = 3;
+}
+
+message ExBuildingInfo
+{
+	optional int32 status = 1;					//0表示建造中，1表示已完成，2表示升级中 3表示维修中 4、战斗中 5、暂停中 6、删除
+	optional int32 bulid_id = 2;				//对应表id
+	optional Position pos = 3;					//城市位置，可以为空
+	optional int32 speed = 4;					//速度
+	repeated HelpUserInfo uin_list = 5;			//帮助人员
+	optional uint32 begin_time = 6;				//开始时间
+	optional int32 hp = 7;
+	repeated UnionProtectArmy union_protesct_army = 8;
+}
+
+message DBExBuilding
+{
+	optional int32 base_inst = 1;
+	repeated ExBuildingInfo build_list = 2;
+}
+
+message FightInfo
+{
+	optional int32 union_id = 1;
+	optional uint32 begin_time = 2;	//开始时间
+	optional int32 type = 3;		//0、删除，1、准备 2、开战 3、冷却
+	optional int32 fight_flag = 4;	//0、被宣战方 1、宣战方
+}
+
+message UnionIconInfo
+{
+	optional int32 color_1 = 1;
+	optional int32 color_2 = 2;
+	optional int32 color_3 = 3;
+	optional int32 icon_1 = 4;
+	optional int32 icon_2 = 5;
+}
+
+message UnionLogUser
+{
+	optional int32 id = 1;			//玩家id
+	optional string union_nick = 2;
+	optional string user_name = 3;
+	optional int32 union_id = 4;
+	optional int32 param = 5;		//攻击标志 1、攻击方 2、被攻击方
+	optional uint64 total_fight_power = 6;		//总战斗力
+	optional uint64 left_fight_power = 7;		//剩余战斗力
+	optional uint64 destory_fight_power = 8;	//摧毁战斗力
+}
+
+message UnionLogUserList
+{
+	repeated UnionLogUser user_info = 1;
+}
+
+message UnionLog
+{
+	optional int32 inst = 1;   //唯一id
+	optional int32 index = 2;  //前端不用，0-99
+	optional uint32 create_time = 3; //
+	optional int32 type = 4;  //101表示部队战斗，102表示攻打空间站，103表示联盟输送 104空间站被打 105攻打联盟建筑 106联盟建筑被打
+	repeated string param = 5;
+	repeated UnionLogUser user = 6;
+}
+
+message DBUnionStoreInfo
+{
+	optional DBItemInfo item_info = 1;		//物品信息
+	repeated int32 request_uin_list = 2;	//标记人列表
+}
+
+message DBUnionData
+{
+	optional int32 union_id = 1;				//联盟id，唯一
+	optional string union_name = 2;				//联盟名字
+	optional string union_nick = 3;				//联盟简称
+	optional int32 union_boss = 4;				//联盟盟主
+	optional int32 user_max = 5;
+	repeated DBUnionUser user_list = 6;			//会员列表
+	repeated int32 join_id_list = 7;			//申请列表
+	repeated int32 invite_id_list = 8;			//邀请列表
+	optional uint64 union_exp = 9;				//联盟经验
+	optional string self_desc = 10;					//对内公告
+	optional string desc = 11;						//联盟公告
+	optional int32 open_flag = 12;					//0、自动入会 1、审核入会 2、无法加入
+	optional int32 limit_score = 13;				//
+	optional UnionIconInfo union_icon_info = 14;	//联盟图标
+	repeated int32 refuse_union = 15;				//屏蔽联盟id
+	repeated int32 refuse_member = 16;				//屏蔽用户
+	optional int32 word = 17;						//语言
+	optional int32 help_base_inst = 18;
+	optional UnionCount union_count = 19;
+	optional int32 union_k = 20;
+	optional int32 build_base_inst = 21;
+	repeated ExBuildingInfo union_build_list = 22;		//联盟建筑列表
+	optional DBUnionGroupInfo union_group_info = 23;	//军团信息
+	repeated UnionHelpInfo help_list = 24;				//帮助列表
+	repeated FightInfo fight_list = 25;					//宣战list
+	optional uint64 union_score = 26;					//联盟实力
+	optional uint64 mineral = 27;						//矿物
+	optional uint64 energy = 28;						//能源
+	optional uint64 crystal = 29;						//泰拉多水晶
+	optional uint64 alloy = 30;							//克瑞姆合金
+	optional uint32 energy_charge_time = 31;			//上次能源结算时间
+	optional uint32 mineral_charge_time = 32;			//上次矿物结算时间
+	optional UnionCityCount union_city_count = 33; 		//城市统计
+	optional int32 log_total_inst = 34; 				//已用的Inst
+	optional uint64 union_cash = 35;					//联盟贡献点
+	repeated DBUnionStoreInfo store_info = 36;			//商店
+	optional int32 store_history_num = 37;				//商店购买数量
+	optional int32 oldest_store_history_index = 38;
+}
+
+message UnionCityCount
+{
+	optional int32 mineral_recover = 1;			//资源回复速度
+	optional int32 energy_recover = 2;
+	optional int32 mineral_speed_percent = 3;	//资源产出加速
+	optional int32 energy_speed_percent = 4;	//资源产出加速
+	optional int32 upkeep = 5;					//消耗
+}
+
+message UnionSourceChangeInfo
+{
+	optional uint64 mineral = 1;				//矿物
+	optional uint64 energy = 2;					//能源
+	optional uint64 crystal = 3;				//泰拉多水晶
+	optional uint64 alloy = 4;					//克瑞姆合金
+	optional uint32 energy_charge_time = 5;		//上次能源结算时间
+	optional uint32 mineral_charge_time = 6;	//上次矿物结算时间
+	optional int32 mineral_speed_percent = 7;	//资源产出加速
+	optional int32 energy_speed_percent = 8;	//资源产出加速
+	optional int32 mineral_recover = 9;			//资源回复速度
+	optional int32 energy_recover = 10;
+	optional uint64 union_score = 11;
+}
+
+message UnionGroupInfo
+{
+    optional int32 inst_id = 1;
+	optional int32 create_user = 2;		//0、删除
+	optional string group_name = 3;
+	repeated int32 user_list = 4;
+	optional string union_notice = 5;	//公告
+	optional Position pos = 6;
+	optional int32 buff_id = 7;
+}
+
+message DBUnionGroupInfo
+{
+	optional int32 base_inst = 1;
+	repeated UnionGroupInfo union_group_list = 2;
+}
+
+message DBUnionUserData
+{
+	optional int32 union_id = 1;			//联盟id
+	repeated int32 join_union = 2;      	//申请加入列表
+	repeated int32 invite_union = 3;		//邀请加入列表
+	optional uint32 help_begin_time = 4;	//每日帮助开始时间
+	optional int32 speak_num = 5;			//已阅读评论
+	optional int32 helped_flag = 6;         //help的id
+	optional uint32 helped_time = 7;       //帮助时间
+	optional int32 log_last_inst = 8;    	//最新阅读到的inst,自增
+	repeated int32 union_city_res = 9;    	//联盟城市缓存，login时更新
+	optional Position pos = 10;
+	optional int32 union_group_id = 11;		//加入军团id
+	optional int32 union_score = 12;		//联盟贡献点
+	optional int32 help_union_score = 13;	//每日帮助贡献点
+	optional int32 union_group_buff = 14;	//军团buff
+}
+
+message DBUnionUser
+{
+	optional int32 user_id = 1;         //玩家uin
+	optional uint64 score = 2;			//玩家实力
+	optional int32 user_level = 3;		//玩家阶级
+	optional int32 kill_num = 4;		//杀敌数
+	optional int32 got_union_score = 5; //已获得的贡献点
+	optional int32 used_union_score = 6; //已使用的贡献点
+}
+
+message UnionHelpInfo
+{
+	optional int32 uin = 1;				//被帮助人
+	optional int32 type = 2; 			//1建筑，2研发, 3升级建筑，4销毁建筑，5维修部队，6维修防御
+	optional int32 id = 3;				//建筑id，研发id
+	optional int32 max_num = 4;			//最高帮助上限
+	repeated int32 uin_list = 5;		//已帮助玩家
+	optional int32 inst = 6;
+	optional int32 param = 7;			//进度条inst
+	optional uint32 end_time = 8;       //结束时间
+}
+
+message MapBuildNode {
+	optional Position position = 1;
+	optional int32 id = 2;				//玩家id
+	optional string name = 3;
+	optional string unionname = 4;
+	optional int32 level = 5;
+	repeated MapCityStatus city_status = 6;
+	optional int32 base_k = 7;
+	optional int32 union_id = 8;
+	optional int32 status = 9;                  //0、表示建造中，1、表示已完成 2、升级中 3、维修中 4,战斗中,5、暂停中
+	optional int32 hp = 10;
+	optional int32 max_hp = 11;
+	optional uint32 begin_time = 12;
+	optional int32 speed = 13;
+	optional int32 help_num = 14;
+	optional int32 hurt = 15;
+	optional int32 build_id = 16;
+	optional int64 fight_area = 17;
+	optional string fight_army = 18;
+}
+
+message MapUnionBuildNode {
+	optional Position position = 1;
+	optional int32 union_id = 2;				//玩家id
+	optional string unionnick = 3;				//简称
+	optional string unionname = 4;				//全称
+	optional int32 level = 5;
+	optional int32 status = 6;                  //0、表示建造中，1、表示已完成 2、升级中 3、维修中,4,战斗中,5、暂停中
+	repeated MapCityStatus city_status = 7;
+	optional int32 hp = 8;
+	optional int32 max_hp = 9;
+	optional uint32 begin_time = 10;
+	optional int32 speed = 11;
+	optional int32 help_num = 12;
+	optional int32 hurt = 13;
+	optional int32 build_id = 14;
+	optional int64 fight_area = 15;
+	optional string fight_army = 16;
+	optional int64 power = 17;
+}
+
+message MapUnionFightNode
+{
+	optional int32 fight_union_id = 1;
+	optional int32 union_id = 2;
+	optional int32 type = 3;
+	optional uint32 begin_time = 4;
+	optional int32 k = 5;
+}
+
+message FightData
+{
+	optional int32 win_flag = 1;			//1表示胜利，2表示失败
+	optional Position fight_pos = 2;		//战斗发生地点
+	optional int32 rob_source1 = 3;			//抢劫资源
+	optional int32 rob_source2 = 4;
+	optional int32 rob_source3 = 5;
+	optional int32 rob_source4 = 6;
+	optional int32 rob_source5 = 7;
+	repeated MailFightResult fight_result = 8;
+}
+
+message GatherInfo
+{
+    repeated AwardInfo award_info = 1;
+	optional int32 source = 2;
+	optional int32 param = 3;
+}
+
+message ArmyResult {
+	optional int32 type = 1;						//兵种类型 -2空间站,-3联盟建筑
+	optional int32 armytotal = 2;					//总量
+	optional int32 armyleft = 3;					//剩余
+}
+
+message BuffResult
+{
+	optional int32 buff_id = 1;
+	optional int32 buff_param = 2;
+}
+
+message HeroResult
+{
+	optional int32 hero_id = 1;
+	optional int32 hero_exp = 2;
+	optional int32 hero_capture = 3;
+}
+
+message DesArmyResult
+{
+	optional int32 type = 1;
+	optional int32 des_num = 2;	//摧毁数量
+}
+
+message MailFightResult {
+	optional int32 id = 1;						//玩家id
+	optional string name = 2;					//玩家name
+	repeated ArmyResult army_result = 3;		//部队信息
+	optional UnionIconInfo union_icon_info = 6;
+	repeated HeroResult hero_result = 7; 		//英雄信息
+	optional uint64 total_fight_power = 8;		//总战斗力
+	optional uint64 left_fight_power = 9;		//剩余战斗力
+	optional int32 rob_source1 = 10;			//抢劫资源
+	optional int32 rob_source2 = 11;
+	optional int32 rob_source3 = 12;
+	optional int32 rob_source4 = 13;
+	optional int32 rob_source5 = 14;
+	optional int32 union_id = 15;
+	optional int32 ani_param = 16;				//怪物id
+	optional uint64 destory_fight_power = 17;	//摧毁战斗力
+	repeated DesArmyResult des_army_result = 18;//摧毁船数量
+}
+
+message MailExploreInfo
+{
+    repeated AwardInfo award_info = 1;
+}
+
+message MailInfo
+{
+	optional int32 inst_id = 1;
+    optional int32 from_uin = 2;	//发件人
+    optional int32 to_uin = 3;		//收件人
+    optional int32 word_id = 4;		//留言id
+    repeated string param = 5;		//参数
+    optional int32 index = 6;		//详细信息
+    optional int32 save_flag = 7;   //1表示已存
+    optional uint32 create_time = 8;
+    optional int32 read_flag = 9; 	//1表示已读
+	repeated BookmarkInfo bookmark_info = 10;
+}
+
+message MailDesc
+{
+    optional int32 type = 1; 							//1.战斗 2.侦查 3.采集 4.打怪 5.踢出联盟 6.退出联盟 7.探索 8.联盟宣战
+    optional int32 flag = 2;
+    optional FightData fight_data = 3;
+    optional GatherInfo gather_info = 4;				//采集信息
+	optional MailExploreInfo explore_info = 5;			//探索
+}
+
+message DBMailList
+{
+    optional int32 total_num = 1;
+    optional int32 recv_num = 2;
+    optional int32 type = 3;
+}
+
+message DBMail
+{
+    optional DBMailList c2c_info = 1;	//收件箱
+    optional DBMailList report_info = 2;//战斗报告
+    optional DBMailList save_info = 3;	//已收藏
+    optional DBMailList self_info = 4;	//系统邮件
+}
+
+message CmdReqMailSysInsert
+{
+	optional int32 word_id = 1;
+	repeated string param = 2;
+}
+
+message CmdReqBeSendUnionMail
+{
+	optional int32 union_id = 1;
+	optional int32 from_user = 2;
+    optional string content = 3;//内容
+    optional string title = 4;	//主题
+}
+
+message UnionSpeakInfo
+{
+	optional int32 inst_id = 1;
+	optional int32 user_id = 2;			//玩家名字
+	optional int32 union_id = 3;		//联盟名字
+	optional string union_nick = 4;
+	optional string union_name = 5;
+	optional uint32 speak_time = 6;
+	optional string desc = 7;			//留言
+	optional int32 union_pic = 8;
+	optional int32 user_pic = 9;
+	optional string user_name = 10;
+}
+
+message UserSpeakInfo
+{
+    optional int32 inst_id = 1;
+	optional int32 user_id = 2;
+	optional string user_name = 3;
+	optional string union_nick = 4;
+	optional int32 union_level = 5;
+	optional int32 server_id = 6;
+	optional uint32 speak_time = 7;
+	optional string desc = 8;
+	optional int32 union_pic = 9;
+	optional int32 vip_level = 10;
+	optional int32 user_pic = 11;
+}
+
+message DBRadarInfo
+{
+	optional int32 inst_id = 1;
+	optional int32 type = 2;				//0、删除，目标类型，1表示被攻击，2表示增援，3表示资源帮助
+	optional int32 param = 3;				//表示己方的队伍的inst_id
+	optional int32 uin = 4;					//进攻方
+	optional int32 army_inst_id = 5;        //进攻部队
+	optional ProgressInfo progress_info = 6;
+	optional ArmyShowInfo army_show_info = 7;	//进攻方信息
+	repeated int32 sys_id_list = 8;
+	optional Position true_from = 9;    		//真实出发地
+	optional Position true_target= 10;  		//真实目的地
+}
+
+message ScoutInfo
+{
+	optional int32 s = 1;
+}
+
+message DBRadar
+{
+	repeated DBRadarInfo rader_list = 1;
+	optional int32 base_inst = 2;
+	repeated ScoutInfo s_list = 3;			//侦察过的星系
+	optional int32 r_count = 4;				//次数
+	optional uint32 charge_time = 5;		//结算时间
+	optional int32 r_cd = 6;				//cd
+}
+
+message DefenceSlots
+{
+	optional int32 id = 1;
+	optional int32 pos = 2;		//插槽位置
+}
+
+message DefenceInfo
+{
+	optional int32 inst_id = 1;
+	optional int32 build_id = 2;
+	repeated DefenceSlots w_slot_list = 3;	//武器插槽
+	repeated DefenceSlots p_slot_list = 4;	//通用插槽
+}
+
+message DBDefence
+{
+	repeated DefenceInfo defence_info = 1;
+}
+
+message BookmarkInfo
+{
+	optional int32 intst_id = 1;
+	optional int32 type = 2; 	//1、全部 2、喜好 3、朋友 4、敌人
+	optional string title = 3;
+	optional Position position = 4;
+}
+
+message DBBookmarkInfo
+{
+	optional int32 max_num = 1;
+	repeated BookmarkInfo bookmark_info_list = 2;
+	optional int32 inst_id = 3;
+}
+
+message AchieveInfo
+{
+	optional int32 inst_id = 1;
+	optional int32 id = 2;	//任务id
+	optional int32 num = 3;	//完成任务进度
+	optional int32 got_flag = 4;
+	optional int32 type = 5; //0.成就 1.每日任务
+}
+
+message DBAchieveInfo
+{
+	repeated int32 complete_achieve_list = 1;	//已完成的成就
+	optional int32 base_inst = 2;
+	repeated AchieveInfo achieve_list = 3;		//正在进行的成就
+	repeated AchieveInfo day_mission_list = 4;	//每日任务
+}
+
+message CardInfo
+{
+	optional int32 type = 1;	//1、月卡，2、年卡
+	optional uint32 end_time = 2;
+	optional uint32 get_award_time = 3;	//上一次领奖时间
+}
+
+message DBCardInfo
+{
+	repeated CardInfo card_list = 1;
+}
+
+message InstanceEventInfo
+{
+	optional uint64 inst_id = 1;	//唯一标识
+	optional int32 id = 2;			//表id
+	optional int32 type = 3;		//1、竞技模式 2、目标模式
+	optional uint32 begin_time = 4;
+	optional uint32 pre_time = 5;	//前置阶段时间
+	optional uint32 total_time = 6;
+	optional int32 status = 7; 		//0、预发布 1、正式发布 3、准备阶段 4、前置阶段 5、最终阶段 6、奖励阶段
+}
+
+message EventInfo
+{
+	optional uint64 inst_id = 1;
+	optional uint32 end_time = 2;
+	optional int32 event_type = 3;	//1、多人副本
+	optional int32 status = 4;		//4、前置阶段 5、最终阶段 6、奖励阶段
+}
+
+message GameInstanceEventInfo
+{
+	optional uint64 inst_id = 1;
+	optional uint32 end_time = 2;
+	optional uint64 point = 3;
+	optional int32 type = 4;		//1、竞技模式 2、目标模式
+}
+
+message DBGameEventInfo
+{
+	optional GameInstanceEventInfo instance_event_info = 1;
+}
+
+message DBBaseMission
+{
+	optional int32 mission_id = 1;	//任务id
+	optional int32 value = 2;		//进度
+}
+
+message DBMissionData
+{
+	repeated DBBaseMission base_mission_list = 1;	//正在进行的列表
+	repeated int32 base_complete_mission = 2;		//已完成的主线
+	optional int32 base_mission_inst = 3;
+	repeated int32 base_got_mission = 4;			//已领奖的主线
+}
+
+enum CmdID {
+	ReqCSBegin = 0;
+
+	ReqLogin = 13;
+	RspLogin = 14;
+	ReqGM = 15;
+	RspGM = 16;
+	ReqGetGmInfo = 17;
+	RspGetGmInfo = 18;
+	ReqHeart = 19;
+	RspHeart = 20;
+	ReqBuild = 21;
+	RspBuild = 22;
+	ReqBuildUpdate = 23;
+	RspBuildUpdate = 24;
+	ReqBuildCancel = 25;
+	RspBuildCancel = 26;
+	ReqProgressSpeed = 27;
+	RspProgressSpeed = 28;
+	ReqGetBuildingList = 29;
+	RspGetBuildingList = 30;
+	ReqBuildingStop = 31;
+	RspBuildingStop = 32;
+	ReqProgressStop = 33;
+	RspProgressStop = 34;
+	ReqSaveShipPlan = 35;
+	RspSaveShipPlan = 36;
+	ReqAddPlanNum = 37;
+	RspAddPlanNum = 38;
+	ReqDelShipPlan = 39;
+	RspDelShipPlan = 40;
+	ReqTraining = 41;
+	RspTraining = 42;
+	ReqSoldierDismiss = 43;
+	RspSoldierDismiss = 44;
+	ReqCancelTraining = 45;
+	RspCancelTraining = 46;
+	ReqArmy = 47;
+	RspArmy = 48;
+	ReqRefreashHero = 49;
+	RspRefreashHero = 50;
+	ReqRecruitHero = 51;
+	RspRecruitHero = 52;
+	ReqDeleteHero = 53;
+	RspDeleteHero = 54;
+	ReqSendHero = 55;
+	RspSendHero = 56;
+	RspArmyInfo = 57;
+	ReqHeroCaptain = 58;
+	RspHeroCaptain = 59;
+	ReqArmyAction = 60;
+	ReqCreateUnion = 61;
+	RspCreateUnion = 62;
+	ReqJoinUnion = 63;
+	RspNoticeJoin = 64;
+	ReqInviteUnion = 65;
+	RspNoticeInvite = 66;
+	ReqRefuseInvite = 67;
+	RspNoticeRefuseInvite = 68;
+	ReqRefuseJoin = 69;
+	RspNoticeRefuseJoin = 70;
+	ReqAgreeInvite = 71;
+	ReqAgreeJoin = 72;
+	RspUnionMemberChange = 73;
+	ReqQuitUnion = 80;
+	RspQuitUnion = 81;
+	ReqKickMember = 82;
+	ReqCancelUnion = 83;
+	ReqUnionChangeLevel = 84;
+	ReqChangeLeader = 85;
+	RspChangeLeader = 86;
+	ReqOpenUnion = 87;
+	RspOpenUnion = 88;
+	ReqChangeUnionInfo = 89;
+	RspNoticeUnionInfoChange = 90;
+	ReqCreateUnionGroup = 91;
+	RspCreateUnionGroup = 92;
+	RspNoticeUnionSourceChange = 93;
+	ReqGetUnionList = 94;
+	RspGetUnionList = 95;
+	ReqChangeUnionName = 96;
+	RspChangeUnionName = 97;
+	RspNoticeChangeUnionName = 98;
+	ReqRefuseSpeak = 99;
+	RspRefuseSpeak = 100;
+	ReqUnionNeedSpeed = 101;
+	RspUnionSpeedListChange = 102;
+	ReqUnionSpeed = 103;
+	RspUnionNeedHelp = 104;
+	ReqGetUnionSimpleInfo = 105;
+	RspGetUnionSimpleInfo = 106;
+	ReqCancelJoin = 107;
+	ReqGetUserSimpleInfo = 108;
+	RspGetUserSimpleInfo = 109;
+	ReqGetUnionPos = 110;
+	RspGetUnionPos = 111;
+	ReqCancelInvite = 112;
+	ReqUnionComplexInfo = 113;
+	RspUnionComplexInfo = 114;
+	ReqSpecialRank = 115;
+	RspSpecialRank = 116;
+	ReqRankInfo = 117;	//以前ReqAllianceRankInfo
+	RspRankInfo = 118;	//以前RspAllianceRankInfo
+	RspArmyInfoChange = 119;
+	RspCityChange = 120;
+	RspOutSourceArmyChange = 121;
+	ReqBack = 122;
+	RspNoticeCashOrGoodsUpdate = 123;
+	ReqAddUnionGroup = 124;
+	RspAddUnionGroup = 125;
+	ReqExitUnionGroup = 126;
+	RspExitUnionGroup = 127;
+	AddUnionFight = 129;
+	ReqCreateFleet = 130;
+	RspCreateFleet = 131;
+	ReqDeleteFleet = 132;
+	RspDeleteFleet = 133;
+	NoticeUnionFight = 134;
+	RspNoticeFight = 135;
+	ReqGetUnionFightList = 136;
+	RspGetUnionFightList = 137;
+	ReqMove = 138;
+	RspMove = 139;
+	ReqRepair = 140;
+	RspRepair = 141;
+	ReqExploreFinish = 142;
+	RspExploreFinish = 143;
+	NoticeExploreInfo = 144;
+	ReqSpeed = 145;
+	RspSpeed = 146;
+	ReqGetMailSimpleInfo = 147;
+	RspGetMailSimpleInfo = 148;
+	ReqGetMailDesc = 149;
+	RspGetMailDesc = 150;
+	ReqDelMail = 151;
+	RspDelMail = 152;
+	ReqSaveMail = 153;
+	RspSaveMail = 154;
+	ReqSendMail = 155;
+	RspSendMail = 156;
+	ReqMarkMail = 157;
+	RspMarkMail = 158;
+	RspNoticeMailChange	= 159;
+	ReqSendUserComment = 160;
+	RspSendUserComment = 161;
+	ReqGetUserComment = 162;
+	RspGetUserComment = 163;
+	ReqDelUserComment = 164;
+	RspDelUserComment = 165;
+	ReqSendUnionComment = 166;
+	RspSendUnionComment = 167;
+	ReqGetUnionComment = 168;
+	RspGetUnionComment = 169;
+	ReqGetReplyComment = 170;
+	RspGetReplyComment = 171;
+	ReqUseItem = 172;
+	RspUseItem = 173;
+	ReqBuyItem = 174;
+	RspBuyItem = 175;
+	ReqReleaseHero = 176;
+	RspPrisonChange = 177;
+	ReqSSReleaseHero = 178;
+	ReqRedeemHero = 179;
+	ReqGetUnionLog = 180;
+	RspGetUnionLog = 181;
+	NoticeUnionLog = 182;
+	ReqGetUnionHelp = 183;
+	RspGetUnionHelp = 184;
+	ReqSaveUnionLog = 185;
+	RspRadarInfoChange = 186;
+	ReqScout = 187;
+	RspScout = 188;
+	NoticeRadarInfo = 189;
+	ReqAddBookmarkCap = 190;
+	RspAddBookmarkCap = 191;
+	ReqAddBookmark = 192;
+	RspAddBookmark = 193;
+	ReqDeleteBookmark = 194;
+	RspDeleteBookmark = 195;
+	ReqChangeBookmark = 196;
+	RspChangeBookmark = 197;
+	ReqGetBookmarkList = 198;
+	RspGetBookmarkList = 199;
+	ReqGetDefenceInfo = 200;
+	RspGetDefenceInfo = 201;
+	ReqChangeDefenceSlots = 202;
+	RspChangeDefenceSlots = 203;
+	ReqMarkUnionItem = 204;
+	ReqBuyUnionItem = 205;
+	RspUnionItemChange = 206;
+	ReqUpUnionItem = 207;
+	ReqGetUnionstoreHistory = 208;
+	RspGetUnionstoreHistory = 209;
+	RspNoticeUnionScoreChange = 210;
+	UpdateAchieve = 211;
+	ReqGetAchieveAward = 212;
+	RspGetAchieveAward = 213;
+	ReqChangeUnionGroup = 214;
+	ReqGetCardAward = 215;
+	RspGetCardAward = 216;
+	ReqGetBuyResult = 217;
+	RspGetBuyResult = 218;
+	ReqGuideSet = 219;
+	RspGuideSet = 220;
+	ReqReseach = 221;
+	RspReseach = 222;
+	ReqReseachInfo = 223;
+	RspReseachInfo = 224;
+	ReqUnionCitySourceHelp = 225;
+	RspUnionCitySourceHelp = 226;
+	ReqCreatTradeSeq = 227;
+	RspCreatTradeSeq = 228;
+	NoticeInstanceMonster = 229;
+	NoticeInstanceChange = 230;
+	RspVersionRefresh = 231;
+	ReqSignIn = 232;
+	RspSignIn = 233;
+	ReqGetDayMissionAward = 234;
+	RspGetDayMissionAward = 235;
+	RefreshDayMission = 236;
+	NoticeInstanceSrcChange = 237;
+	ReqHurtBack = 238;
+	RspHurtBack = 239;
+	ReqAddPvpPoint = 240;
+	ReqVersion = 241;
+	RspVersion = 242;
+	ReqMissionGift = 243;
+	RspMissionGift = 244;
+	RspNoticeMissionComplete = 245;
+
+	ReqCSEnd = 10000;
+
+	ReqCMBegin = 10001;
+
+	ReqMapInfo = 10002;
+	RspMapInfo = 10003;
+	ReqGetCloudMap = 10004;
+	RspCloudMap = 10005;
+
+	ReqCMEnd = 20000;
+
+	ReqSSBegin = 20001;
+	ReqRouteLogin = 20002;
+	RspRouteLogin = 20003;
+	ReqRouteLogOut = 20004;
+	RspRouteLogOut = 20005;
+	ReqSSHeart = 20006;
+	ReqSSUserLogin = 20007;
+	ReqSSLock = 20008;
+	RspSSLock = 20009;
+	ReqSSWriteData = 20010;
+	ReqSSAskUnLock = 20011;
+	ReqSSTTWriteData = 20012;
+	RspSSTTWriteData = 20013;
+	ReqSSTTGetData = 20014;
+	RspSSTTGetData = 20015;
+	ReqSSTTGetUserBase = 20016;
+	RspSSTTGetUserBase = 20017;
+	ReqSSTTSetUserBase = 20018;
+	ReqSSRouteAnnouce = 20019;
+	ReqSSKickPcl = 20020;
+	ReqSSTranslatorInfo = 20021;
+	RspSSTranslatorInfo = 20022;
+	ReqSSSaveTranslatorInfo = 20023;
+	RspSSSaveTranslatorInfo = 20024;
+	ReqSSGetTranslatorInfo = 20025;
+	RspSSGetTranslatorInfo = 20026;
+	ReqSSUnionAllSimpleInfoUpdate = 20027;
+	ReqSSUnionSimpleInfoUpdate = 20028;
+	ReqSSGetUnionSimpleInfo = 20029;
+	RspSSGetUnionSimpleInfo = 20030;
+	ReqSSUserAllSimpleInfoUpdate = 20031;
+	ReqSSUserSimpleInfoUpdate = 20032;
+	ReqSSGetUserSimpleInfo = 20033;
+	RspSSGetUserSimpleInfo = 20034;
+	ReqSSCreatePos = 20035;
+	RspSSCreatePos = 20036;
+	ReqSSChangeCityInfo = 20037;
+	ReqSSChangeCityStatus = 20038;
+	ReqSSSourceBegin = 20039;
+	ReqSSSourceBeginResult = 20040;
+	RspSSSourceBeginResult = 20041;
+	ReqSSSourceEnd = 20042;
+	ReqSSSourceEndResult = 20043;
+	RspSSSourceEndResult = 20044;
+	ReqSSSourceStop = 20045;
+	ReqSSCreateUnion = 20046;
+	RspSSCreateUnion = 20047;
+	ReqSSGetUnion = 20048;
+	RspSSGetUnion = 20049;
+	ReqSSChangeUnionName = 20050;
+	RspSSChangeUnionName = 20051;
+	ReqSSUpdateName = 20052;
+	RspSSUpdateName = 20053;
+	ReqSSDeleteName = 20054;
+	ReqSSChangeName = 20055;
+	ReqSSCreateUnionID = 20056;
+	RspSSCreateUnionID = 20057;
+	ReqSSChangeId = 20058;
+	ReqSSRankUpdate = 20059;
+	ReqSSRankInfo = 20060;
+	RspSSRankInfo = 20061;
+	ReqSSAllianceRank = 20062;
+	RspSSAllianceRank = 20063;
+	ReqSSSpecialRank = 20064;
+	RspSSSpecialRank = 20065;
+	ReqSSGetUnionList = 20066;
+	RspSSGetUnionList = 20067;
+	ReqSSDelRankInfo = 20068;
+	RspSSDelRankInfo = 20069;
+	ReqSSJoinUnion = 20070;
+	RspSSJoinUnion = 20071;
+	ReqSSInviteUnion = 20072;
+	RspSSInviteUnion = 20073;
+	ReqSSRefuseInvite = 20074;
+	RspSSRefuseInvite = 20075;
+	ReqSSRefuseJoin = 20076;
+	RspSSRefuseJoin = 20077;
+	ReqSSAgreeInvite = 20078;
+	RspSSAgreeInvite = 20079;
+	ReqSSAgreeJoin = 20080;
+	RspSSAgreeJoin = 20081;
+	ReqSSQuitUnion = 20082;
+	RspSSQuitUnion = 20083;
+	ReqSSKickMember = 20084;
+	ReqSSCancelUnion = 20085;
+	RspSSCancelUnion = 20086;
+	ReqSSCancelJoin = 20087;
+	ReqForceQuitUnion = 20088;
+	ReqSSCancelInvite = 20089;
+	ReqSSChangeLeader = 20090;
+	RspSSChangeLeader = 20091;
+	ReqSSSetKingFlag = 20092;
+	ReqSSChangeKing = 20093;
+	ReqSSKingGet = 20094;
+	ReqSSUnionToKing = 20095;
+	RspSSUnionToKing = 20096;
+	ReqSSUnionComplexInfo = 20097;
+	RspSSUnionComplexInfo = 20098;
+	ReqSSChangeUnionInfo = 20099;
+	RspSSChangeUnionInfo = 20100;
+	ReqSSOpenUnion = 20101;
+	RspSSOpenUnion = 20102;
+	ReqSSUnionChangeLevel = 20103;
+	RspSSUnionChangeLevel = 20104;
+	ReqSSRefuseSpeak = 20105;
+	RspSSRefuseSpeak = 20106;
+	ReqSSUnionNeedSpeed = 20107;
+	RspSSUnionNeedSpeed = 20108;
+	ReqSSCheckMember = 20109;
+	RspSSCheckMember = 20110;
+	ReqSSUnionHelp = 20111;
+	ReqSSUnionUserInfoChange = 20112;
+	ReqSSUnionRankInfoChange = 20113;
+	ReqSSArmyAction = 20114;
+	RspSSArmyAction = 20115;
+	ReqSSDelArmy = 20116;
+	ReqSSArmyBackHome = 20117;
+	ReqSSArmyStay = 20118;
+	ReqSSUnionCancelSpeed = 20119;
+	RspSSUnionCancelSpeed = 20120;
+	ReqSSUnionSpeed = 20121;
+	RspSSUnionSpeed = 20122;
+	ReqSSUnionUpdateSpeed = 20123;
+	RspSSUnionUpdateSpeed = 20124;
+	ReqSSUnionKing = 20125;
+	RspSSUnionKing = 20126;
+	ReqSSUnionMember = 20127;
+	RspSSUnionMember = 20128;
+	ReqSSWriteUnionData = 20129;
+	ReqSSAskUnionUnLock = 20130;
+	ReqSSSaveUnionLogInfo = 20131;
+	RspSSSaveUnionLogInfo = 20132;
+	ReqSSGetUnionLogInfo = 20133;
+	RspSSGetUnionLogInfo = 20134;
+	ReqSSTTSaveUnionLog = 20135;
+	RspSSTTSaveUnionLog = 20136;
+	ReqSSTTGetUnionLog = 20137;
+	RspSSTTGetUnionLog = 20138;
+	ReqSSUnionLock = 20139;
+	RspSSUnionLock = 20140;
+	ReqSSCheckUnionAct = 20141;
+	ReqSSCreateUnionGroup = 20142;
+	RspSSCreateUnionGroup = 20143;
+	ReqSSAddUnionGroup = 20144;
+	RspSSAddUnionGroup = 20145;
+	ReqSSExitUnionGroup = 20146;
+	RspSSExitUnionGroup = 20147;
+	ReqSSTTGetUnionBase = 20148;
+	RspSSTTGetUnionBase = 20149;
+	ReqSSTTSetUnionBase = 20150;
+	ReqSSTTWriteUnionData = 20151;
+	RspSSTTWriteUnionData = 20152;
+	ReqSSTTGetUnionData = 20153;
+	RspSSTTGetUnionData = 20154;
+	ReqQuitUnionGroup = 20155;
+	ReqSSArmyInfoChange = 20156;
+	ReqSSArmyBack = 20157;
+	RspSSArmyBack = 20158;
+	ReqSSArmyAutoBack = 20159;
+	ReqSSArmyBackCity = 20160;
+	ReqSSExBuild	= 20161;
+	ReqSSUnionExBuild = 20162;
+	ReqSSCheckUnionCityPos = 20163;
+	RspSSCheckUnionCityPos = 20164;
+	ReqSSCheckMapBuildPos = 20165;
+	RspSSCheckMapBuildPos = 20166;
+	ReqSSUnionBuild = 20167;
+	RspSSUnionBuild = 20168;
+	NoticeSSUpdateBuildInfo = 20169;
+	NoticeSSUpdateUnionBuildInfo = 20170;
+	RspNoticeCityStatusChange = 20171;
+	ReqSSAreaFight = 20172;
+	NoticeSSUpdateStatus = 20173;
+	ReqSSAreaFightResult = 20174;
+	ReqSSUpdateMapBuild = 20175;
+	RspSSUpdateMapBuild = 20176;
+	ReqSSUpdateBuildStatus = 20177;
+	RspSSNoticeUpdateBuildInfo = 20178;
+	ReqSSUpdateUnionBuild = 20179;
+	RspSSUpdateUnionBuild = 20180;
+	ReqGetUnionBuildingHp = 20181;
+	RspGetUnionBuildingHp = 20182;
+	ReqSSAddUnionFight = 20183;
+	RspSSAddUnionFight = 20184;
+	ReqSSDelMapUnionFight = 20185;
+	ReqSSAddMapUnionFight = 20186;
+	ReqSSGetUnionFightList = 20187;
+	RspSSGetUnionFightList = 20188;
+	ReqSSMove = 20189;
+	RspSSMove = 20190;
+	ReqSSPrisonHeroPosChange = 20191;
+	ReqSSUpdateCityInfo = 20192;
+	ReqSSUpdateSpaceBuildStatus = 20193;
+	ReqSSFightEnd = 20194;
+	ReqSSFightAreaComplete = 20195;
+	RspSSFightAreaComplete = 20196;
+	ReqSSRefreshMonster = 20197;
+	RspSSRefreshMonster = 20198;
+	ReqSSExploreBegin = 20199;
+	ReqSSExploreEnd = 20200;
+	ReqSSRefreshExMonster = 20201;
+	RspSSRefreshExMonster = 20202;
+	ReqSSKickCity = 20203;
+	ReqSSChangeUnionBuild = 20204;
+	ReqCheckExplore = 20205;
+	RspCheckExplore = 20206;
+	ReqUpdateUnionBuildHelp = 20207;
+	RspUpdateUnionBuildHelp = 20208;
+	ReqSSMailInsert = 20209;
+	RspSSMailInsert = 20210;
+	ReqSSMailDel = 20211;
+	RspSSMailDel = 20212;
+	ReqSSMailSave = 20213;
+	RspSSMailSave = 20214;
+	ReqSSMailMark = 20215;
+	RspSSMailMark = 20216;
+	ReqSSMailInfoGet = 20217;
+	RspSSMailInfoGet = 20218;
+	ReqSSMailDescGet = 20219;
+	RspSSMailDescGet = 20220;
+	ReqMailSysInsert = 20221;
+	ReqBeSendUnionMail = 20222;
+	ReqSSUnionCommentInsert = 20223;
+	RspSSUnionCommentInsert = 20224;
+	ReqSSUnionCommentInfoGet = 20225;
+	RspSSUnionCommentInfoGet = 20226;
+	ReqSSUnionCommInfoGet = 20227;
+	RspSSUnionCommInfoGet = 20228;
+	ReqSSUserCommentInsert = 20229;
+	RspSSUserCommentInsert = 20230;
+	ReqSSUserCommentDel = 20231;
+	RspSSUserCommentDel = 20232;
+	ReqSSUserCommentInfoGet = 20233;
+	RspSSUserCommentInfoGet = 20234;
+	ReqSSUserReplyInfoGet = 20235;
+	RspSSUserReplyInfoGet = 20236;
+	ReqSSMailFight = 20237;
+	ReqSSMailFightEnd = 20238;
+	ReqSSGameFightEnd = 20239;
+	RspSSGameFightEnd = 20240;
+	ReqFightReportInsert = 20241;
+	ReqSSCheckUnionBaseBuild = 20242;
+	RspSSCheckUnionBaseBuild = 20243;
+	ReqSSRadarInfoChange = 20244;
+	ReqSSScoutArmyChange = 20245;
+	RspSSScoutArmyChange = 20246;
+	ReqSSDelScout = 20247;
+	ReqSSArmyInTrap = 20248;
+	ReqSSMarkUnionItem = 20249;
+	ReqSSBuyUnionItem = 20250;
+	RspSSUnionItemChange = 20251;
+	ReqSSUpUnionItem = 20252;
+	ReqSSGetUnionstoreHistoryNum = 20253;
+	RspSSGetUnionstoreHistoryNum = 20254;
+	ReqSSUnionStoreHistory = 20255;
+	RspSSUnionStoreHistory = 20256;
+	ReqSSInsertUnionStoreHistory = 20257;
+	ReqSSAddUnionScore = 20258;
+	RspSSAddUnionScore = 20259;
+	ReqUnionAddScore = 20260;
+	ReqSSChangeUnionGroup = 20261;
+	ReqSSNoticeChangeGroup = 20262;
+	RspSSChangeUnionGroup = 20263;
+	ReqSSUnionSourceHelp = 20264;
+	RspSSUnionSourceHelp = 20265;
+	ReqSSGetUnionCityPos = 20266;
+	RspSSGetUnionCityPos = 20267;
+	ReqSSUnionCityArmyArrive = 20268;
+	ReqSSAddUnionSource = 20269;
+	ReqSSDelExplore = 20270;
+	ReqSSGetBuyResult = 20271;
+	RspSSGetBuyResult = 20272;
+	ReqSSSetBuyInfo = 20273;
+	RspSSSetBuyInfo = 20274;
+	ReqSSOldPayAdd = 20275;
+	ReqSSOldPayDel = 20276;
+	ReqSSOldPayGet = 20277;
+	RspSSOldPayGet = 20278;
+	ReqSSPushMessage = 20279;
+	ReqSSInsertUnionFightReport = 20280;
+	ReqSSNoticeUnionRadarSys = 20281;
+	ReqSSAddEventInsPoint = 20282;
+	ReqSSChangeSection = 20283;
+	ReqSSRefreshInsMap = 20284;
+	ReqSSSendEventInsAward = 20285;
+	NoticeSSEventInsChange = 20286;
+	ReqSSAddUnionValue = 20287;
+	ReqSSKickInsUser = 20288;
+	ReqSSGetEventRankInfo = 20289;
+	ReqSSRankUpdateEx = 20290;
+	RspSSRankUpdateEx = 20291;
+	ReqSSProtectBuilding = 20292;
+	RspSSProtectBuilding = 20293;
+	ReqSSArmyArriveProtect = 20294;
+	ReqSSProtectArmyBegin = 20295;
+	RspSSProtectArmyBegin = 20296;
+	ReqSSProtectBuildingEnd = 20297;
+	RspSSProtectBuildingEnd = 20298;
+	ReqSSProtectArmyAttack = 20299;
+	ReqSSSourceRecover = 20300;
+	RspSSSourceRecover = 20301;
+
+	ReqSSEnd = 30000;
+
+	ReqCLBegin = 30001;
+	ReqNewLogin = 30002;
+	RspNewLogin = 30003;
+	ReqRegist = 30004;
+	RspRegist = 30005;
+	ReqChangeAccoutInfo = 30006;
+	RspChangeAccoutInfo = 30007;
+	ReqCheckLogin = 30008;
+	RspCheckLogin = 30009;
+	ReqCLEnd = 40000;
+
+	ReqNameBegin = 40001;
+	ReqSearchUser = 40002;
+	RspSearchUser = 40003;
+	ReqSearchUnion = 40004;
+	RspSearchUnion = 40005;
+	ReqCheckName = 40006;
+	RspCheckName = 40007;
+	ReqNameEnd = 50000;
+
+	ReqSSChatBegin = 50001;
+	ReqSSRoomSay = 50002;
+	RspSSRommSay = 50003;
+	ReqSSRoomGet = 50004;
+	RspSSRoomGet = 50005;
+	RspSSChatEnd = 60000;
+
+	ReqEventBegin = 60001;
+	ReqGetEventInfo = 60002;
+	RspGetEventInfo = 60003;
+	ReqGetEventList = 60004;
+	RspGetEventList = 60005;
+	ReqAddEvent = 60006;
+	RspAddEvent = 60007;
+	ReqChangeEventInfo = 60008;
+	RspChangeEventInfo = 60009;
+	ReqDelEvent = 60010;
+	RspDelEvent = 60011;
+	ReqEventEnd = 60012;
+
+	ReqDBBegin = 80001;
+	ReqSSCreateUserID = 80002;
+	RspSSCreateUserID = 80003;
+	ReqDBEnd = 90000;
+}
+
+message CmdReqLogin {
+	optional string user_name = 1;
+	optional string password = 2;	//为空表示快速开始
+	optional int32 type  = 3;     	//1表示facebook
+	optional string language = 4; 	//语言
+	optional int32 phone_type = 5;	//1、android 2、apple
+	optional string source_ver = 6; //资源版本号
+	optional string app_ver = 7; //程序版本号
+}
+
+message CmdRspLogin {
+	optional CUserData home_user_data = 1;
+	optional uint32 svr_time = 2;
+	optional string login_name = 3;
+	optional string password = 4;	//为空表示快速开始
+	optional int32 type  = 5;     //1表示facebook
+	optional string language = 6; //语言
+	optional int32 defence_flag = 7;
+	optional int32 repair_flag = 8;
+	optional string res_version = 9;
+	optional string client_version = 10;
+	optional int32 notice_num = 11;
+	optional DBUnionData union_data = 12;
+}
+
+message GMInfo
+{
+	repeated string gm_cmd = 1;
+}
+
+message CmdReqGM
+{
+	optional GMInfo gm_info = 1;
+	optional int32 revert = 2;
+}
+
+message CmdRspGM
+{
+	optional GMInfo gm_info = 1;
+}
+
+message CmdReqGetGmInfo
+{
+	optional int32 uin = 1;
+}
+
+message CmdRspGetGmInfo
+{
+	repeated string gm_cmd = 1;
+}
+
+message CmdReqRegist {
+	optional string login_name = 1;
+	optional string password = 2;
+	optional string old_user_name = 3;		//设备号
+	optional string mail = 4;
+	optional int32 type = 5;  // 1表示facebook
+}
+
+message CmdRspRegist {
+	optional string login_name = 1;
+	optional string password = 2;
+	optional string old_user_name = 3;
+	optional string mail = 4;
+	optional int32 type = 5;  // 1表示facebook
+}
+
+message CmdReqChangeAccoutInfo {
+	optional string login_name = 1;
+	optional string password = 2;
+	optional string param = 3;
+	optional int32 type = 4;   //1表示邮箱，2表示密码
+}
+
+message CmdRspChangeAccoutInfo {
+	optional string login_name = 1;
+	optional string password = 2;
+	optional string param = 3;
+	optional int32 type = 4;   //1表示邮箱，2表示密码
+}
+
+message CmdReqCheckLogin {
+	optional string old_user_name = 1;
+	optional string old_password = 2;
+	optional int32 old_type  = 3;     //1表示facebook
+	optional string login_name = 4;
+	optional string password = 5;
+	optional int32 type  = 6;     //1表示facebook
+}
+
+message CmdRspCheckLogin {
+	optional string login_name = 1;
+	optional string password = 2;
+	optional int32 type  = 3;     //1表示facebook
+}
+
+message CmdReqHeart
+{
+	optional int32 revert = 1;
+}
+
+message CmdRspHeart
+{
+	optional int32 revert = 1;
+}
+
+message Weapon_info
+{
+	optional int32 inst_id = 1;
+	optional int32 weapon_id = 2;
+	optional int32 type = 3;
+}
+
+message WarShipComponent
+{
+	optional int32 super_engine = 1;	//超光速引擎
+	optional int32 sub_engine = 2;		//亚光速引擎
+	optional int32 detector = 3;		//探测器
+	optional int32 fight_ai = 4;		//战斗AI
+	optional int32 load_id = 5;			//装载
+}
+
+message ModuleInfo
+{
+	optional int32 module_id = 1;
+	repeated int32 weapon_list = 2;	//武器
+	repeated int32 equip_list = 3;	//设备
+}
+
+message WarShipPlanningInfo
+{
+	optional int32 inst_id = 1;
+	optional int32 ship_id = 2;
+	optional string name = 3;
+	optional WarShipComponent war_ship_component = 4;	//基本组件
+	repeated ModuleInfo module_list = 5;
+	optional int32 first_inst_id = 6;			//原始蓝图
+}
+
+message DBShipPlanningInfo
+{
+	optional int32 base_inst = 1;
+	optional int32 open_num = 2;
+	repeated WarShipPlanningInfo planing_info = 3;
+}
+
+message CmdReqSaveShipPlan
+{
+	optional WarShipPlanningInfo plan_info = 1;
+}
+
+message CmdRspSaveShipPlan
+{
+	optional WarShipPlanningInfo plan_info = 1;
+}
+
+message CmdReqDelShipPlan
+{
+	optional int32 inst_id = 1;
+}
+
+message CmdRspDelShipPlan
+{
+	optional int32 inst_id = 1;
+}
+
+message CmdReqAddPlanNum
+{
+    optional int32 item_id = 1;
+}
+
+message CmdRspAddPlanNum
+{
+    optional int32 plan_num = 1;
+	optional int32 item_id = 2;
+}
+
+message BuildingBaseInfo
+{
+	optional int32 inst = 1;
+	optional int32 pos = 2;    //坐标
+	optional int32 type = 3;   //类型
+	optional int32 level = 4;  //等级
+	optional int32 status = 5;  //0表示正常，1表示升级，2表示建造，3表示销毁
+}
+
+message ReaeachClassInfo
+{
+	optional int32 class_type = 1;
+	optional int32 id = 2;
+}
+
+message ReseachInfo
+{
+	repeated ReaeachClassInfo id_list = 1;  //同一系列的会删掉以前的
+	optional int32 source1 = 2;         	//正在升级需要的资源
+	optional int32 source2 = 3;
+	optional int32 source3 = 4;
+	optional int32 source4 = 5;
+	optional int32 source5 = 6;
+}
+
+message DBBuilding
+{
+	optional int32 base_inst = 1;
+	repeated BuildingBaseInfo building_list = 2;
+	optional ReseachInfo reseach_info = 3;
+}
+
+message CmdReqBuild {
+	optional int32 build_type = 1;             //建筑类型
+	optional int32 pos = 2;                    //建筑位置
+	optional int32 quick = 3;                  //1表示立即建造
+	optional int32 step = 4;				   //新手引导step
+}
+
+message CmdRspBuild {
+	optional BuildingBaseInfo building_info = 1;   //建筑基础信息
+	optional ProgressInfo progress_info = 2;       //产生进度条
+	optional SourceChangeInfo source_change_info = 3;	 //资源变更
+	optional int32 cash = 4;
+}
+
+message CmdReqBuildUpdate
+{
+	optional int32 inst_id = 1;                    //建筑索引
+	optional int32 quick = 2;                  //1表示立即建造
+	optional int32 step = 3;
+}
+
+message CmdRspBuildUpdate
+{
+	optional BuildingBaseInfo building_info = 1;   //建筑基础信息
+	optional ProgressInfo progress_info = 2;       //产生进度条
+	optional SourceChangeInfo source_change_info = 3; //资源变更
+	optional int32 cash = 4;
+}
+
+message CmdReqBuildCancel
+{
+	optional int32 inst_id = 1;                    //建筑索引
+	optional int32 item_id = 2;                    //不为0表示扣物品立即完成
+}
+
+message CmdRspBuildCancel
+{
+	optional BuildingBaseInfo building_info = 1;   //建筑基础信息
+	optional ProgressInfo progress_info = 2;       //产生进度条
+	optional SourceChangeInfo source_change_info = 3; //资源变更
+	optional int32 cash = 4;
+	optional int32 item_id = 5;
+	optional int32 item_num = 6;
+}
+
+message CmdReqGetBuildingList
+{
+	repeated int32 pos_list = 1;                   //建筑位置集合
+}
+
+message CmdRspGetBuildingList
+{
+	repeated BuildingBaseInfo building_list = 1;   //建筑信息
+	optional SourceChangeInfo source_change_info = 2; //资源变更
+}
+
+message CmdReqBuildingStop
+{
+	optional int32 pos = 1;
+}
+
+message CmdRspBuildingStop
+{
+	optional BuildingBaseInfo building = 1;
+	optional ProgressInfo del_progress = 2;
+	optional SourceChangeInfo source_change_info = 3; //资源变更
+}
+
+
+message CmdReqProgressSpeed
+{
+	optional int32 progress_inst_id = 1;           //进度条
+	optional int32 item_id = 2;                    //加速道具
+}
+
+message CmdRspProgressSpeed
+{
+	optional ProgressInfo progress_info = 1;       //进度条变更
+	optional int32 item_id = 2;                    //加速道具
+	optional int32 item_num = 3;	               //加速道具数量
+	optional uint32 svr_time = 4;
+}
+
+message CmdReqProgressStop
+{
+	optional int32 progress_inst_id  = 1;
+}
+
+message CmdRspProgressStop
+{
+	optional ProgressInfo del_progress = 1;
+	optional SourceChangeInfo source_change_info = 2; //资源变更
+}
+
+message TrainingInfo
+{
+	optional int32 mineral = 1;
+	optional int32 energy = 2;
+	optional int32 crystal = 3;
+	optional int32 alloy = 4;
+	optional ArmyDesc army_desc = 5;
+	optional int32 ship_yard_id = 6;	//船坞inst_id
+	repeated int32 training_list = 7;	//等待建造队列
+	optional uint32 left_time = 8;	//等待队列建造时间
+}
+
+message ArmyRepairInfo
+{
+	optional int32 repair_army_inst = 1;
+	optional int32 repair_solider = 2;
+	repeated ArmyDesc repair_army = 3;
+}
+
+message DBArmyDesc
+{
+	repeated ArmyDesc army = 1;         		//部队
+	repeated TrainingInfo training_info = 2;	//造兵
+	optional int32 army_inst = 3;
+	repeated ArmyInfo out_army_list = 4;
+	repeated OutArmySourceInfo out_source_army_list = 5;
+	optional ArmyRepairInfo army_repair_info = 6;
+	optional uint64 city_army_fight_army = 7;
+	optional int32 fight_round = 8;
+	optional int32 home_army_fight_flag = 9;
+}
+
+message CmdReqTraining
+{
+	optional ArmyDesc army_desc = 1;
+	optional int32 mineral = 2;
+	optional int32 energy = 3;
+	optional int32 crystal = 4;
+	optional int32 alloy = 5;
+	optional int32 use_time = 6;
+	optional int32 step = 7;			//新手引导step
+	optional int32 ship_yard_id = 8;	//船坞inst_id
+}
+
+message CmdRspTraining
+{
+	optional ArmyDesc army_desc = 1;
+	optional int32 cash = 2;
+	optional ProgressInfo progress_info = 3;       		//进度条变更
+	optional SourceChangeInfo source_change_info = 4; 	//资源变更
+	optional uint64 upkeep = 5;
+	optional int32 ship_yard_id = 6;					//船坞inst_id
+	optional TrainingInfo training_info = 7;			//当前船坞建造信息
+	optional int32 notice_flag = 8;						//0、回包，1、推送
+}
+
+message CmdReqCancelTraining
+{
+	optional ArmyDesc army_desc = 1;
+	optional int32 ship_yard_id = 2;	//船坞inst_id
+	optional int32 index = 3;		    //取消index
+}
+
+message CmdRspCancelTraining
+{
+	optional ArmyDesc army_desc = 1;
+	optional int32 cash = 2;
+	optional SourceChangeInfo source_change_info = 3; 	//资源变更
+	optional uint64 upkeep = 4;
+	optional int32 ship_yard_id = 5;					//船坞inst_id
+	optional TrainingInfo training_info = 6;			//当前船坞建造信息
+	optional ProgressInfo progress_info = 7;       		//进度条变更
+}
+
+message CmdReqSoldierDismiss
+{
+	optional ArmyDesc army_desc = 1;
+}
+
+message CmdRspSoldierDismiss
+{
+	optional ArmyDesc army_desc = 1;
+	optional uint64 upkeep = 2;
+}
+
+message CmdReqArmy
+{
+	optional int32 revert = 1;
+}
+
+message CmdRspArmy
+{
+	optional DBArmyDesc army_info = 1;
+	optional uint64 upkeep = 2;
+}
+message CmdReqMapInfo {
+	optional int32 k = 1;
+	optional int32 s = 2;
+	optional int32 first_flag = 3;          //第一次进地图，为1
+}
+
+message CmdRspMapInfo {
+	repeated MapCityNode mapcitynode_list=1;
+	repeated MapSouceNode mapsoucenode_list=2;
+	repeated MapCampNode mapcampnode_list=3;
+	repeated ArmyShowInfo mapmonsternode_list=4;
+	optional MapCenterNode mapcenternode = 5;
+	optional int32 client_push = 6;	//0、push
+	repeated MapUnionCityNode unioncitynode_list = 7;
+	repeated MapUnionBuildNode union_build_list = 8;
+	repeated MapBuildNode build_list = 9;
+	repeated MapFightAreaNode map_fight_list = 10;
+}
+
+message CmdRspArmyInfo
+{
+	repeated ArmyShowInfo armyinfo_list=1;
+	optional int32 total_flag=2;     //0表示增量，1表示全量
+}
+
+message CmdReqGetCloudMap
+{
+	optional int32 k = 1;
+	optional int32 flag = 2;   //0表示增量，1表示全量, 玩家联盟变更需要发flag为0的请求,第一次进星云,发flag为1的请求
+	optional Position pos = 3; //空间站位置
+	repeated int32 s = 4;   //所有部队所在s,空间站所在s
+}
+
+message CmdRspCloudMap
+{
+	optional int32 flag = 1; //0表示增量，1表示全量 2、删除
+	repeated MapSysInfo sys_list = 2; //星云信息
+}
+
+message CmdReqKing
+{
+	optional int32 revert = 1;
+}
+
+message KingInfo
+{
+	optional int32 k = 1;
+	optional int32 uin = 2;
+}
+
+message EventFightServerInfo
+{
+	repeated int32 server = 1;
+}
+
+message CmdRspKing
+{
+	repeated KingInfo king_list = 1;
+	repeated TitleInfo title_list = 2;
+	optional int32 k = 3;
+	repeated EventFightServerInfo fight_server_info = 4;
+}
+
+message CmdReqArmyAction {
+	optional Position taget_position=1;
+	optional Position from_position=2;
+	optional ArmyInfo army_info=3;
+}
+
+message CmdRspArmyAction {
+	optional int32 user_id=1;
+	repeated ArmyDesc army = 2;  //剩余部队
+}
+
+message CmdReqBigMap {
+	optional int32 revert = 1;
+}
+
+message CmdRspBigMap {
+	repeated BigMapInfo openmap = 1;
+	optional int32 fight_k = 2;
+	optional BossUserData boss_user_data = 3;
+}
+
+message CmdRspArmyInfoChange
+{
+	optional int32 user_id = 1;
+	optional ArmyInfo armyinfo_list=2;
+	repeated ProgressInfo progress_info=3;
+}
+
+message CmdReqRefreashHero
+{
+	optional int32 cash = 1;
+}
+
+message CmdRspRefreashHero
+{
+	optional int32 cash = 1;
+	optional uint32 refreash_time = 2;
+	repeated HeroInfo refreash_hero_list = 3;
+}
+
+message CmdReqRecruitHero
+{
+	optional int32 hero_inst_id = 1;
+}
+
+message CmdRspRecruitHero
+{
+	optional DBHeroInfo hero_info = 1;
+}
+
+message CmdReqDeleteHero
+{
+	optional int32 hero_inst_id = 1;
+}
+
+message CmdRspDeleteHero
+{
+	repeated HeroInfo hero_list = 1;
+}
+
+message CmdReqSendHero
+{
+    optional int32 hero_inst_id = 1;
+	optional int32 fleet_id = 2;
+}
+
+message CmdRspSendHero
+{
+	optional HeroInfo hero_info = 1;
+	optional SourceChangeInfo source_change_info = 2;
+}
+
+message CmdReqHeroCaptain
+{
+	optional int32 uin = 1;
+}
+
+message CmdRspHeroCaptain
+{
+	optional int32 hero_max = 1;
+}
+
+message CmdReqCreateUnion
+{
+	optional string name = 1;
+	optional string nick = 2;
+	optional int32 word = 3;
+	optional UnionIconInfo icon_info = 4;
+}
+
+message CmdRspCreateUnion
+{
+	optional DBUnionData union_data = 1;
+	optional DBUnionUserData union_user = 2;
+	optional int32 cash = 3;
+}
+
+message CmdReqJoinUnion
+{
+	optional int32 union_id = 1;
+}
+
+message CmdRspNoticeJoin
+{
+	optional int32 union_id = 1;
+	optional int32 user_id = 2;
+}
+
+message CmdReqInviteUnion
+{
+	optional int32 union_id = 1;
+	optional int32 invite_uin = 2;
+}
+
+message CmdRspNoticeInvite
+{
+	optional int32 union_id = 1;
+	optional int32 user_id = 2;
+}
+
+message CmdReqRefuseInvite
+{
+	optional int32 union_id = 1;
+}
+
+message CmdRspNoticeRefuseInvite
+{
+	optional int32 refuse_user = 1;
+	optional int32 refuse_union = 2;
+}
+
+message CmdReqRefuseJoin
+{
+	optional int32 user = 1;
+}
+
+message CmdRspNoticeRefuseJoin
+{
+	optional int32 refuse_user = 1;
+	optional int32 refuse_union = 2;
+}
+
+message CmdReqAgreeInvite
+{
+	optional int32 union_id = 1;
+}
+
+message CmdReqAgreeJoin
+{
+	optional int32 user_id = 1;
+}
+
+message CmdRspUnionMemberChange
+{
+	optional int32 type = 1; //1表示更新或增加，2表示删除
+	optional DBUnionUser user_info = 2;
+	optional UserSimpleInfo simple_info = 3;	//只有是在新增玩家入盟的时候才不为null
+}
+
+message CmdReqSearchUnion
+{
+	optional string key_word = 1;
+}
+
+message CmdRspSearchUnion
+{
+	repeated int32 union_id_list = 1;
+	optional string key_word = 2;
+}
+
+message CmdReqSearchUser
+{
+	optional string key_word = 1;
+}
+
+message CmdRspSearchUser
+{
+	repeated int32 user_id_list = 1;
+}
+
+message CmdReqCheckName
+{
+	optional int32 type = 1; //1表示联盟名，2表示联盟昵称，3表示用户名
+	optional string name = 2;
+}
+
+message CmdRspCheckName
+{
+	optional int32 flag = 1; //1表示可用
+	optional string name = 2;
+	optional int32 type = 3;
+	optional int32 user_id = 4;
+}
+
+message CmdReqQuitUnion
+{
+	optional int32 revert = 1;
+}
+
+message CmdRspQuitUnion
+{
+	optional DBUnionUser user_info = 1;
+	optional ProgressInfo progress_info = 2;
+}
+
+message CmdReqKickMember
+{
+	optional int32 kick_user = 1;
+	optional string reason = 2;
+}
+
+message CmdReqCancelUnion
+{
+	optional string reason = 1;
+}
+
+message CmdReqUnionChangeLevel
+{
+	optional int32 user = 1;
+	optional int32 level = 2;
+}
+
+message CmdReqChangeLeader
+{
+	optional int32 new_leader = 1;
+}
+
+message CmdRspChangeLeader
+{
+	optional int32 new_leader = 1;
+}
+
+message CmdReqOpenUnion
+{
+	optional int32 open_flag = 1;	//0、自动入会 1、审核入会 2、无法加入
+	optional int32 limit_score = 2;
+}
+
+message CmdRspOpenUnion
+{
+	optional int32 open_flag = 1;	//0、自动入会 1、审核入会 2、无法加入
+	optional int32 limit_score = 2;
+}
+
+message CmdReqChangeUnionInfo
+{
+	optional int32 type = 1;		//1表示更改名称，2表示更改简称，3表示对内描述，4表示更改图标, 5表示更改联盟语言 6、对外公告
+	optional string info = 2;
+	optional int32 param = 3;
+	optional UnionIconInfo icon_info = 4;
+}
+
+message CmdRspNoticeUnionInfoChange
+{
+	optional int32 type = 1;		//1表示更改名称，2表示更改简称，3表示对内描述，4表示更改图标, 5表示更改联盟语言 6、对外公告
+	optional string info = 2;
+	optional int32 param = 3;
+	optional int32 change_user = 4;
+	optional UnionIconInfo icon_info = 5;
+}
+
+message CmdReqCreateUnionGroup
+{
+	optional string group_name = 1;
+	optional int32 group_buff = 2;
+	optional Position pos = 3;
+	optional string gruop_notice = 4;
+}
+
+message CmdReqChangeUnionGroup
+{
+	optional int32 inst_id  = 1;
+	optional string group_name = 2;
+	optional int32 group_buff = 3;
+	optional Position pos = 4;
+	optional string gruop_notice = 5;
+	optional int32 kick_user = 6;		//踢人
+}
+
+message CmdRspCreateUnionGroup
+{
+	optional UnionGroupInfo union_group_info = 1;
+	optional int32 type = 2; 	//0、回包，1、推送
+}
+
+message CmdReqAddUnionGroup
+{
+	optional int32 inst_id  = 1;
+}
+
+message CmdRspAddUnionGroup
+{
+	optional UnionGroupInfo union_group_info = 1;
+}
+
+message CmdReqExitUnionGroup
+{
+	optional int32 inst_id  = 1;
+}
+
+message CmdRspExitUnionGroup
+{
+	optional UnionGroupInfo union_group_info = 1;
+}
+
+message CmdRspNoticeUnionSourceChange
+{
+	optional int32 union_id = 1;
+	optional uint64 union_exp = 2;
+	optional UnionSourceChangeInfo source_change_info = 3;
+}
+
+message CmdAllianceInfo
+{
+    optional int32 alliance_id = 1;
+    optional uint64 alliance_value = 2;
+	optional int32 rank = 3;
+}
+
+message CmdAllianceRankInfo
+{
+    optional int32 rank_id = 1;
+    repeated CmdAllianceInfo alliance_info = 2;
+}
+
+message CmdReqRankInfo
+{
+    optional int32 server_id = 1;	//所在区
+    repeated int32 rank_id = 2;		//所请求排行榜id
+	optional int32 rank_num = 3;	//请求数量
+}
+
+message CmdRspRankInfo
+{
+    repeated CmdAllianceRankInfo alliance_rank_info = 1;
+}
+
+message CmdReqSpecialRank
+{
+	optional int32 server_id = 1;
+    optional int32 id = 2;
+	repeated int32 rank_id = 3;
+}
+
+message CmdRspSpecialRank
+{
+	repeated CmdAllianceRankInfo alliance_rank_info = 1;
+}
+
+message CmdReqGetUnionList
+{
+    optional int32 server_id = 1;
+	optional int32 rank_id = 2;
+}
+
+message CmdRspGetUnionList
+{
+    repeated int32 union_id_list = 1;
+}
+
+message CmdReqChangeUnionName
+{
+	optional string name = 1;
+	optional string nick = 2;
+}
+
+message CmdRspChangeUnionName
+{
+	optional string name = 1;
+	optional string nick = 2;
+	optional int32 item_id = 3;
+	optional int32 item_num = 4;
+	optional int32 cash = 5;
+}
+
+message CmdRspNoticeChangeUnionName
+{
+	optional string name = 1;
+	optional string nick = 2;
+	optional int32 union_id = 3;
+}
+
+message CmdReqRefuseSpeak
+{
+	optional int32 type = 1; //1表示联盟，2表示个人
+	optional int32 id = 2;
+}
+
+message CmdRspRefuseSpeak
+{
+	optional int32 type = 1; //1表示联盟，2表示个人
+	optional int32 id = 2;
+}
+
+message CmdReqUnionNeedSpeed
+{
+	optional int32 type = 1;
+	optional int32 id = 2;
+}
+
+message UnionSpeedChangeInfo
+{
+	optional UnionHelpInfo helpInfo = 1;
+	optional int32 type = 2; //1表示修改，2表示删除
+}
+
+message CmdRspUnionSpeedListChange
+{
+	repeated UnionSpeedChangeInfo change_info_list = 1;
+}
+
+message CSUnionSpeedInfo
+{
+	optional int32 help_inst = 1;
+	optional int32 uin = 2;
+}
+
+message CmdReqUnionSpeed
+{
+	repeated CSUnionSpeedInfo union_help_inst_list = 1;
+}
+
+message CmdRspUnionNeedHelp
+{
+	optional ProgressInfo progress_info = 1;
+}
+
+message CmdReqGetUnionSimpleInfo
+{
+	repeated int32 union_id_list = 1;
+}
+
+message CmdRspGetUnionSimpleInfo
+{
+	repeated UnionSimpleInfo union_simple_info_list = 1;
+}
+
+message CmdReqCancelJoin
+{
+	optional int32 union_id=1;
+}
+
+message CmdReqGetUserSimpleInfo
+{
+	repeated int32 uin_list=1;
+	optional uint32 trans_id = 2;
+}
+
+message CmdRspGetUserSimpleInfo
+{
+	repeated UserSimpleInfo user_simplet_info_list = 1;
+	optional uint32 trans_id = 2;
+}
+
+message CmdReqGetUnionPos
+{
+	optional int32 user = 1;
+}
+
+message CmdRspGetUnionPos
+{
+	optional int32 user = 1;
+	optional Position pos = 2;
+}
+
+message CmdReqCancelInvite
+{
+	optional int32 uin=1;
+}
+
+message UnionComplexInfo
+{
+	optional int32 union_id = 1;			//联盟id，唯一
+	optional string union_name = 2;			//联盟名字
+	optional string union_nick = 3;			//联盟简称
+	optional int32 union_boss = 4;			//联盟盟主
+	repeated DBUnionUser user_list = 5;		//会员列表
+	optional string self_desc = 6;			//联盟对外公告
+	optional uint64 union_score = 7;		//联盟实力
+	optional string desc = 8;				//联盟公告
+	optional UnionIconInfo union_icon_info = 9;			//联盟图标
+	optional int32 word = 10;
+	optional UnionCount union_count = 11;
+	optional uint64 union_exp = 12;
+}
+
+message CmdReqUnionComplexInfo
+{
+	repeated int32 union_id_list = 1;
+}
+
+message CmdRspUnionComplexInfo
+{
+	repeated UnionComplexInfo union_complex_info_list = 1;
+}
+
+message CmdReqForceQuitUnion
+{
+	optional int32 union_id = 1;
+}
+
+message CityShowInfo {
+	optional int32 id = 1;
+	optional int32 mineral = 2;
+	optional int32 energy = 3;
+	optional int32 crystal = 4;
+	optional int32 alloy = 5;
+	optional int32 power = 6;
+	repeated ArmyDesc army = 7;
+	repeated CityStatus city_status = 8;
+}
+
+message CmdRspCityChange {
+	optional CityShowInfo city_show_info = 1;
+	optional SourceChangeInfo souce_change_info = 2;
+	optional uint64 city_army_fight_army = 3;
+}
+
+message CmdRspOutSourceArmyChange
+{
+	optional int32 user_id = 1;
+	optional OutArmySourceInfo out_source_army = 2;
+}
+
+message CmdReqBack {
+	optional int32 inst_id = 1;      //部队标识
+	repeated int32 sys_id_list = 2;      //途经星系
+}
+
+message CmdRspNoticeCashOrGoodsUpdate
+{
+	optional int32 cash = 1;
+	repeated DBItemInfo item_list=2;
+}
+
+//后端专用
+message CmdReqQuitUnionGroup
+{
+	optional int32 union_id = 1;
+}
+
+message FightNode
+{
+	optional Position pos = 1;			//固定建筑用
+	optional string army_index = 2;			//部队用
+	optional int32 uin = 3;
+	optional int32 union_id = 4;
+	optional int32 res_id = 5;			 //pos不为0时，表示是其他建筑，为0表示是空间站
+	optional string monster_index = 6;	 //armyshow index
+}
+
+message FightTargetInfo
+{
+	optional FightNode attack_node = 1;		//攻击方
+	optional FightNode defence_node = 2;	//受击方
+	repeated int32 attack_type = 3;			//用了什么武器
+	optional int32 union_fight = 4;			//是否宣战
+}
+
+message FightArmyLose
+{
+	optional int32 type = 1;    //1-7		巡洋舰-炮艇
+	optional int32 num = 2;
+}
+
+message FightArmyResult
+{
+	optional ArmyShowInfo show_info = 1;		//
+	repeated FightArmyLose lose_info = 2;		//损失信息
+}
+
+message FightResult
+{
+	repeated FightTargetInfo target_info = 1;		//攻击信息
+	repeated FightArmyResult army_result = 2;
+	optional uint32 begin_time = 3;					//本轮开始时间
+	repeated MapBuildNode map_build_node = 4;
+	repeated MapUnionBuildNode map_union_build_node = 5;
+	repeated MapCityNode map_city_node = 6;
+}
+
+message CmdRspNoticeFight
+{
+	optional FightResult fight_result = 1;
+}
+
+message CmdAddUnionFight
+{
+	optional int32 union_id = 1;	//宣战union_id
+}
+
+message CmdNoticeUnionFight
+{
+	repeated FightInfo fight_info = 1;	//宣战union_id
+}
+
+message CmdReqGetUnionFightList
+{
+	optional int32 union_id = 1;
+}
+
+message CmdRspGetUnionFightList
+{
+	repeated FightInfo fight_info = 1;
+}
+
+message CmdReqCreateFleet
+{
+	repeated ArmyDesc army_desc = 1;
+	optional int32 hero_inst_id = 2;
+	optional int32 inst_id = 3;		//0、创建 1、添加
+	optional string fleet_name = 4;
+}
+
+message CmdRspCreateFleet
+{
+	repeated ArmyInfo out_army_list = 1;
+	optional int32 inst_id = 2;
+	repeated ArmyDesc army = 3;
+	optional DBHeroInfo hero_info = 4;
+}
+
+message CmdReqDeleteFleet
+{
+	optional int32 inst_id = 1;
+}
+
+message CmdRspDeleteFleet
+{
+	repeated ArmyInfo out_army_list = 1;
+	repeated ArmyDesc army = 2;
+	optional DBHeroInfo hero_info = 3;
+}
+
+message CmdRspNoticeCityStatusChange
+{
+	repeated ExBuildingInfo build_list = 1;
+	optional UnionSourceChangeInfo source_change_info = 2;
+}
+
+message CmdReqMove {
+	optional Position target_position=1;
+	optional Position from_position=2;
+}
+
+message CmdRspMove {
+	optional Position target_position=1;
+	optional Position from_position=2;
+	optional SourceChangeInfo source_change_info = 3;
+	optional uint32 move_time = 4;
+}
+
+message CmdReqRepair {
+	optional int32 army_inst = 1;  //0表示母港
+	optional int32 soldier_type = 2;  //维修哪个船，如果为0，表示全部维修
+}
+
+message CmdRspRepair {
+	optional ProgressInfo progress_info = 1;
+	optional ArmyRepairInfo army_repair_info = 2;
+	optional SourceChangeInfo source_change_info = 3;	 //资源变更
+}
+
+message CmdNoticeExploreInfo
+{
+	optional ExploreInfo explore_info = 1;
+	optional int32 flag = 2; 				//1、删除 0、更改
+	optional int32 explore_time = 3;		//探索次数
+	optional uint32 charge_time = 4;		//结算时间
+}
+
+message CmdReqExploreFinish
+{
+	optional int32 inst_id = 1;
+}
+
+message CmdRspExploreFinish
+{
+	optional int32 inst_id = 1;
+	repeated AwardInfo award_list = 2;
+	optional SourceChangeInfo source_change_info = 3;
+}
+
+message CmdReqSpeed {
+	optional int32 inst_id = 1;      //部队标识
+	optional int32 item_id = 2;      //加速道具
+}
+
+message CmdRspSpeed {
+	optional int32 revert = 1;      //占位，统一格式用
+	optional int32 item_id = 2;                    //加速道具
+	optional int32 item_num = 3;	               //加速道具数量
+	optional uint32 svr_time = 4;
+}
+
+//邮件相关
+message CmdReqGetMailSimpleInfo
+{
+    optional int32 type = 1;	//1:收件  2:报告  3:收藏  4:日志
+    optional int32 begin = 2;	//从0开始
+	optional int32 end = 3;		//end比begin大
+}
+
+message CmdRspGetMailSimpleInfo
+{
+    repeated MailInfo maileInfo_list = 1;
+    optional int32 type = 2;
+	optional int32 having_num = 3;
+    optional int32 begin = 4;	//从1开始
+	optional int32 end = 5;		//end比begin大
+}
+
+message CmdReqSendMail
+{
+    optional int32 to_uin = 1;
+    optional int32 from_uin = 2;
+    optional string content = 3;//内容
+    optional string title = 4;	//主题
+    optional int32 type = 5;	//1:发送全联盟  2: 发送给个人
+	repeated BookmarkInfo bookmark_info = 6;
+}
+
+message CmdRspSendMail
+{
+    optional int32 to_uin = 1;
+    optional int32 from_uin = 2;
+    optional int32 type = 3;
+}
+
+message CmdReqGetMailDesc
+{
+    optional int32 index = 1;	//MailInfo 里面的index
+    optional int32 type = 2;
+}
+
+message CmdRspGetMailDesc
+{
+    optional int32 index = 1;
+    optional int32 type = 2;
+    optional MailDesc desc = 3;
+}
+
+message CmdReqDelMail
+{
+    optional int32 type = 1;
+    repeated int32 index = 2;
+    optional int32 unread_num = 3;
+}
+
+message CmdRspDelMail
+{
+    optional int32 type = 1;
+    repeated int32 index = 2;
+	optional int32 having_num = 3;
+}
+
+message CmdReqSaveMail
+{
+    optional int32 type = 1;
+    optional int32 index = 2;
+}
+
+message CmdRspSaveMail
+{
+    optional int32 type = 1;
+    optional int32 index = 2;
+}
+
+message CmdRspNoticeMailChange
+{
+	optional DBMail mail_info = 1;
+}
+
+message CmdReqMarkMail
+{
+    optional int32 type = 1;
+    repeated int32 index = 2;
+}
+
+message CmdRspMarkMail
+{
+    optional int32 type = 1;
+    repeated int32 index = 2;
+}
+
+message CmdReqSendUserComment
+{
+    optional int32 to_uin = 1;
+	optional int32 from_uin = 2;
+	optional string content = 3;
+}
+
+message CmdRspSendUserComment
+{
+    optional int32 to_uin = 1;
+	optional int32 from_uin = 2;
+	optional UserSpeakInfo user_speak_info = 3;
+}
+
+message CmdReqGetUserComment
+{
+    optional int32 uin = 1;
+	repeated int32 index = 2;
+}
+
+message CmdRspGetUserComment
+{
+    optional int32 uin = 1;
+    repeated UserSpeakInfo user_speak_info = 2;
+}
+
+message CmdReqGetReplyComment
+{
+    optional int32 uin = 1;
+	optional int32 from_uin = 2;
+	repeated int32 index = 3;  //数组下标，如：0~19
+}
+
+message CmdRspGetReplyComment
+{
+    optional int32 uin = 1;
+	optional int32 from_uin = 2;
+    repeated UserSpeakInfo user_speak_info = 3;
+	optional int32 total_speak_num = 4;
+}
+
+message CmdReqDelUserComment
+{
+    optional int32 to_uin = 1;
+    optional int32 from_uin = 2;
+    optional int32 index = 3;
+}
+
+message CmdRspDelUserComment
+{
+	optional int32 index = 1;
+}
+
+message CmdReqSendUnionComment
+{
+    optional int32 to_union_id = 1;
+	optional int32 from_union_id = 2;
+	optional string content = 3;
+}
+
+message CmdRspSendUnionComment
+{
+    optional int32 to_union_id = 1;
+	optional int32 from_union_id = 2;
+	optional UnionSpeakInfo union_speak_info = 3;
+}
+
+message CmdReqGetUnionComment
+{
+    optional int32 union_id = 1;
+}
+
+message CmdRspGetUnionComment
+{
+    optional int32 union_id = 1;
+    repeated UnionSpeakInfo union_speak_info = 2;
+}
+
+message CmdReqUseItem
+{
+	optional int32 item_id = 1; 	//使用道具
+	optional int32 buy_flag = 2;	//1、购买并使用
+}
+
+message CmdRspUseItem
+{
+	optional DBItemInfo item_info = 1;                 	//道具数量
+	optional SourceChangeInfo source_change_info = 2;  	//资源变更
+	repeated AwardInfo award_list = 3;
+	optional int32 cash = 4;
+}
+
+message CmdReqBuyItem {
+	optional int32 item_id = 1;
+	optional int32 item_num = 2;
+}
+
+message CmdRspBuyItem {
+	optional DBItemInfo item_info = 1;
+	optional int32 cash = 2;
+}
+
+message CmdReqFightReportInsert
+{
+	repeated MailFightResult fight_result = 1;
+	optional int32 loser = 2;			//0、战斗正常结束 1、主动召回者失败uin
+	optional uint64 fight_pos = 3;
+	optional int32 pvp_flag = 4;		//0、正常 1、多人副本
+}
+
+message CmdReqReleaseHero
+{
+	optional int32 inst_id = 1;
+}
+
+message CmdRspPrisonChange
+{
+	repeated DBPrisonInfo prision_info_change = 1;
+	optional SourceChangeInfo source_change_info = 2;
+}
+
+message CmdReqRedeemHero
+{
+	optional int32 hero_inst_id = 1;
+}
+
+message CmdReqGetUnionLog
+{
+	optional int32 union_id = 1;
+}
+
+message CmdRspGetUnionLog
+{
+	optional int32 union_id = 1;
+	repeated UnionLog union_log_list = 2;
+}
+
+message CmdNoticeUnionLog
+{
+	optional int32 inst = 1;
+}
+
+message CmdRspRadarInfoChange
+{
+	repeated DBRadarInfo radar_info_list = 1;
+}
+
+message CmdReqScout
+{
+	optional Position pos = 1;
+}
+
+message CmdRspScout
+{
+	optional SourceChangeInfo source_change_info = 1;
+}
+
+message CmdNoticeRadarInfo
+{
+	optional int32 r_cd = 1;
+	optional uint32 charge_time = 2;
+	optional int32 r_count = 3;
+}
+
+message CmdReqAddBookmarkCap
+{
+	optional int32 item_id = 1;
+}
+
+message CmdRspAddBookmarkCap
+{
+	optional DBItemInfo item_info = 1;
+	optional int32 cash = 2;
+	optional int32 bookmark_cap = 3;
+}
+
+message CmdReqAddBookmark
+{
+	optional BookmarkInfo bookmark_info = 1;
+}
+
+message CmdRspAddBookmark
+{
+	optional BookmarkInfo bookmark_info = 1;
+}
+
+message CmdReqDeleteBookmark
+{
+	optional int32 inst_id = 1;
+}
+
+message CmdRspDeleteBookmark
+{
+	optional int32 inst_id = 1;
+}
+
+message CmdReqChangeBookmark
+{
+	optional int32 inst_id = 1;
+	optional int32 type = 2; 	//1、全部 2、喜好 3、朋友 4、敌人
+	optional string title = 3;
+}
+
+message CmdRspChangeBookmark
+{
+	optional BookmarkInfo bookmark_info = 1;
+}
+
+message CmdReqGetBookmarkList
+{
+	optional int32 type = 1;
+}
+
+message CmdRspGetBookmarkList
+{
+	optional DBBookmarkInfo bookmark_list = 1;
+}
+
+message CmdReqGetDefenceInfo
+{
+	optional int32 inst_id = 1;
+}
+
+message CmdRspGetDefenceInfo
+{
+	optional DefenceInfo defence_info = 1;
+}
+
+message CmdReqChangeDefenceSlots
+{
+	optional int32 type = 1;	//1、武器，2、部件
+	optional int32 inst_id = 2;
+	optional DefenceSlots defence_slots = 3;
+}
+
+message CmdRspChangeDefenceSlots
+{
+	optional DefenceInfo defence_info = 1;
+}
+
+message CmdReqMarkUnionItem
+{
+	optional int32 item_id = 1;
+}
+
+message CmdReqBuyUnionItem
+{
+	optional int32 item_id = 1;
+	optional int32 item_num = 2;
+}
+
+message CmdRspUnionItemChange
+{
+	optional DBUnionStoreInfo store_info = 1;
+	optional int32 type = 2;  //1表示上架，2表示购买，3表示标记
+	optional int32 user = 3;  //谁触发的
+}
+
+message CmdReqUpUnionItem
+{
+	optional int32 item_id = 1;
+	optional int32 item_num = 2;
+}
+
+message CmdReqGetUnionstoreHistory
+{
+	optional int32 union_id = 1;
+}
+
+message UnionStoreHistory
+{
+	optional int32 user_id = 1;
+	optional int32 item_id = 2;
+	optional int32 item_num = 3;
+	optional uint32 buy_time = 4;
+}
+
+message CmdRspGetUnionstoreHistory
+{
+	optional int32 union_id = 1;
+	repeated UnionStoreHistory hitory_list = 2;
+}
+
+message CmdReqUnionAddScore
+{
+	optional int32 union_id = 1;
+	optional int32 add_score = 2;
+	optional int32 add_exp = 3;
+}
+
+message CmdRspNoticeUnionScoreChange
+{
+	optional int32 union_id = 1;
+	optional uint64 union_score = 2;
+	optional uint64 union_exp = 3;
+}
+
+message CmdUpdateAchieve
+{
+	optional AchieveInfo achieve_info = 1;
+	optional int32 type = 2; //0.成就 1.每日任务
+}
+
+message CmdReqGetAchieveAward
+{
+	optional int32 inst_id = 1;	//成就inst_id
+}
+
+message CmdRspGetAchieveAward
+{
+	repeated AwardInfo award_list = 1;
+	optional int32 complete_achieve_id = 2;	//不为0，则加入已完成列表
+	repeated AchieveInfo achieve_list = 3;	//正在进行的成就
+	optional SourceChangeInfo source_change_info = 4;
+	optional int32 cash = 5;
+}
+
+message CmdReqGetDayMissionAward
+{
+	optional int32 inst_id = 1;	//每日任务inst_id
+}
+
+message CmdRspGetDayMissionAward
+{
+	repeated AwardInfo award_list = 1;
+	optional int32 inst_id = 2;
+	optional SourceChangeInfo source_change_info = 3;
+	optional int32 cash = 5;
+}
+
+message CmdRefreshDayMission
+{
+	repeated AchieveInfo day_mission_list = 1;
+}
+
+message CmdReqGetCardAward
+{
+	optional int32 type = 1;
+}
+
+message CmdRspGetCardAward
+{
+	repeated AwardInfo award_list = 1;
+	optional int32 cash = 2;
+	optional uint32 get_award_time = 3;	//上一次领奖时间
+	optional int32 type = 4;
+}
+
+message CmdReqGetBuyResult
+{
+	optional string session=1;
+	optional int32 pay_type=2;
+	optional string guid=3;
+}
+
+message CmdRspGetBuyResult
+{
+	optional DBPay pay=1;
+	repeated AwardInfo award_list=2;
+	repeated AwardInfo ext_award_list=3;
+	optional string guid=4;
+	optional string orderserial = 5;
+	optional CityShowInfo city_show_info = 6;
+	optional SourceChangeInfo souce_change_info = 7;
+	optional DBCardInfo card_list = 8;
+	optional int32 product_id = 9;
+}
+
+message CmdReqCreatTradeSeq
+{
+	optional int32 product_id=1;
+	optional int32 pay_type=2;
+}
+
+message CmdRspCreatTradeSeq
+{
+	optional PayInfo pay_info = 1;
+}
+
+message CmdReqGuideSet
+{
+	optional int32 guide_id = 1;
+}
+
+message CmdRspGuideSet
+{
+	optional int32 guide_id = 2;
+}
+
+
+message CmdReqReseach
+{
+	optional int32 id = 1;   //升级的id
+	optional int32 cash = 2;
+	optional int32 use_time = 3;
+	optional int32 step = 4;	//新手引导step
+}
+
+message CmdRspReseach
+{
+	optional int32 id = 1;
+	optional ProgressInfo progress_info = 2;       //进度条变更
+	optional SourceChangeInfo source_change_info = 3; //资源变更
+	optional int32 cash = 4;
+}
+
+message CmdReqReseachInfo
+{
+	optional int32 revert =1;
+}
+
+message CmdRspReseachInfo
+{
+	optional ReseachInfo reseach_info =1;
+	optional SourceChangeInfo source_change_info = 2; //资源变更
+}
+
+message CmdReqUnionCitySourceHelp
+{
+	optional int32 union_id = 1;
+	repeated int32 source = 2;
+	optional ArmyInfo army_info=3;
+}
+
+message CmdRspUnionCitySourceHelp
+{
+	optional SourceChangeInfo source_change_info = 1; //资源变更
+}
+
+message CmdNoiticeInstanceMonster
+{
+	repeated ArmyInfo monster_node_list = 1;
+}
+
+message CmdNoticeInstanceChange
+{
+	optional DBInstance instance_info = 1;
+}
+
+message CmdNoticeInstanceSrcChange
+{
+	optional InstanceSrcInfo instance_src_info = 1;
+}
+
+message CmdRspVersionRefresh
+{
+	optional string client_version = 1;
+	optional string res_version = 2;
+}
+
+message CmdReqSignIn
+{
+	optional int32 week_day = 1;
+}
+
+message CmdRspSignIn
+{
+	optional int32 id = 1; //0 表示7天之后的奖励
+	repeated AwardInfo award_info = 2;
+	optional uint32 sign_time = 3;
+	optional SourceChangeInfo source_change_info = 4;
+	optional int32 cash = 5;
+}
+
+message CmdReqHurtBack
+{
+	optional int32 army_inst = 1;
+	optional ArmyDesc army_desc = 2;
+}
+
+message CmdRspHurtBack
+{
+	optional ArmyInfo out_army_list = 1;
+	optional int32 inst_id = 2;
+	optional ArmyDesc army = 3; 	//全量
+}
+
+message CmdReqGetEventInfo
+{
+	optional int32 type = 1;
+	optional uint64 inst_id = 2;
+}
+
+message CmdRspGetEventInfo
+{
+	optional InstanceEventInfo instance_event_list = 1;
+}
+
+message CmdReqGetEventList
+{
+	optional int32 k = 1;
+	optional int32 type = 2;	//1、多人副本
+	optional int32 flag = 3;	//0、所有预发布状态
+}
+
+message CmdRspGetEventList
+{
+	repeated InstanceEventInfo instanece_event_info = 1;
+}
+
+message CmdReqAddPvpPoint
+{
+	optional int32 point = 1;
+}
+
+message CmdReqAddEvent
+{
+	optional int32 event_type = 1;
+	optional uint32 begin_time = 2;
+	optional int32 id = 3;
+	optional int32 k = 4;	//0、所有服一样
+	optional int32 status = 5;
+}
+
+message CmdRspAddEvent
+{
+	optional int32 event_type = 1;
+	optional int64 inst_id = 2;
+}
+
+message CmdReqChangeEventInfo
+{
+	optional int32 event_type = 1;
+	optional InstanceEventInfo instance_event_info = 2;
+}
+
+message CmdRspChangeEventInfo
+{
+	optional int32 event_type = 1;
+	optional InstanceEventInfo instance_event_info = 2;
+}
+
+message CmdReqDelEvent
+{
+	optional int32 event_type = 1;
+	optional uint64 inst_id = 2;
+}
+
+message CmdRspDelEvent
+{
+	optional int32 event_type = 1;
+}
+
+message CmdReqVersion
+{
+	optional int32 type = 1;
+}
+
+message CmdRspVersion
+{
+	optional int32 type = 1;
+	optional string client_version = 2;
+	optional string src_version = 3;
+}
+
+message CmdReqMissionGift
+{
+	optional int32 inst_id = 1;		//主线为任务id
+	optional int32 step = 2;
+}
+
+message CmdRspMissionGift
+{
+	optional int32 inst_id = 1;		//主线为任务id
+	repeated AwardInfo award_list = 2;	//奖励
+	optional SourceChangeInfo source_change_info = 3; //资源变更
+	optional int32 cash = 4;
+}
+
+message CmdRspNoticeMissionComplete
+{
+	repeated int32 complete_mission = 1;
+}
+
+message CsExtInfo1 {
+	optional CmdNoiticeInstanceMonster rsp_notice_instance_monster = 1;
+	optional CmdReqUnionCitySourceHelp req_union_city_source_help = 2;
+	optional CmdRspUnionCitySourceHelp rsp_union_city_source_help = 3;
+	optional CmdReqCreatTradeSeq req_create_trade_seq = 4;
+	optional CmdRspCreatTradeSeq rsp_create_trade_seq = 5;
+	optional CmdRspVersionRefresh rsp_version = 6;
+	optional CmdNoticeInstanceChange rsp_notice_instance_change = 7;
+	optional CmdReqSignIn req_sign_in = 8;
+	optional CmdRspSignIn rsp_sign_in = 9;
+	optional CmdReqGetDayMissionAward req_get_day_mission_award = 10;
+	optional CmdRspGetDayMissionAward rsp_get_day_mission_award = 11;
+	optional CmdRefreshDayMission refresh_day_mission = 12;
+	optional CmdNoticeInstanceSrcChange rsp_notice_instance_src_change = 13;
+	optional CmdReqHurtBack req_hurt_back = 14;
+	optional CmdRspHurtBack rsp_hurt_back = 15;
+	optional CmdReqGetEventInfo req_get_event_info = 16;
+	optional CmdRspGetEventInfo rsp_get_event_info = 17;
+	optional CmdReqGetEventList req_get_event_list = 18;
+	optional CmdRspGetEventList rsp_get_event_list = 19;
+	optional CmdReqAddPvpPoint req_add_pvp_point = 20;
+	optional CmdReqAddEvent req_add_event = 21;
+	optional CmdRspAddEvent rsp_add_event = 22;
+	optional CmdReqChangeEventInfo req_change_event_info = 23;
+	optional CmdRspChangeEventInfo rsp_change_event_info = 24;
+	optional CmdReqDelEvent req_del_event = 25;
+	optional CmdRspDelEvent rsp_del_event = 26;
+	optional CmdReqVersion req_version = 27;
+	optional CmdRspVersion rsp_version_ex = 28;
+	optional CmdReqMissionGift req_mission_gift = 29;
+	optional CmdRspMissionGift rsp_mission_gift = 30;
+	optional CmdRspNoticeMissionComplete rsp_notice_mission_complete = 31;
+}
+
+message CsExtInfo {
+	optional CmdReqUnionComplexInfo req_union_complex_info=1;
+	optional CmdRspUnionComplexInfo rsp_union_complex_info=2;
+	optional CmdReqRankInfo req_alliance_rank = 3;
+	optional CmdRspRankInfo rsp_alliance_rank = 4;
+	optional CmdReqSpecialRank req_special_rank = 5;
+	optional CmdRspSpecialRank rsp_special_rank = 6;
+	optional CmdRspArmyInfoChange rsp_army_info_change=7;
+	optional CmdRspCityChange rsp_city_change = 8;
+	optional CmdReqForceQuitUnion req_force_quit_union = 9;
+	optional CmdRspOutSourceArmyChange rsp_out_source_army_change = 10;
+	optional CmdReqBack req_back = 11;
+	optional CmdRspNoticeCashOrGoodsUpdate rsp_notice_cash_or_goods = 12;
+	optional CmdReqAddUnionGroup req_add_union_group = 13;
+	optional CmdRspAddUnionGroup rsp_add_union_group = 14;
+	optional CmdReqExitUnionGroup req_exit_union_group = 15;
+	optional CmdRspExitUnionGroup rsp_exit_union_group = 16;
+	optional CmdReqQuitUnionGroup req_quit_union_group = 17;
+	optional CmdAddUnionFight add_union_fight = 19;
+	optional CmdReqCreateFleet req_create_fleet = 20;
+	optional CmdRspCreateFleet rsp_create_fleet = 21;
+	optional CmdReqDeleteFleet req_delete_fleet = 22;
+	optional CmdRspDeleteFleet rsp_delete_fleet = 23;
+	optional CmdNoticeUnionFight notice_union_fight = 24;
+	optional CmdRspNoticeCityStatusChange rsp_notice_city_status_change = 25;
+	optional CmdRspNoticeFight rsp_notice_fight = 26;
+	optional CmdReqGetUnionFightList req_get_union_fight_list = 27;
+	optional CmdRspGetUnionFightList rsp_get_union_fight_list = 28;
+	optional CmdReqMove req_move = 29;
+	optional CmdRspMove rsp_move = 30;
+	optional CmdReqRepair req_repair = 31;
+	optional CmdRspRepair rsp_repair = 32;
+	optional CmdReqExploreFinish req_explore_finish = 33;
+	optional CmdRspExploreFinish rsp_explore_finish = 34;
+	optional CmdNoticeExploreInfo notice_explore_info = 35;
+	optional CmdReqSpeed req_speed = 36;
+	optional CmdRspSpeed rsp_speed = 37;
+	optional CmdReqMailSysInsert req_mail_sys_insert = 38;
+	optional CmdReqGetMailDesc req_get_mail_desc = 39;
+	optional CmdRspGetMailDesc rsp_get_mail_desc = 40;
+	optional CmdReqDelMail req_del_mail = 41;
+	optional CmdRspDelMail rsp_del_mail = 42;
+	optional CmdReqSaveMail req_save_mail = 43;
+	optional CmdRspSaveMail rsp_save_mail = 44;
+	optional CmdReqSendMail req_send_mail = 45;
+	optional CmdRspSendMail rsp_send_mail = 46;
+	optional CmdRspNoticeMailChange rsp_notice_mail_change = 47;
+	optional CmdReqMarkMail req_mark_mail = 48;
+	optional CmdRspMarkMail rsp_mark_mail = 49;
+	optional CmdReqBeSendUnionMail req_be_send_union_mail = 50;
+	optional CmdReqGetMailSimpleInfo req_get_mail_simple_info = 51;
+	optional CmdRspGetMailSimpleInfo rsp_get_mail_simple_info = 52;
+	optional CmdReqSendUserComment req_send_user_comment = 53;
+	optional CmdRspSendUserComment rsp_send_user_comment = 54;
+	optional CmdReqGetUserComment req_get_user_comment = 55;
+	optional CmdRspGetUserComment rsp_get_user_comment = 56;
+	optional CmdReqDelUserComment req_del_user_comment = 57;
+	optional CmdRspDelUserComment rsp_del_user_comment = 58;
+	optional CmdReqSendUnionComment req_send_union_comment = 59;
+	optional CmdRspSendUnionComment rsp_send_union_comment = 60;
+	optional CmdReqGetUnionComment req_get_union_comment = 61;
+	optional CmdRspGetUnionComment rsp_get_union_comment = 62;
+	optional CmdReqGetReplyComment req_get_reply_comment = 63;
+	optional CmdRspGetReplyComment rsp_get_reply_comment = 64;
+	optional CmdReqUseItem req_use_item = 65;
+	optional CmdRspUseItem rsp_use_item = 66;
+	optional CmdReqBuyItem req_buyitem = 67;
+	optional CmdRspBuyItem rsp_buyitem = 68;
+	optional CmdReqFightReportInsert req_fight_report_insert = 69;
+	optional CmdReqReleaseHero req_release_hero = 70;
+	optional CmdRspPrisonChange rsp_prision_change = 71;
+	optional CmdReqRedeemHero req_redeem_hero = 72;
+	optional CmdReqGetUnionLog req_get_union_log = 73;
+	optional CmdRspGetUnionLog rsp_get_union_log = 74;
+	optional CmdNoticeUnionLog notice_union_log = 75;
+	optional CmdRspRadarInfoChange rsp_radar_info_change = 76;
+	optional CmdReqScout req_scout = 77;
+	optional CmdRspScout rsp_scout = 78;
+	optional CmdNoticeRadarInfo notice_radar_info = 79;
+	optional CmdReqAddBookmarkCap req_add_bookmark_cap = 80;
+	optional CmdRspAddBookmarkCap rsp_add_bookmark_cap = 81;
+	optional CmdReqAddBookmark req_add_bookmark = 82;
+	optional CmdRspAddBookmark rsp_add_bookmark = 83;
+	optional CmdReqDeleteBookmark req_delete_bookmark = 84;
+	optional CmdRspDeleteBookmark rsp_delete_bookmark = 85;
+	optional CmdReqChangeBookmark req_change_bookmark = 87;
+	optional CmdRspChangeBookmark rsp_change_bookmark = 88;
+	optional CmdReqGetBookmarkList req_get_bookmark_list = 89;
+	optional CmdRspGetBookmarkList rsp_get_bookmark_list = 90;
+	optional CmdReqGetDefenceInfo req_get_defence_info = 91;
+	optional CmdRspGetDefenceInfo rsp_get_defence_info = 92;
+	optional CmdReqChangeDefenceSlots req_change_defence_slots = 93;
+	optional CmdRspChangeDefenceSlots rsp_change_defence_slots = 94;
+	optional CmdReqMarkUnionItem req_mark_union_item = 95;
+	optional CmdReqBuyUnionItem req_buy_union_item = 96;
+	optional CmdRspUnionItemChange rsp_union_item_change = 97;
+	optional CmdReqUpUnionItem req_up_union_item = 98;
+	optional CmdReqGetUnionstoreHistory req_get_union_store_history = 99;
+	optional CmdRspGetUnionstoreHistory rsp_get_union_store_history = 100;
+	optional CmdReqUnionAddScore req_union_add_score = 101;
+	optional CmdRspNoticeUnionScoreChange rsp_notice_union_score_change = 102;
+	optional CmdUpdateAchieve update_achieve = 103;
+	optional CmdReqGetAchieveAward req_get_achieve_award = 104;
+	optional CmdRspGetAchieveAward rsp_get_achieve_award = 105;
+	optional CmdReqChangeUnionGroup req_change_union_group = 106;
+	optional CmdReqGetCardAward req_get_card_award = 107;
+	optional CmdRspGetCardAward rsp_get_card_award = 108;
+	optional CmdReqGetBuyResult req_get_buy_result = 109;
+	optional CmdRspGetBuyResult rsp_get_buy_result = 110;
+	optional CmdReqGuideSet req_guide_set = 111;
+	optional CmdRspGuideSet rsp_guide_set = 112;
+	optional CmdReqReseach req_reseach=113;
+	optional CmdRspReseach rsp_reseach=114;
+	optional CmdReqReseachInfo req_reseach_info=115;
+	optional CmdRspReseachInfo rsp_reseach_info=116;
+}
+
+message CsInfo {
+	required int32 id=1;
+	required CmdID  cmd=2;
+	optional int32  result=3;
+	optional CmdReqLogin req_login=4;
+	optional CmdRspLogin rsp_login=5;
+	optional CmdReqChangeAccoutInfo req_change_accout_info=6;
+	optional CmdRspChangeAccoutInfo rsp_change_accout_info=7;
+	optional CmdReqCheckLogin req_check_login=8;
+	optional CmdRspCheckLogin rsp_check_login=9;
+	optional CmdReqRegist req_regist=10;
+	optional CmdRspRegist rsp_regist=11;
+	optional CmdReqHeart req_heart=12;
+	optional CmdRspHeart rsp_heart=13;
+	optional CmdReqGM req_gm = 14;
+	optional CmdRspGM rsp_gm = 15;
+	optional CmdReqGetGmInfo req_get_gm_info = 16;
+	optional CmdRspGetGmInfo rsp_get_gm_info = 17;
+	optional CmdReqBuild req_build = 18;
+	optional CmdRspBuild rsp_build = 19;
+	optional CmdReqBuildUpdate req_build_update = 20;
+	optional CmdRspBuildUpdate rsp_build_update = 21;
+	optional CmdReqBuildCancel req_build_cancel = 22;
+	optional CmdRspBuildCancel rsp_build_cancel = 23;
+	optional CmdReqProgressSpeed req_progress_speed = 24;
+	optional CmdRspProgressSpeed rsp_progress_speed = 25;
+	optional CmdReqGetBuildingList req_get_building_list = 26;
+	optional CmdRspGetBuildingList rsp_get_building_list = 27;
+	optional CmdReqBuildingStop req_building_stop = 28;
+	optional CmdRspBuildingStop rsp_building_stop = 29;
+	optional CmdReqProgressStop req_progress_stop = 30;
+	optional CmdRspProgressStop rsp_progress_stop = 31;
+	optional CmdReqSaveShipPlan req_save_ship_plan = 32;
+	optional CmdRspSaveShipPlan rsp_save_ship_plan = 33;
+	optional CmdReqAddPlanNum req_add_plan_num = 34;
+	optional CmdRspAddPlanNum rsp_add_plan_num = 35;
+	optional CmdReqDelShipPlan req_del_ship_plan = 36;
+	optional CmdRspDelShipPlan rsp_del_ship_plan = 37;
+	optional CmdReqTraining req_training = 38;
+	optional CmdRspTraining rsp_training = 39;
+	optional CmdReqSoldierDismiss req_soldier_dismiss = 40;
+	optional CmdRspSoldierDismiss rsp_soldier_dismiss = 41;
+	optional CmdReqCancelTraining req_cancel_training = 42;
+	optional CmdRspCancelTraining rsp_cancel_training = 43;
+	optional CmdReqArmy req_army = 44;
+	optional CmdRspArmy rsp_army = 45;
+	optional CmdReqRefreashHero req_refreash_hero = 46;
+	optional CmdRspRefreashHero rsp_refreash_hero = 47;
+	optional CmdReqRecruitHero req_recruit_hero = 48;
+	optional CmdRspRecruitHero rsp_recruit_hero = 49;
+	optional CmdReqDeleteHero req_delete_hero = 50;
+	optional CmdRspDeleteHero rsp_delete_hero = 51;
+	optional CmdReqSendHero req_send_hero = 52;
+	optional CmdRspSendHero rsp_send_hero = 53;
+	optional CmdReqMapInfo req_map_info = 54;
+	optional CmdRspMapInfo rsp_map_info = 55;
+	optional CmdRspArmyInfo rsp_army_info = 56;
+	optional CmdReqGetCloudMap req_get_cloud_map = 57;
+	optional CmdRspCloudMap rsp_cloud_map = 58;
+	optional CmdReqHeroCaptain req_hero_captain = 59;
+	optional CmdRspHeroCaptain rsp_hero_captain = 60;
+	optional CmdReqCreateUnion req_create_union = 61;
+	optional CmdRspCreateUnion rsp_create_union = 62;
+	optional CmdReqJoinUnion req_join_union = 63;
+	optional CmdRspNoticeJoin rsp_notice_join = 64;
+	optional CmdReqInviteUnion req_invite_union = 65;
+	optional CmdRspNoticeInvite rsp_notice_invite = 66;
+	optional CmdReqRefuseInvite req_refuse_invite = 67;
+	optional CmdRspNoticeRefuseInvite rsp_notice_refuse_invite = 68;
+	optional CmdReqRefuseJoin req_refuse_join = 69;
+	optional CmdRspNoticeRefuseJoin rsp_notice_refuse_join = 70;
+	optional CmdReqAgreeInvite req_agree_invite = 71;
+	optional CmdReqAgreeJoin req_agree_join = 72;
+	optional CmdRspUnionMemberChange rsp_union_member_change = 73;
+	optional CmdReqSearchUnion req_search_union = 74;
+	optional CmdRspSearchUnion rsp_search_union = 75;
+	optional CmdReqSearchUser req_search_user = 76;
+	optional CmdRspSearchUser rsp_search_user = 77;
+	optional CmdReqCheckName req_check_name = 78;
+	optional CmdRspCheckName rsp_check_name = 79;
+	optional CmdReqQuitUnion req_quit_union = 80;
+	optional CmdRspQuitUnion rsp_quit_union = 81;
+	optional CmdReqKickMember req_kick_member = 82;
+	optional CmdReqCancelUnion req_cancel_union = 83;
+	optional CmdReqUnionChangeLevel req_union_change_level = 84;
+	optional CmdReqChangeLeader req_change_leader = 85;
+	optional CmdRspChangeLeader rsp_change_leader = 86;
+	optional CmdReqOpenUnion req_open_union = 87;
+	optional CmdRspOpenUnion rsp_open_union = 88;
+	optional CmdReqChangeUnionInfo req_change_union_info = 89;
+	optional CmdRspNoticeUnionInfoChange rsp_notice_union_info_change = 90;
+	optional CmdReqCreateUnionGroup req_create_union_group = 91;
+	optional CmdRspCreateUnionGroup rsp_create_union_group = 92;
+	optional CmdRspNoticeUnionSourceChange rsp_notice_union_source_change = 93;
+	optional CmdReqGetUnionList req_get_union_list = 94;
+	optional CmdRspGetUnionList rsp_get_union_list = 95;
+	optional CmdReqArmyAction req_army_action = 96;
+	optional CmdReqChangeUnionName req_change_union_name = 97;
+	optional CmdRspChangeUnionName rsp_change_union_name = 98;
+	optional CmdRspNoticeChangeUnionName rsp_notice_union_name_change = 99;
+	optional CmdReqRefuseSpeak req_refuse_speak= 100;
+	optional CmdRspRefuseSpeak rsp_refuse_speak= 101;
+	optional CmdReqUnionNeedSpeed req_union_need_speed= 102;
+	optional CmdRspUnionSpeedListChange rsp_union_speed_list_change= 103;
+	optional CmdReqUnionSpeed req_union_speed= 104;
+	optional CmdRspUnionNeedHelp rsp_union_need_help = 105;
+	optional CmdReqGetUnionSimpleInfo req_get_union_simple_info = 106;
+	optional CmdRspGetUnionSimpleInfo rsp_get_union_simple_info = 107;
+	optional CmdReqCancelJoin req_cancel_join = 108;
+	optional CmdReqGetUserSimpleInfo req_get_user_simple_info = 109;
+	optional CmdRspGetUserSimpleInfo rsp_get_user_simple_info = 110;
+	optional CmdReqGetUnionPos req_get_union_pos = 111;
+	optional CmdRspGetUnionPos	rsp_get_union_pos = 112;
+	optional CmdReqCancelInvite req_cancel_invite = 113;
+	optional CsExtInfo ext_info=114;
+	optional CsExtInfo1 ext_info1=115;
+}

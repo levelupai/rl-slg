@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Ship_Tab>
+<TResHead version="4">
+    <Magic>1397052237 </Magic>
+    <Version>4 </Version>
+    <Unit>1316 </Unit>
+    <Count>7 </Count>
+    <MetalibHash>fbb6b367d068f7e097736392a46cb69c</MetalibHash>
+    <ResVersion>0 </ResVersion>
+    <CreateTime>2017-03-02 11:18:27</CreateTime>
+    <ResEncording>UTF-8</ResEncording>
+</TResHead>
+<Ship version="1">
+    <ship_id>1 </ship_id>
+    <ship_resid>1 </ship_resid>
+    <ship_name>ship_type_name_1</ship_name>
+    <ship_rank>0 </ship_rank>
+    <ship_type>1 </ship_type>
+    <ship_cp>1 </ship_cp>
+    <ship_mod1>1 </ship_mod1>
+    <ship_mod2>0 </ship_mod2>
+    <ship_mod3>0 </ship_mod3>
+    <ship_mod4>0 </ship_mod4>
+    <ship_cslots>1,2,3,4</ship_cslots>
+    <ship_buff>13,21,22,23,24,25,26,27,30,31,32,38</ship_buff>
+</Ship>
+<Ship version="1">
+    <ship_id>2 </ship_id>
+    <ship_resid>2 </ship_resid>
+    <ship_name>ship_type_name_2</ship_name>
+    <ship_rank>2 </ship_rank>
+    <ship_type>1 </ship_type>
+    <ship_cp>2 </ship_cp>
+    <ship_mod1>1 </ship_mod1>
+    <ship_mod2>2 </ship_mod2>
+    <ship_mod3>0 </ship_mod3>
+    <ship_mod4>0 </ship_mod4>
+    <ship_cslots>1,2,3,4</ship_cslots>
+    <ship_buff>13,21,22,23,24,25,26,27,30,31,32,38</ship_buff>
+</Ship>
+<Ship version="1">
+    <ship_id>3 </ship_id>
+    <ship_resid>3 </ship_resid>
+    <ship_name>ship_type_name_3</ship_name>
+    <ship_rank>3 </ship_rank>
+    <ship_type>1 </ship_type>
+    <ship_cp>4 </ship_cp>
+    <ship_mod1>1 </ship_mod1>
+    <ship_mod2>2 </ship_mod2>
+    <ship_mod3>0 </ship_mod3>
+    <ship_mod4>0 </ship_mod4>
+    <ship_cslots>1,2,3,4</ship_cslots>
+    <ship_buff>13,21,22,23,24,25,26,27,30,31,32,38</ship_buff>
+</Ship>
+<Ship version="1">
+    <ship_id>4 </ship_id>
+    <ship_resid>4 </ship_resid>
+    <ship_name>ship_type_name_4</ship_name>
+    <ship_rank>4 </ship_rank>
+    <ship_type>1 </ship_type>
+    <ship_cp>8 </ship_cp>
+    <ship_mod1>3 </ship_mod1>
+    <ship_mod2>1 </ship_mod2>
+    <ship_mod3>2 </ship_mod3>
+    <ship_mod4>0 </ship_mod4>
+    <ship_cslots>1,2,3,4</ship_cslots>
+    <ship_buff>13,21,22,23,24,25,26,27,30,31,32,38</ship_buff>
+</Ship>
+<Ship version="1">
+    <ship_id>5 </ship_id>
+    <ship_resid>5 </ship_resid>
+    <ship_name>ship_type_name_5</ship_name>
+    <ship_rank>5 </ship_rank>
+    <ship_type>1 </ship_type>
+    <ship_cp>14 </ship_cp>
+    <ship_mod1>3 </ship_mod1>
+    <ship_mod2>1 </ship_mod2>
+    <ship_mod3>2 </ship_mod3>
+    <ship_mod4>0 </ship_mod4>
+    <ship_cslots>1,2,3,4</ship_cslots>
+    <ship_buff>13,21,22,23,24,25,26,27,30,31,32,38</ship_buff>
+</Ship>
+<Ship version="1">
+    <ship_id>6 </ship_id>
+    <ship_resid>6 </ship_resid>
+    <ship_name>ship_type_name_6</ship_name>
+    <ship_rank>6 </ship_rank>
+    <ship_type>1 </ship_type>
+    <ship_cp>24 </ship_cp>
+    <ship_mod1>3 </ship_mod1>
+    <ship_mod2>1 </ship_mod2>
+    <ship_mod3>2 </ship_mod3>
+    <ship_mod4>0 </ship_mod4>
+    <ship_cslots>1,2,3,4</ship_cslots>
+    <ship_buff>13,21,22,23,24,25,26,27,30,31,32,38</ship_buff>
+</Ship>
+<Ship version="1">
+    <ship_id>11 </ship_id>
+    <ship_resid>11 </ship_resid>
+    <ship_name>ship_type_name_11</ship_name>
+    <ship_rank>0 </ship_rank>
+    <ship_type>2 </ship_type>
+    <ship_cp>0 </ship_cp>
+    <ship_mod1>1 </ship_mod1>
+    <ship_mod2>0 </ship_mod2>
+    <ship_mod3>0 </ship_mod3>
+    <ship_mod4>0 </ship_mod4>
+    <ship_cslots>1,2,5</ship_cslots>
+    <ship_buff></ship_buff>
+</Ship>
+</Ship_Tab>

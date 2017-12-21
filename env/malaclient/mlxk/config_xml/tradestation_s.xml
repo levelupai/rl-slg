@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<TradeStation_Tab>
+<TResHead version="4">
+    <Magic>1397052237 </Magic>
+    <Version>4 </Version>
+    <Unit>20 </Unit>
+    <Count>20 </Count>
+    <MetalibHash>9d3517492d2db0c9810684b4bbd8bec9</MetalibHash>
+    <ResVersion>0 </ResVersion>
+    <CreateTime>2016-10-17 17:46:03</CreateTime>
+    <ResEncording>UTF-8</ResEncording>
+</TResHead>
+<TradeStation version="1">
+    <ts_id>301 </ts_id>
+    <ts_mregain>10 </ts_mregain>
+    <ts_maxm>2500 </ts_maxm>
+    <ts_mregainp>10 </ts_mregainp>
+    <ts_maxmp>2500 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>302 </ts_id>
+    <ts_mregain>20 </ts_mregain>
+    <ts_maxm>5000 </ts_maxm>
+    <ts_mregainp>10 </ts_mregainp>
+    <ts_maxmp>2500 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>303 </ts_id>
+    <ts_mregain>30 </ts_mregain>
+    <ts_maxm>7500 </ts_maxm>
+    <ts_mregainp>10 </ts_mregainp>
+    <ts_maxmp>2500 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>304 </ts_id>
+    <ts_mregain>50 </ts_mregain>
+    <ts_maxm>12500 </ts_maxm>
+    <ts_mregainp>20 </ts_mregainp>
+    <ts_maxmp>5000 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>305 </ts_id>
+    <ts_mregain>75 </ts_mregain>
+    <ts_maxm>18750 </ts_maxm>
+    <ts_mregainp>25 </ts_mregainp>
+    <ts_maxmp>6250 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>306 </ts_id>
+    <ts_mregain>100 </ts_mregain>
+    <ts_maxm>25000 </ts_maxm>
+    <ts_mregainp>25 </ts_mregainp>
+    <ts_maxmp>6250 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>307 </ts_id>
+    <ts_mregain>125 </ts_mregain>
+    <ts_maxm>31250 </ts_maxm>
+    <ts_mregainp>25 </ts_mregainp>
+    <ts_maxmp>6250 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>308 </ts_id>
+    <ts_mregain>150 </ts_mregain>
+    <ts_maxm>37500 </ts_maxm>
+    <ts_mregainp>25 </ts_mregainp>
+    <ts_maxmp>6250 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>309 </ts_id>
+    <ts_mregain>200 </ts_mregain>
+    <ts_maxm>50000 </ts_maxm>
+    <ts_mregainp>50 </ts_mregainp>
+    <ts_maxmp>12500 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>310 </ts_id>
+    <ts_mregain>250 </ts_mregain>
+    <ts_maxm>62500 </ts_maxm>
+    <ts_mregainp>50 </ts_mregainp>
+    <ts_maxmp>12500 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>311 </ts_id>
+    <ts_mregain>300 </ts_mregain>
+    <ts_maxm>75000 </ts_maxm>
+    <ts_mregainp>50 </ts_mregainp>
+    <ts_maxmp>12500 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>312 </ts_id>
+    <ts_mregain>400 </ts_mregain>
+    <ts_maxm>100000 </ts_maxm>
+    <ts_mregainp>100 </ts_mregainp>
+    <ts_maxmp>25000 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>313 </ts_id>
+    <ts_mregain>500 </ts_mregain>
+    <ts_maxm>125000 </ts_maxm>
+    <ts_mregainp>100 </ts_mregainp>
+    <ts_maxmp>25000 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>314 </ts_id>
+    <ts_mregain>600 </ts_mregain>
+    <ts_maxm>150000 </ts_maxm>
+    <ts_mregainp>100 </ts_mregainp>
+    <ts_maxmp>25000 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>315 </ts_id>
+    <ts_mregain>750 </ts_mregain>
+    <ts_maxm>187500 </ts_maxm>
+    <ts_mregainp>150 </ts_mregainp>
+    <ts_maxmp>37500 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>316 </ts_id>
+    <ts_mregain>1000 </ts_mregain>
+    <ts_maxm>250000 </ts_maxm>
+    <ts_mregainp>250 </ts_mregainp>
+    <ts_maxmp>62500 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>317 </ts_id>
+    <ts_mregain>1250 </ts_mregain>
+    <ts_maxm>312500 </ts_maxm>
+    <ts_mregainp>250 </ts_mregainp>
+    <ts_maxmp>62500 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>318 </ts_id>
+    <ts_mregain>1500 </ts_mregain>
+    <ts_maxm>375000 </ts_maxm>
+    <ts_mregainp>250 </ts_mregainp>
+    <ts_maxmp>62500 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>319 </ts_id>
+    <ts_mregain>1750 </ts_mregain>
+    <ts_maxm>437500 </ts_maxm>
+    <ts_mregainp>250 </ts_mregainp>
+    <ts_maxmp>62500 </ts_maxmp>
+</TradeStation>
+<TradeStation version="1">
+    <ts_id>320 </ts_id>
+    <ts_mregain>2000 </ts_mregain>
+    <ts_maxm>500000 </ts_maxm>
+    <ts_mregainp>250 </ts_mregainp>
+    <ts_maxmp>62500 </ts_maxmp>
+</TradeStation>
+</TradeStation_Tab>

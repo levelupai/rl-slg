@@ -1,0 +1,3 @@
+[submodule "env/malaclient"]
+	path = env/malaclient
+	url = http://192.168.1.119/liyuan/mala_client.git

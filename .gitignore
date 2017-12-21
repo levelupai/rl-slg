@@ -1,0 +1,6 @@
+.idea
+*.pyc
+*.log
+/data/state.pkl
+/config/config.json
+/data/*.json

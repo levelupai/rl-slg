@@ -1,0 +1,4045 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<SpaceBuild_Tab>
+<TResHead version="4">
+    <Magic>1397052237 </Magic>
+    <Version>4 </Version>
+    <Unit>4200 </Unit>
+    <Count>126 </Count>
+    <MetalibHash>30062823d24e1163f02943ad89a2ec3a</MetalibHash>
+    <ResVersion>0 </ResVersion>
+    <CreateTime>2017-03-09 15:28:16</CreateTime>
+    <ResEncording>UTF-8</ResEncording>
+</TResHead>
+<SpaceBuild version="1">
+    <sb_id>1 </sb_id>
+    <sb_resid>1 </sb_resid>
+    <sb_name>spacebuild_name_7,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_7</sb_classname>
+    <sb_desc>spacebuild_desc_7</sb_desc>
+    <sb_nextbuild>0 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>2000 </sb_needres>
+    <sb_repairres>1000 </sb_repairres>
+    <sb_rank>1 </sb_rank>
+    <sb_maxrank>0 </sb_maxrank>
+    <sb_hp>1250 </sb_hp>
+    <sb_type>0 </sb_type>
+    <sb_isunionbuild>0 </sb_isunionbuild>
+    <sb_workshipcount>0 </sb_workshipcount>
+    <sb_mainspeed>0 </sb_mainspeed>
+    <sb_subspeed>0 </sb_subspeed>
+    <sb_repairspeed>0 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>99 </sb_onstar>
+    <sb_needrank>0 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>0 </sb_ac>
+    <sb_shield>1250 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>2 </sb_id>
+    <sb_resid>2 </sb_resid>
+    <sb_name>spacebuild_name_7,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_7</sb_classname>
+    <sb_desc>spacebuild_desc_7</sb_desc>
+    <sb_nextbuild>0 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>4500 </sb_needres>
+    <sb_repairres>2250 </sb_repairres>
+    <sb_rank>2 </sb_rank>
+    <sb_maxrank>0 </sb_maxrank>
+    <sb_hp>1800 </sb_hp>
+    <sb_type>0 </sb_type>
+    <sb_isunionbuild>0 </sb_isunionbuild>
+    <sb_workshipcount>0 </sb_workshipcount>
+    <sb_mainspeed>0 </sb_mainspeed>
+    <sb_subspeed>0 </sb_subspeed>
+    <sb_repairspeed>0 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>99 </sb_onstar>
+    <sb_needrank>0 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>0 </sb_ac>
+    <sb_shield>1800 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>3 </sb_id>
+    <sb_resid>3 </sb_resid>
+    <sb_name>spacebuild_name_7,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_7</sb_classname>
+    <sb_desc>spacebuild_desc_7</sb_desc>
+    <sb_nextbuild>0 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>8000 </sb_needres>
+    <sb_repairres>4000 </sb_repairres>
+    <sb_rank>3 </sb_rank>
+    <sb_maxrank>0 </sb_maxrank>
+    <sb_hp>2450 </sb_hp>
+    <sb_type>0 </sb_type>
+    <sb_isunionbuild>0 </sb_isunionbuild>
+    <sb_workshipcount>0 </sb_workshipcount>
+    <sb_mainspeed>0 </sb_mainspeed>
+    <sb_subspeed>0 </sb_subspeed>
+    <sb_repairspeed>0 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>99 </sb_onstar>
+    <sb_needrank>0 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>0 </sb_ac>
+    <sb_shield>2450 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>4 </sb_id>
+    <sb_resid>4 </sb_resid>
+    <sb_name>spacebuild_name_7,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_7</sb_classname>
+    <sb_desc>spacebuild_desc_7</sb_desc>
+    <sb_nextbuild>0 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>12500 </sb_needres>
+    <sb_repairres>6250 </sb_repairres>
+    <sb_rank>4 </sb_rank>
+    <sb_maxrank>0 </sb_maxrank>
+    <sb_hp>3200 </sb_hp>
+    <sb_type>0 </sb_type>
+    <sb_isunionbuild>0 </sb_isunionbuild>
+    <sb_workshipcount>0 </sb_workshipcount>
+    <sb_mainspeed>0 </sb_mainspeed>
+    <sb_subspeed>0 </sb_subspeed>
+    <sb_repairspeed>0 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>99 </sb_onstar>
+    <sb_needrank>0 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>0 </sb_ac>
+    <sb_shield>3200 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>5 </sb_id>
+    <sb_resid>5 </sb_resid>
+    <sb_name>spacebuild_name_7,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_7</sb_classname>
+    <sb_desc>spacebuild_desc_7</sb_desc>
+    <sb_nextbuild>0 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>18000 </sb_needres>
+    <sb_repairres>9000 </sb_repairres>
+    <sb_rank>5 </sb_rank>
+    <sb_maxrank>0 </sb_maxrank>
+    <sb_hp>4050 </sb_hp>
+    <sb_type>0 </sb_type>
+    <sb_isunionbuild>0 </sb_isunionbuild>
+    <sb_workshipcount>0 </sb_workshipcount>
+    <sb_mainspeed>0 </sb_mainspeed>
+    <sb_subspeed>0 </sb_subspeed>
+    <sb_repairspeed>0 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>99 </sb_onstar>
+    <sb_needrank>0 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>0 </sb_ac>
+    <sb_shield>4050 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>6 </sb_id>
+    <sb_resid>6 </sb_resid>
+    <sb_name>spacebuild_name_7,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_7</sb_classname>
+    <sb_desc>spacebuild_desc_7</sb_desc>
+    <sb_nextbuild>0 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>24500 </sb_needres>
+    <sb_repairres>12250 </sb_repairres>
+    <sb_rank>6 </sb_rank>
+    <sb_maxrank>0 </sb_maxrank>
+    <sb_hp>5000 </sb_hp>
+    <sb_type>0 </sb_type>
+    <sb_isunionbuild>0 </sb_isunionbuild>
+    <sb_workshipcount>0 </sb_workshipcount>
+    <sb_mainspeed>0 </sb_mainspeed>
+    <sb_subspeed>0 </sb_subspeed>
+    <sb_repairspeed>0 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>99 </sb_onstar>
+    <sb_needrank>0 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>0 </sb_ac>
+    <sb_shield>5000 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>101 </sb_id>
+    <sb_resid>101 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>102 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>10000 </sb_needres>
+    <sb_repairres>5000 </sb_repairres>
+    <sb_rank>1 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>10000 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>500 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>100 </sb_ac>
+    <sb_shield>10000 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>102 </sb_id>
+    <sb_resid>102 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>103 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>22500 </sb_needres>
+    <sb_repairres>11250 </sb_repairres>
+    <sb_rank>2 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>14400 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>550 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>105 </sb_ac>
+    <sb_shield>14400 </sb_shield>
+    <sb_sr>4 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>103 </sb_id>
+    <sb_resid>103 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>104 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>40000 </sb_needres>
+    <sb_repairres>20000 </sb_repairres>
+    <sb_rank>3 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>19600 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>600 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>110 </sb_ac>
+    <sb_shield>19600 </sb_shield>
+    <sb_sr>5 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>104 </sb_id>
+    <sb_resid>104 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>105 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>62500 </sb_needres>
+    <sb_repairres>31250 </sb_repairres>
+    <sb_rank>4 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>25600 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>650 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>115 </sb_ac>
+    <sb_shield>25600 </sb_shield>
+    <sb_sr>7 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>105 </sb_id>
+    <sb_resid>105 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>106 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>90000 </sb_needres>
+    <sb_repairres>45000 </sb_repairres>
+    <sb_rank>5 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>32400 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>700 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>120 </sb_ac>
+    <sb_shield>32400 </sb_shield>
+    <sb_sr>9 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>106 </sb_id>
+    <sb_resid>106 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>107 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>122500 </sb_needres>
+    <sb_repairres>61250 </sb_repairres>
+    <sb_rank>6 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>40000 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>750 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>125 </sb_ac>
+    <sb_shield>40000 </sb_shield>
+    <sb_sr>11 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>107 </sb_id>
+    <sb_resid>107 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>108 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>160000 </sb_needres>
+    <sb_repairres>80000 </sb_repairres>
+    <sb_rank>7 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>48400 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>800 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>130 </sb_ac>
+    <sb_shield>48400 </sb_shield>
+    <sb_sr>13 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>108 </sb_id>
+    <sb_resid>108 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>109 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>202500 </sb_needres>
+    <sb_repairres>101250 </sb_repairres>
+    <sb_rank>8 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>57600 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>850 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>135 </sb_ac>
+    <sb_shield>57600 </sb_shield>
+    <sb_sr>16 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>109 </sb_id>
+    <sb_resid>109 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>110 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>250000 </sb_needres>
+    <sb_repairres>125000 </sb_repairres>
+    <sb_rank>9 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>67600 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>900 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>140 </sb_ac>
+    <sb_shield>67600 </sb_shield>
+    <sb_sr>18 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>110 </sb_id>
+    <sb_resid>110 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>111 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>302500 </sb_needres>
+    <sb_repairres>151250 </sb_repairres>
+    <sb_rank>10 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>78400 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>950 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>145 </sb_ac>
+    <sb_shield>78400 </sb_shield>
+    <sb_sr>21 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>111 </sb_id>
+    <sb_resid>111 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>112 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>360000 </sb_needres>
+    <sb_repairres>180000 </sb_repairres>
+    <sb_rank>11 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>90000 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>1000 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>150 </sb_ac>
+    <sb_shield>90000 </sb_shield>
+    <sb_sr>25 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>112 </sb_id>
+    <sb_resid>112 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>113 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>422500 </sb_needres>
+    <sb_repairres>211250 </sb_repairres>
+    <sb_rank>12 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>102400 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>1050 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>155 </sb_ac>
+    <sb_shield>102400 </sb_shield>
+    <sb_sr>28 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>113 </sb_id>
+    <sb_resid>113 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>114 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>490000 </sb_needres>
+    <sb_repairres>245000 </sb_repairres>
+    <sb_rank>13 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>115600 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>1100 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>160 </sb_ac>
+    <sb_shield>115600 </sb_shield>
+    <sb_sr>32 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>114 </sb_id>
+    <sb_resid>114 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>115 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>562500 </sb_needres>
+    <sb_repairres>281250 </sb_repairres>
+    <sb_rank>14 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>129600 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>1150 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>165 </sb_ac>
+    <sb_shield>129600 </sb_shield>
+    <sb_sr>36 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>115 </sb_id>
+    <sb_resid>115 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>116 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>640000 </sb_needres>
+    <sb_repairres>320000 </sb_repairres>
+    <sb_rank>15 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>144400 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>1200 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>170 </sb_ac>
+    <sb_shield>144400 </sb_shield>
+    <sb_sr>40 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>116 </sb_id>
+    <sb_resid>116 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>117 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>722500 </sb_needres>
+    <sb_repairres>361250 </sb_repairres>
+    <sb_rank>16 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>160000 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>1250 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>175 </sb_ac>
+    <sb_shield>160000 </sb_shield>
+    <sb_sr>44 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>117 </sb_id>
+    <sb_resid>117 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>118 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>810000 </sb_needres>
+    <sb_repairres>405000 </sb_repairres>
+    <sb_rank>17 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>176400 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>1300 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>180 </sb_ac>
+    <sb_shield>176400 </sb_shield>
+    <sb_sr>49 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>118 </sb_id>
+    <sb_resid>118 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>119 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>902500 </sb_needres>
+    <sb_repairres>451250 </sb_repairres>
+    <sb_rank>18 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>193600 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>1350 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>185 </sb_ac>
+    <sb_shield>193600 </sb_shield>
+    <sb_sr>53 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>119 </sb_id>
+    <sb_resid>119 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>120 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>1000000 </sb_needres>
+    <sb_repairres>500000 </sb_repairres>
+    <sb_rank>19 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>211600 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>1400 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>190 </sb_ac>
+    <sb_shield>211600 </sb_shield>
+    <sb_sr>58 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>120 </sb_id>
+    <sb_resid>120 </sb_resid>
+    <sb_name>spacebuild_name_1,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_1</sb_classname>
+    <sb_desc>spacebuild_desc_1</sb_desc>
+    <sb_nextbuild>0 </sb_nextbuild>
+    <sb_prebuild>0 </sb_prebuild>
+    <sb_needres>1102500 </sb_needres>
+    <sb_repairres>551250 </sb_repairres>
+    <sb_rank>20 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>230400 </sb_hp>
+    <sb_type>1 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>1500 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>4 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>200 </sb_ac>
+    <sb_shield>230400 </sb_shield>
+    <sb_sr>64 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>201 </sb_id>
+    <sb_resid>201 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>202 </sb_nextbuild>
+    <sb_prebuild>101 </sb_prebuild>
+    <sb_needres>4000 </sb_needres>
+    <sb_repairres>2000 </sb_repairres>
+    <sb_rank>1 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>2500 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>300 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>100 </sb_ac>
+    <sb_shield>2500 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>202 </sb_id>
+    <sb_resid>202 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>203 </sb_nextbuild>
+    <sb_prebuild>102 </sb_prebuild>
+    <sb_needres>9000 </sb_needres>
+    <sb_repairres>4500 </sb_repairres>
+    <sb_rank>2 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>3600 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>325 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>105 </sb_ac>
+    <sb_shield>3600 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>203 </sb_id>
+    <sb_resid>203 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>204 </sb_nextbuild>
+    <sb_prebuild>103 </sb_prebuild>
+    <sb_needres>16000 </sb_needres>
+    <sb_repairres>8000 </sb_repairres>
+    <sb_rank>3 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>4900 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>350 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>110 </sb_ac>
+    <sb_shield>4900 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>204 </sb_id>
+    <sb_resid>204 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>205 </sb_nextbuild>
+    <sb_prebuild>104 </sb_prebuild>
+    <sb_needres>25000 </sb_needres>
+    <sb_repairres>12500 </sb_repairres>
+    <sb_rank>4 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>6400 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>375 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>115 </sb_ac>
+    <sb_shield>6400 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>205 </sb_id>
+    <sb_resid>205 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>206 </sb_nextbuild>
+    <sb_prebuild>105 </sb_prebuild>
+    <sb_needres>36000 </sb_needres>
+    <sb_repairres>18000 </sb_repairres>
+    <sb_rank>5 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>8100 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>400 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>120 </sb_ac>
+    <sb_shield>8100 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>206 </sb_id>
+    <sb_resid>206 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>207 </sb_nextbuild>
+    <sb_prebuild>106 </sb_prebuild>
+    <sb_needres>49000 </sb_needres>
+    <sb_repairres>24500 </sb_repairres>
+    <sb_rank>6 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>10000 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>425 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>125 </sb_ac>
+    <sb_shield>10000 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>207 </sb_id>
+    <sb_resid>207 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>208 </sb_nextbuild>
+    <sb_prebuild>107 </sb_prebuild>
+    <sb_needres>64000 </sb_needres>
+    <sb_repairres>32000 </sb_repairres>
+    <sb_rank>7 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>12100 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>450 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>130 </sb_ac>
+    <sb_shield>12100 </sb_shield>
+    <sb_sr>3 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>208 </sb_id>
+    <sb_resid>208 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>209 </sb_nextbuild>
+    <sb_prebuild>108 </sb_prebuild>
+    <sb_needres>81000 </sb_needres>
+    <sb_repairres>40500 </sb_repairres>
+    <sb_rank>8 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>14400 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>475 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>135 </sb_ac>
+    <sb_shield>14400 </sb_shield>
+    <sb_sr>4 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>209 </sb_id>
+    <sb_resid>209 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>210 </sb_nextbuild>
+    <sb_prebuild>109 </sb_prebuild>
+    <sb_needres>100000 </sb_needres>
+    <sb_repairres>50000 </sb_repairres>
+    <sb_rank>9 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>16900 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>500 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>140 </sb_ac>
+    <sb_shield>16900 </sb_shield>
+    <sb_sr>4 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>210 </sb_id>
+    <sb_resid>210 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>211 </sb_nextbuild>
+    <sb_prebuild>110 </sb_prebuild>
+    <sb_needres>121000 </sb_needres>
+    <sb_repairres>60500 </sb_repairres>
+    <sb_rank>10 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>19600 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>525 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>145 </sb_ac>
+    <sb_shield>19600 </sb_shield>
+    <sb_sr>5 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>211 </sb_id>
+    <sb_resid>211 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>212 </sb_nextbuild>
+    <sb_prebuild>111 </sb_prebuild>
+    <sb_needres>144000 </sb_needres>
+    <sb_repairres>72000 </sb_repairres>
+    <sb_rank>11 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>22500 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>550 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>150 </sb_ac>
+    <sb_shield>22500 </sb_shield>
+    <sb_sr>6 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>212 </sb_id>
+    <sb_resid>212 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>213 </sb_nextbuild>
+    <sb_prebuild>112 </sb_prebuild>
+    <sb_needres>169000 </sb_needres>
+    <sb_repairres>84500 </sb_repairres>
+    <sb_rank>12 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>25600 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>575 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>155 </sb_ac>
+    <sb_shield>25600 </sb_shield>
+    <sb_sr>7 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>213 </sb_id>
+    <sb_resid>213 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>214 </sb_nextbuild>
+    <sb_prebuild>113 </sb_prebuild>
+    <sb_needres>196000 </sb_needres>
+    <sb_repairres>98000 </sb_repairres>
+    <sb_rank>13 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>28900 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>600 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>160 </sb_ac>
+    <sb_shield>28900 </sb_shield>
+    <sb_sr>8 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>214 </sb_id>
+    <sb_resid>214 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>215 </sb_nextbuild>
+    <sb_prebuild>114 </sb_prebuild>
+    <sb_needres>225000 </sb_needres>
+    <sb_repairres>112500 </sb_repairres>
+    <sb_rank>14 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>32400 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>625 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>165 </sb_ac>
+    <sb_shield>32400 </sb_shield>
+    <sb_sr>9 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>215 </sb_id>
+    <sb_resid>215 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>216 </sb_nextbuild>
+    <sb_prebuild>115 </sb_prebuild>
+    <sb_needres>256000 </sb_needres>
+    <sb_repairres>128000 </sb_repairres>
+    <sb_rank>15 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>36100 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>650 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>170 </sb_ac>
+    <sb_shield>36100 </sb_shield>
+    <sb_sr>10 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>216 </sb_id>
+    <sb_resid>216 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>217 </sb_nextbuild>
+    <sb_prebuild>116 </sb_prebuild>
+    <sb_needres>289000 </sb_needres>
+    <sb_repairres>144500 </sb_repairres>
+    <sb_rank>16 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>40000 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>675 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>175 </sb_ac>
+    <sb_shield>40000 </sb_shield>
+    <sb_sr>11 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>217 </sb_id>
+    <sb_resid>217 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>218 </sb_nextbuild>
+    <sb_prebuild>117 </sb_prebuild>
+    <sb_needres>324000 </sb_needres>
+    <sb_repairres>162000 </sb_repairres>
+    <sb_rank>17 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>44100 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>700 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>180 </sb_ac>
+    <sb_shield>44100 </sb_shield>
+    <sb_sr>12 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>218 </sb_id>
+    <sb_resid>218 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>219 </sb_nextbuild>
+    <sb_prebuild>118 </sb_prebuild>
+    <sb_needres>361000 </sb_needres>
+    <sb_repairres>180500 </sb_repairres>
+    <sb_rank>18 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>48400 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>725 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>185 </sb_ac>
+    <sb_shield>48400 </sb_shield>
+    <sb_sr>13 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>219 </sb_id>
+    <sb_resid>219 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>220 </sb_nextbuild>
+    <sb_prebuild>119 </sb_prebuild>
+    <sb_needres>400000 </sb_needres>
+    <sb_repairres>200000 </sb_repairres>
+    <sb_rank>19 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>52900 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>750 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>190 </sb_ac>
+    <sb_shield>52900 </sb_shield>
+    <sb_sr>14 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>220 </sb_id>
+    <sb_resid>220 </sb_resid>
+    <sb_name>spacebuild_name_2,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_2</sb_classname>
+    <sb_desc>spacebuild_desc_2</sb_desc>
+    <sb_nextbuild>0 </sb_nextbuild>
+    <sb_prebuild>120 </sb_prebuild>
+    <sb_needres>441000 </sb_needres>
+    <sb_repairres>220500 </sb_repairres>
+    <sb_rank>20 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>57600 </sb_hp>
+    <sb_type>2 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>800 </sb_influence>
+    <sb_onstar>1 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>200 </sb_ac>
+    <sb_shield>57600 </sb_shield>
+    <sb_sr>16 </sb_sr>
+    <sb_attackrange>0 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp></sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>301 </sb_id>
+    <sb_resid>301 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>302 </sb_nextbuild>
+    <sb_prebuild>101 </sb_prebuild>
+    <sb_needres>2000 </sb_needres>
+    <sb_repairres>1000 </sb_repairres>
+    <sb_rank>1 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>1250 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>1250 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1012|2,2012|2,3012|2</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>302 </sb_id>
+    <sb_resid>302 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>303 </sb_nextbuild>
+    <sb_prebuild>102 </sb_prebuild>
+    <sb_needres>4500 </sb_needres>
+    <sb_repairres>2250 </sb_repairres>
+    <sb_rank>2 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>1800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>52 </sb_ac>
+    <sb_shield>1800 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1012|3,2012|3,3012|3</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>303 </sb_id>
+    <sb_resid>303 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>304 </sb_nextbuild>
+    <sb_prebuild>103 </sb_prebuild>
+    <sb_needres>8000 </sb_needres>
+    <sb_repairres>4000 </sb_repairres>
+    <sb_rank>3 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>2450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>55 </sb_ac>
+    <sb_shield>2450 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1012|4,2012|4,3012|4</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>304 </sb_id>
+    <sb_resid>304 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>305 </sb_nextbuild>
+    <sb_prebuild>104 </sb_prebuild>
+    <sb_needres>12500 </sb_needres>
+    <sb_repairres>6250 </sb_repairres>
+    <sb_rank>4 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>3200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>57 </sb_ac>
+    <sb_shield>3200 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1012|5,2012|5,3012|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>305 </sb_id>
+    <sb_resid>305 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>306 </sb_nextbuild>
+    <sb_prebuild>105 </sb_prebuild>
+    <sb_needres>18000 </sb_needres>
+    <sb_repairres>9000 </sb_repairres>
+    <sb_rank>5 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>4050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>60 </sb_ac>
+    <sb_shield>4050 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1013|3,2013|3,3013|3</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>306 </sb_id>
+    <sb_resid>306 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>307 </sb_nextbuild>
+    <sb_prebuild>106 </sb_prebuild>
+    <sb_needres>24500 </sb_needres>
+    <sb_repairres>12250 </sb_repairres>
+    <sb_rank>6 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>5000 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>62 </sb_ac>
+    <sb_shield>5000 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1013|4,2013|4,3013|4</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>307 </sb_id>
+    <sb_resid>307 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>308 </sb_nextbuild>
+    <sb_prebuild>107 </sb_prebuild>
+    <sb_needres>32000 </sb_needres>
+    <sb_repairres>16000 </sb_repairres>
+    <sb_rank>7 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>6050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>65 </sb_ac>
+    <sb_shield>6050 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1013|5,2013|5,3013|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>308 </sb_id>
+    <sb_resid>308 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>309 </sb_nextbuild>
+    <sb_prebuild>108 </sb_prebuild>
+    <sb_needres>40500 </sb_needres>
+    <sb_repairres>20250 </sb_repairres>
+    <sb_rank>8 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>7200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>67 </sb_ac>
+    <sb_shield>7200 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1013|6,2013|6,3013|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>309 </sb_id>
+    <sb_resid>309 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>310 </sb_nextbuild>
+    <sb_prebuild>109 </sb_prebuild>
+    <sb_needres>50000 </sb_needres>
+    <sb_repairres>25000 </sb_repairres>
+    <sb_rank>9 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>8450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>70 </sb_ac>
+    <sb_shield>8450 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1013|7,2013|7,3013|7</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>310 </sb_id>
+    <sb_resid>310 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>311 </sb_nextbuild>
+    <sb_prebuild>110 </sb_prebuild>
+    <sb_needres>60500 </sb_needres>
+    <sb_repairres>30250 </sb_repairres>
+    <sb_rank>10 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>9800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>72 </sb_ac>
+    <sb_shield>9800 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1014|4,2014|4,3014|4</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>311 </sb_id>
+    <sb_resid>311 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>312 </sb_nextbuild>
+    <sb_prebuild>111 </sb_prebuild>
+    <sb_needres>72000 </sb_needres>
+    <sb_repairres>36000 </sb_repairres>
+    <sb_rank>11 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>11250 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>75 </sb_ac>
+    <sb_shield>11250 </sb_shield>
+    <sb_sr>3 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1014|5,2014|5,3014|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>312 </sb_id>
+    <sb_resid>312 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>313 </sb_nextbuild>
+    <sb_prebuild>112 </sb_prebuild>
+    <sb_needres>84500 </sb_needres>
+    <sb_repairres>42250 </sb_repairres>
+    <sb_rank>12 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>12800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>77 </sb_ac>
+    <sb_shield>12800 </sb_shield>
+    <sb_sr>3 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1014|6,2014|6,3014|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>313 </sb_id>
+    <sb_resid>313 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>314 </sb_nextbuild>
+    <sb_prebuild>113 </sb_prebuild>
+    <sb_needres>98000 </sb_needres>
+    <sb_repairres>49000 </sb_repairres>
+    <sb_rank>13 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>14450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>80 </sb_ac>
+    <sb_shield>14450 </sb_shield>
+    <sb_sr>4 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1014|7,2014|7,3014|7</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>314 </sb_id>
+    <sb_resid>314 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>315 </sb_nextbuild>
+    <sb_prebuild>114 </sb_prebuild>
+    <sb_needres>112500 </sb_needres>
+    <sb_repairres>56250 </sb_repairres>
+    <sb_rank>14 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>16200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>82 </sb_ac>
+    <sb_shield>16200 </sb_shield>
+    <sb_sr>4 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1014|8,2014|8,3014|8</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>315 </sb_id>
+    <sb_resid>315 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>316 </sb_nextbuild>
+    <sb_prebuild>115 </sb_prebuild>
+    <sb_needres>128000 </sb_needres>
+    <sb_repairres>64000 </sb_repairres>
+    <sb_rank>15 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>18050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>85 </sb_ac>
+    <sb_shield>18050 </sb_shield>
+    <sb_sr>5 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1014|9,2014|9,3014|9</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>316 </sb_id>
+    <sb_resid>316 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>317 </sb_nextbuild>
+    <sb_prebuild>116 </sb_prebuild>
+    <sb_needres>144500 </sb_needres>
+    <sb_repairres>72250 </sb_repairres>
+    <sb_rank>16 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>20000 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>87 </sb_ac>
+    <sb_shield>20000 </sb_shield>
+    <sb_sr>5 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1015|5,2015|5,3015|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>317 </sb_id>
+    <sb_resid>317 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>318 </sb_nextbuild>
+    <sb_prebuild>117 </sb_prebuild>
+    <sb_needres>162000 </sb_needres>
+    <sb_repairres>81000 </sb_repairres>
+    <sb_rank>17 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>22050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>90 </sb_ac>
+    <sb_shield>22050 </sb_shield>
+    <sb_sr>6 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1015|6,2015|6,3015|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>318 </sb_id>
+    <sb_resid>318 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>319 </sb_nextbuild>
+    <sb_prebuild>118 </sb_prebuild>
+    <sb_needres>180500 </sb_needres>
+    <sb_repairres>90250 </sb_repairres>
+    <sb_rank>18 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>24200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>92 </sb_ac>
+    <sb_shield>24200 </sb_shield>
+    <sb_sr>6 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1015|6,2015|6,3015|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>319 </sb_id>
+    <sb_resid>319 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>320 </sb_nextbuild>
+    <sb_prebuild>119 </sb_prebuild>
+    <sb_needres>200000 </sb_needres>
+    <sb_repairres>100000 </sb_repairres>
+    <sb_rank>19 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>26450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>95 </sb_ac>
+    <sb_shield>26450 </sb_shield>
+    <sb_sr>7 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1015|7,2015|7,3015|7</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>320 </sb_id>
+    <sb_resid>320 </sb_resid>
+    <sb_name>spacebuild_name_3,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_3</sb_classname>
+    <sb_desc>spacebuild_desc_3</sb_desc>
+    <sb_nextbuild>0 </sb_nextbuild>
+    <sb_prebuild>120 </sb_prebuild>
+    <sb_needres>220500 </sb_needres>
+    <sb_repairres>110250 </sb_repairres>
+    <sb_rank>20 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>28800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>100 </sb_ac>
+    <sb_shield>28800 </sb_shield>
+    <sb_sr>8 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>500 </sb_traprange>
+    <sb_wp>1015|8,2015|8,3015|8</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>401 </sb_id>
+    <sb_resid>401 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>402 </sb_nextbuild>
+    <sb_prebuild>101 </sb_prebuild>
+    <sb_needres>2000 </sb_needres>
+    <sb_repairres>1000 </sb_repairres>
+    <sb_rank>1 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>1250 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>30 </sb_ac>
+    <sb_shield>1250 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1012|8,1013|4</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>402 </sb_id>
+    <sb_resid>402 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>403 </sb_nextbuild>
+    <sb_prebuild>102 </sb_prebuild>
+    <sb_needres>4500 </sb_needres>
+    <sb_repairres>2250 </sb_repairres>
+    <sb_rank>2 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>1800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>31 </sb_ac>
+    <sb_shield>1800 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1012|10,1013|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>403 </sb_id>
+    <sb_resid>403 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>404 </sb_nextbuild>
+    <sb_prebuild>103 </sb_prebuild>
+    <sb_needres>8000 </sb_needres>
+    <sb_repairres>4000 </sb_repairres>
+    <sb_rank>3 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>2450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>32 </sb_ac>
+    <sb_shield>2450 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1012|12,1013|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>404 </sb_id>
+    <sb_resid>404 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>405 </sb_nextbuild>
+    <sb_prebuild>104 </sb_prebuild>
+    <sb_needres>12500 </sb_needres>
+    <sb_repairres>6250 </sb_repairres>
+    <sb_rank>4 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>3200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>33 </sb_ac>
+    <sb_shield>3200 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1012|14,1013|7</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>405 </sb_id>
+    <sb_resid>405 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>406 </sb_nextbuild>
+    <sb_prebuild>105 </sb_prebuild>
+    <sb_needres>18000 </sb_needres>
+    <sb_repairres>9000 </sb_repairres>
+    <sb_rank>5 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>4050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>34 </sb_ac>
+    <sb_shield>4050 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1013|8,1014|4</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>406 </sb_id>
+    <sb_resid>406 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>407 </sb_nextbuild>
+    <sb_prebuild>106 </sb_prebuild>
+    <sb_needres>24500 </sb_needres>
+    <sb_repairres>12250 </sb_repairres>
+    <sb_rank>6 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>5000 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>35 </sb_ac>
+    <sb_shield>5000 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1013|10,1014|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>407 </sb_id>
+    <sb_resid>407 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>408 </sb_nextbuild>
+    <sb_prebuild>107 </sb_prebuild>
+    <sb_needres>32000 </sb_needres>
+    <sb_repairres>16000 </sb_repairres>
+    <sb_rank>7 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>6050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>36 </sb_ac>
+    <sb_shield>6050 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1013|12,1014|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>408 </sb_id>
+    <sb_resid>408 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>409 </sb_nextbuild>
+    <sb_prebuild>108 </sb_prebuild>
+    <sb_needres>40500 </sb_needres>
+    <sb_repairres>20250 </sb_repairres>
+    <sb_rank>8 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>7200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>37 </sb_ac>
+    <sb_shield>7200 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1013|14,1014|7</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>409 </sb_id>
+    <sb_resid>409 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>410 </sb_nextbuild>
+    <sb_prebuild>109 </sb_prebuild>
+    <sb_needres>50000 </sb_needres>
+    <sb_repairres>25000 </sb_repairres>
+    <sb_rank>9 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>8450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>38 </sb_ac>
+    <sb_shield>8450 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1014|8,1015|4</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>410 </sb_id>
+    <sb_resid>410 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>411 </sb_nextbuild>
+    <sb_prebuild>110 </sb_prebuild>
+    <sb_needres>60500 </sb_needres>
+    <sb_repairres>30250 </sb_repairres>
+    <sb_rank>10 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>9800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>39 </sb_ac>
+    <sb_shield>9800 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1014|10,1015|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>411 </sb_id>
+    <sb_resid>411 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>412 </sb_nextbuild>
+    <sb_prebuild>111 </sb_prebuild>
+    <sb_needres>72000 </sb_needres>
+    <sb_repairres>36000 </sb_repairres>
+    <sb_rank>11 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>11250 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>40 </sb_ac>
+    <sb_shield>11250 </sb_shield>
+    <sb_sr>3 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1014|12,1015|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>412 </sb_id>
+    <sb_resid>412 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>413 </sb_nextbuild>
+    <sb_prebuild>112 </sb_prebuild>
+    <sb_needres>84500 </sb_needres>
+    <sb_repairres>42250 </sb_repairres>
+    <sb_rank>12 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>12800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>41 </sb_ac>
+    <sb_shield>12800 </sb_shield>
+    <sb_sr>3 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1014|14,1015|7</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>413 </sb_id>
+    <sb_resid>413 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>414 </sb_nextbuild>
+    <sb_prebuild>113 </sb_prebuild>
+    <sb_needres>98000 </sb_needres>
+    <sb_repairres>49000 </sb_repairres>
+    <sb_rank>13 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>14450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>42 </sb_ac>
+    <sb_shield>14450 </sb_shield>
+    <sb_sr>4 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1014|16,1015|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>414 </sb_id>
+    <sb_resid>414 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>415 </sb_nextbuild>
+    <sb_prebuild>114 </sb_prebuild>
+    <sb_needres>112500 </sb_needres>
+    <sb_repairres>56250 </sb_repairres>
+    <sb_rank>14 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>16200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>43 </sb_ac>
+    <sb_shield>16200 </sb_shield>
+    <sb_sr>4 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1014|16,1015|8</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>415 </sb_id>
+    <sb_resid>415 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>416 </sb_nextbuild>
+    <sb_prebuild>115 </sb_prebuild>
+    <sb_needres>128000 </sb_needres>
+    <sb_repairres>64000 </sb_repairres>
+    <sb_rank>15 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>18050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>44 </sb_ac>
+    <sb_shield>18050 </sb_shield>
+    <sb_sr>5 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1014|16,1015|10</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>416 </sb_id>
+    <sb_resid>416 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>417 </sb_nextbuild>
+    <sb_prebuild>116 </sb_prebuild>
+    <sb_needres>144500 </sb_needres>
+    <sb_repairres>72250 </sb_repairres>
+    <sb_rank>16 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>20000 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>45 </sb_ac>
+    <sb_shield>20000 </sb_shield>
+    <sb_sr>5 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1014|16,1015|12</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>417 </sb_id>
+    <sb_resid>417 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>418 </sb_nextbuild>
+    <sb_prebuild>117 </sb_prebuild>
+    <sb_needres>162000 </sb_needres>
+    <sb_repairres>81000 </sb_repairres>
+    <sb_rank>17 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>22050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>46 </sb_ac>
+    <sb_shield>22050 </sb_shield>
+    <sb_sr>6 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1014|16,1015|14</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>418 </sb_id>
+    <sb_resid>418 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>419 </sb_nextbuild>
+    <sb_prebuild>118 </sb_prebuild>
+    <sb_needres>180500 </sb_needres>
+    <sb_repairres>90250 </sb_repairres>
+    <sb_rank>18 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>24200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>47 </sb_ac>
+    <sb_shield>24200 </sb_shield>
+    <sb_sr>6 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1014|16,1015|16</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>419 </sb_id>
+    <sb_resid>419 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>420 </sb_nextbuild>
+    <sb_prebuild>119 </sb_prebuild>
+    <sb_needres>200000 </sb_needres>
+    <sb_repairres>100000 </sb_repairres>
+    <sb_rank>19 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>26450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>48 </sb_ac>
+    <sb_shield>26450 </sb_shield>
+    <sb_sr>7 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1014|20,1015|20</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>420 </sb_id>
+    <sb_resid>420 </sb_resid>
+    <sb_name>spacebuild_name_4,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_4</sb_classname>
+    <sb_desc>spacebuild_desc_4</sb_desc>
+    <sb_nextbuild>0 </sb_nextbuild>
+    <sb_prebuild>120 </sb_prebuild>
+    <sb_needres>220500 </sb_needres>
+    <sb_repairres>110250 </sb_repairres>
+    <sb_rank>20 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>28800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>28800 </sb_shield>
+    <sb_sr>8 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>1014|25,1015|25</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>501 </sb_id>
+    <sb_resid>501 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>502 </sb_nextbuild>
+    <sb_prebuild>101 </sb_prebuild>
+    <sb_needres>2000 </sb_needres>
+    <sb_repairres>1000 </sb_repairres>
+    <sb_rank>1 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>1250 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>30 </sb_ac>
+    <sb_shield>1250 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2012|8,2013|4</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>502 </sb_id>
+    <sb_resid>502 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>503 </sb_nextbuild>
+    <sb_prebuild>102 </sb_prebuild>
+    <sb_needres>4500 </sb_needres>
+    <sb_repairres>2250 </sb_repairres>
+    <sb_rank>2 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>1800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>31 </sb_ac>
+    <sb_shield>1800 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2012|10,2013|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>503 </sb_id>
+    <sb_resid>503 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>504 </sb_nextbuild>
+    <sb_prebuild>103 </sb_prebuild>
+    <sb_needres>8000 </sb_needres>
+    <sb_repairres>4000 </sb_repairres>
+    <sb_rank>3 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>2450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>32 </sb_ac>
+    <sb_shield>2450 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2012|12,2013|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>504 </sb_id>
+    <sb_resid>504 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>505 </sb_nextbuild>
+    <sb_prebuild>104 </sb_prebuild>
+    <sb_needres>12500 </sb_needres>
+    <sb_repairres>6250 </sb_repairres>
+    <sb_rank>4 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>3200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>33 </sb_ac>
+    <sb_shield>3200 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2012|14,2013|7</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>505 </sb_id>
+    <sb_resid>505 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>506 </sb_nextbuild>
+    <sb_prebuild>105 </sb_prebuild>
+    <sb_needres>18000 </sb_needres>
+    <sb_repairres>9000 </sb_repairres>
+    <sb_rank>5 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>4050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>34 </sb_ac>
+    <sb_shield>4050 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2013|8,2014|4</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>506 </sb_id>
+    <sb_resid>506 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>507 </sb_nextbuild>
+    <sb_prebuild>106 </sb_prebuild>
+    <sb_needres>24500 </sb_needres>
+    <sb_repairres>12250 </sb_repairres>
+    <sb_rank>6 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>5000 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>35 </sb_ac>
+    <sb_shield>5000 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2013|10,2014|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>507 </sb_id>
+    <sb_resid>507 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>508 </sb_nextbuild>
+    <sb_prebuild>107 </sb_prebuild>
+    <sb_needres>32000 </sb_needres>
+    <sb_repairres>16000 </sb_repairres>
+    <sb_rank>7 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>6050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>36 </sb_ac>
+    <sb_shield>6050 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2013|12,2014|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>508 </sb_id>
+    <sb_resid>508 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>509 </sb_nextbuild>
+    <sb_prebuild>108 </sb_prebuild>
+    <sb_needres>40500 </sb_needres>
+    <sb_repairres>20250 </sb_repairres>
+    <sb_rank>8 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>7200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>37 </sb_ac>
+    <sb_shield>7200 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2013|14,2014|7</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>509 </sb_id>
+    <sb_resid>509 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>510 </sb_nextbuild>
+    <sb_prebuild>109 </sb_prebuild>
+    <sb_needres>50000 </sb_needres>
+    <sb_repairres>25000 </sb_repairres>
+    <sb_rank>9 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>8450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>38 </sb_ac>
+    <sb_shield>8450 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2014|8,2015|4</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>510 </sb_id>
+    <sb_resid>510 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>511 </sb_nextbuild>
+    <sb_prebuild>110 </sb_prebuild>
+    <sb_needres>60500 </sb_needres>
+    <sb_repairres>30250 </sb_repairres>
+    <sb_rank>10 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>9800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>39 </sb_ac>
+    <sb_shield>9800 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2014|10,2015|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>511 </sb_id>
+    <sb_resid>511 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>512 </sb_nextbuild>
+    <sb_prebuild>111 </sb_prebuild>
+    <sb_needres>72000 </sb_needres>
+    <sb_repairres>36000 </sb_repairres>
+    <sb_rank>11 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>11250 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>40 </sb_ac>
+    <sb_shield>11250 </sb_shield>
+    <sb_sr>3 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2014|12,2015|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>512 </sb_id>
+    <sb_resid>512 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>513 </sb_nextbuild>
+    <sb_prebuild>112 </sb_prebuild>
+    <sb_needres>84500 </sb_needres>
+    <sb_repairres>42250 </sb_repairres>
+    <sb_rank>12 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>12800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>41 </sb_ac>
+    <sb_shield>12800 </sb_shield>
+    <sb_sr>3 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2014|14,2015|7</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>513 </sb_id>
+    <sb_resid>513 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>514 </sb_nextbuild>
+    <sb_prebuild>113 </sb_prebuild>
+    <sb_needres>98000 </sb_needres>
+    <sb_repairres>49000 </sb_repairres>
+    <sb_rank>13 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>14450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>42 </sb_ac>
+    <sb_shield>14450 </sb_shield>
+    <sb_sr>4 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2014|16,2015|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>514 </sb_id>
+    <sb_resid>514 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>515 </sb_nextbuild>
+    <sb_prebuild>114 </sb_prebuild>
+    <sb_needres>112500 </sb_needres>
+    <sb_repairres>56250 </sb_repairres>
+    <sb_rank>14 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>16200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>43 </sb_ac>
+    <sb_shield>16200 </sb_shield>
+    <sb_sr>4 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2014|16,2015|8</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>515 </sb_id>
+    <sb_resid>515 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>516 </sb_nextbuild>
+    <sb_prebuild>115 </sb_prebuild>
+    <sb_needres>128000 </sb_needres>
+    <sb_repairres>64000 </sb_repairres>
+    <sb_rank>15 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>18050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>44 </sb_ac>
+    <sb_shield>18050 </sb_shield>
+    <sb_sr>5 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2014|16,2015|10</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>516 </sb_id>
+    <sb_resid>516 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>517 </sb_nextbuild>
+    <sb_prebuild>116 </sb_prebuild>
+    <sb_needres>144500 </sb_needres>
+    <sb_repairres>72250 </sb_repairres>
+    <sb_rank>16 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>20000 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>45 </sb_ac>
+    <sb_shield>20000 </sb_shield>
+    <sb_sr>5 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2014|16,2015|12</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>517 </sb_id>
+    <sb_resid>517 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>518 </sb_nextbuild>
+    <sb_prebuild>117 </sb_prebuild>
+    <sb_needres>162000 </sb_needres>
+    <sb_repairres>81000 </sb_repairres>
+    <sb_rank>17 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>22050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>46 </sb_ac>
+    <sb_shield>22050 </sb_shield>
+    <sb_sr>6 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2014|16,2015|14</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>518 </sb_id>
+    <sb_resid>518 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>519 </sb_nextbuild>
+    <sb_prebuild>118 </sb_prebuild>
+    <sb_needres>180500 </sb_needres>
+    <sb_repairres>90250 </sb_repairres>
+    <sb_rank>18 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>24200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>47 </sb_ac>
+    <sb_shield>24200 </sb_shield>
+    <sb_sr>6 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2014|16,2015|16</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>519 </sb_id>
+    <sb_resid>519 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>520 </sb_nextbuild>
+    <sb_prebuild>119 </sb_prebuild>
+    <sb_needres>200000 </sb_needres>
+    <sb_repairres>100000 </sb_repairres>
+    <sb_rank>19 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>26450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>48 </sb_ac>
+    <sb_shield>26450 </sb_shield>
+    <sb_sr>7 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2014|20,2015|20</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>520 </sb_id>
+    <sb_resid>520 </sb_resid>
+    <sb_name>spacebuild_name_5,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_5</sb_classname>
+    <sb_desc>spacebuild_desc_5</sb_desc>
+    <sb_nextbuild>0 </sb_nextbuild>
+    <sb_prebuild>120 </sb_prebuild>
+    <sb_needres>220500 </sb_needres>
+    <sb_repairres>110250 </sb_repairres>
+    <sb_rank>20 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>28800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>28800 </sb_shield>
+    <sb_sr>8 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>2014|25,2015|25</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>601 </sb_id>
+    <sb_resid>601 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>602 </sb_nextbuild>
+    <sb_prebuild>101 </sb_prebuild>
+    <sb_needres>2000 </sb_needres>
+    <sb_repairres>1000 </sb_repairres>
+    <sb_rank>1 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>1250 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>1250 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3012|8,3013|4</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>602 </sb_id>
+    <sb_resid>602 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>603 </sb_nextbuild>
+    <sb_prebuild>102 </sb_prebuild>
+    <sb_needres>4500 </sb_needres>
+    <sb_repairres>2250 </sb_repairres>
+    <sb_rank>2 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>1800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>1800 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3012|10,3013|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>603 </sb_id>
+    <sb_resid>603 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>604 </sb_nextbuild>
+    <sb_prebuild>103 </sb_prebuild>
+    <sb_needres>8000 </sb_needres>
+    <sb_repairres>4000 </sb_repairres>
+    <sb_rank>3 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>2450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>2450 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3012|12,3013|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>604 </sb_id>
+    <sb_resid>604 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>605 </sb_nextbuild>
+    <sb_prebuild>104 </sb_prebuild>
+    <sb_needres>12500 </sb_needres>
+    <sb_repairres>6250 </sb_repairres>
+    <sb_rank>4 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>3200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>3200 </sb_shield>
+    <sb_sr>0 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3012|14,3013|7</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>605 </sb_id>
+    <sb_resid>605 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>606 </sb_nextbuild>
+    <sb_prebuild>105 </sb_prebuild>
+    <sb_needres>18000 </sb_needres>
+    <sb_repairres>9000 </sb_repairres>
+    <sb_rank>5 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>4050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>4050 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3013|8,3014|4</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>606 </sb_id>
+    <sb_resid>606 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>607 </sb_nextbuild>
+    <sb_prebuild>106 </sb_prebuild>
+    <sb_needres>24500 </sb_needres>
+    <sb_repairres>12250 </sb_repairres>
+    <sb_rank>6 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>5000 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>5000 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3013|10,3014|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>607 </sb_id>
+    <sb_resid>607 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>608 </sb_nextbuild>
+    <sb_prebuild>107 </sb_prebuild>
+    <sb_needres>32000 </sb_needres>
+    <sb_repairres>16000 </sb_repairres>
+    <sb_rank>7 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>6050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>6050 </sb_shield>
+    <sb_sr>1 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3013|12,3014|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>608 </sb_id>
+    <sb_resid>608 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>609 </sb_nextbuild>
+    <sb_prebuild>108 </sb_prebuild>
+    <sb_needres>40500 </sb_needres>
+    <sb_repairres>20250 </sb_repairres>
+    <sb_rank>8 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>7200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>7200 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3013|14,3014|7</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>609 </sb_id>
+    <sb_resid>609 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>610 </sb_nextbuild>
+    <sb_prebuild>109 </sb_prebuild>
+    <sb_needres>50000 </sb_needres>
+    <sb_repairres>25000 </sb_repairres>
+    <sb_rank>9 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>8450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>8450 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3014|8,3015|4</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>610 </sb_id>
+    <sb_resid>610 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>611 </sb_nextbuild>
+    <sb_prebuild>110 </sb_prebuild>
+    <sb_needres>60500 </sb_needres>
+    <sb_repairres>30250 </sb_repairres>
+    <sb_rank>10 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>9800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>9800 </sb_shield>
+    <sb_sr>2 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3014|10,3015|5</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>611 </sb_id>
+    <sb_resid>611 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>612 </sb_nextbuild>
+    <sb_prebuild>111 </sb_prebuild>
+    <sb_needres>72000 </sb_needres>
+    <sb_repairres>36000 </sb_repairres>
+    <sb_rank>11 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>11250 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>11250 </sb_shield>
+    <sb_sr>3 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3014|12,3015|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>612 </sb_id>
+    <sb_resid>612 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>613 </sb_nextbuild>
+    <sb_prebuild>112 </sb_prebuild>
+    <sb_needres>84500 </sb_needres>
+    <sb_repairres>42250 </sb_repairres>
+    <sb_rank>12 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>12800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>12800 </sb_shield>
+    <sb_sr>3 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3014|14,3015|7</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>613 </sb_id>
+    <sb_resid>613 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>614 </sb_nextbuild>
+    <sb_prebuild>113 </sb_prebuild>
+    <sb_needres>98000 </sb_needres>
+    <sb_repairres>49000 </sb_repairres>
+    <sb_rank>13 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>14450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>14450 </sb_shield>
+    <sb_sr>4 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3014|16,3015|6</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>614 </sb_id>
+    <sb_resid>614 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>615 </sb_nextbuild>
+    <sb_prebuild>114 </sb_prebuild>
+    <sb_needres>112500 </sb_needres>
+    <sb_repairres>56250 </sb_repairres>
+    <sb_rank>14 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>16200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>16200 </sb_shield>
+    <sb_sr>4 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3014|16,3015|8</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>615 </sb_id>
+    <sb_resid>615 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>616 </sb_nextbuild>
+    <sb_prebuild>115 </sb_prebuild>
+    <sb_needres>128000 </sb_needres>
+    <sb_repairres>64000 </sb_repairres>
+    <sb_rank>15 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>18050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>18050 </sb_shield>
+    <sb_sr>5 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3014|16,3015|10</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>616 </sb_id>
+    <sb_resid>616 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>617 </sb_nextbuild>
+    <sb_prebuild>116 </sb_prebuild>
+    <sb_needres>144500 </sb_needres>
+    <sb_repairres>72250 </sb_repairres>
+    <sb_rank>16 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>20000 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>20000 </sb_shield>
+    <sb_sr>5 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3014|16,3015|12</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>617 </sb_id>
+    <sb_resid>617 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>618 </sb_nextbuild>
+    <sb_prebuild>117 </sb_prebuild>
+    <sb_needres>162000 </sb_needres>
+    <sb_repairres>81000 </sb_repairres>
+    <sb_rank>17 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>22050 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>22050 </sb_shield>
+    <sb_sr>6 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3014|16,3015|14</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>618 </sb_id>
+    <sb_resid>618 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>619 </sb_nextbuild>
+    <sb_prebuild>118 </sb_prebuild>
+    <sb_needres>180500 </sb_needres>
+    <sb_repairres>90250 </sb_repairres>
+    <sb_rank>18 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>24200 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>24200 </sb_shield>
+    <sb_sr>6 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3014|16,3015|16</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>619 </sb_id>
+    <sb_resid>619 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>620 </sb_nextbuild>
+    <sb_prebuild>119 </sb_prebuild>
+    <sb_needres>200000 </sb_needres>
+    <sb_repairres>100000 </sb_repairres>
+    <sb_rank>19 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>26450 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>26450 </sb_shield>
+    <sb_sr>7 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3014|20,3015|20</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+<SpaceBuild version="1">
+    <sb_id>620 </sb_id>
+    <sb_resid>620 </sb_resid>
+    <sb_name>spacebuild_name_6,sb_rank</sb_name>
+    <sb_classname>spacebuild_classname_6</sb_classname>
+    <sb_desc>spacebuild_desc_6</sb_desc>
+    <sb_nextbuild>0 </sb_nextbuild>
+    <sb_prebuild>120 </sb_prebuild>
+    <sb_needres>220500 </sb_needres>
+    <sb_repairres>110250 </sb_repairres>
+    <sb_rank>20 </sb_rank>
+    <sb_maxrank>20 </sb_maxrank>
+    <sb_hp>28800 </sb_hp>
+    <sb_type>3 </sb_type>
+    <sb_isunionbuild>1 </sb_isunionbuild>
+    <sb_workshipcount>5 </sb_workshipcount>
+    <sb_mainspeed>1000 </sb_mainspeed>
+    <sb_subspeed>1000 </sb_subspeed>
+    <sb_repairspeed>2000 </sb_repairspeed>
+    <sb_coverrange>50 </sb_coverrange>
+    <sb_influence>0 </sb_influence>
+    <sb_onstar>0 </sb_onstar>
+    <sb_needrank>3 </sb_needrank>
+    <sb_gathermin>0 </sb_gathermin>
+    <sb_ac>50 </sb_ac>
+    <sb_shield>28800 </sb_shield>
+    <sb_sr>8 </sb_sr>
+    <sb_attackrange>50 </sb_attackrange>
+    <sb_traprange>0 </sb_traprange>
+    <sb_wp>3014|25,3015|25</sb_wp>
+    <sb_battlepoint>0 </sb_battlepoint>
+</SpaceBuild>
+</SpaceBuild_Tab>

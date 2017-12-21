@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<ItemsData_Tab>
+<TResHead version="4">
+    <Magic>1397052237 </Magic>
+    <Version>4 </Version>
+    <Unit>576 </Unit>
+    <Count>40 </Count>
+    <MetalibHash>fbb6b367d068f7e097736392a46cb69c</MetalibHash>
+    <ResVersion>0 </ResVersion>
+    <CreateTime>2017-03-10 20:19:34</CreateTime>
+    <ResEncording>UTF-8</ResEncording>
+</TResHead>
+<ItemsData version="1">
+    <item_id>1 </item_id>
+    <item_name>item_name_1,item_param1</item_name>
+    <item_icon>1 </item_icon>
+    <item_func>1 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>10000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_1,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>100 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>10000 </item_uprice>
+    <item_reputation>27000 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>2 </item_id>
+    <item_name>item_name_1,item_param1</item_name>
+    <item_icon>2 </item_icon>
+    <item_func>1 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>105000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_1,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>1000 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>3 </item_id>
+    <item_name>item_name_1,item_param1</item_name>
+    <item_icon>3 </item_icon>
+    <item_func>1 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>1100000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_1,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>10000 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>1000000 </item_uprice>
+    <item_reputation>1000000 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>4 </item_id>
+    <item_name>item_name_1,item_param1</item_name>
+    <item_icon>4 </item_icon>
+    <item_func>1 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>12000000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_1,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>100000 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>5 </item_id>
+    <item_name>item_name_2,item_param1</item_name>
+    <item_icon>5 </item_icon>
+    <item_func>2 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>10000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_2,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>100 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>10000 </item_uprice>
+    <item_reputation>27000 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>6 </item_id>
+    <item_name>item_name_2,item_param1</item_name>
+    <item_icon>6 </item_icon>
+    <item_func>2 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>105000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_2,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>1000 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>7 </item_id>
+    <item_name>item_name_2,item_param1</item_name>
+    <item_icon>7 </item_icon>
+    <item_func>2 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>1100000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_2,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>10000 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>1000000 </item_uprice>
+    <item_reputation>1000000 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>8 </item_id>
+    <item_name>item_name_2,item_param1</item_name>
+    <item_icon>8 </item_icon>
+    <item_func>2 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>12000000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_2,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>100000 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>9 </item_id>
+    <item_name>item_name_3,item_param1</item_name>
+    <item_icon>9 </item_icon>
+    <item_func>3 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>1000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_3,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>100 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>10000 </item_uprice>
+    <item_reputation>27000 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>10 </item_id>
+    <item_name>item_name_3,item_param1</item_name>
+    <item_icon>10 </item_icon>
+    <item_func>3 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>10500 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_3,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>1000 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>11 </item_id>
+    <item_name>item_name_3,item_param1</item_name>
+    <item_icon>11 </item_icon>
+    <item_func>3 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>110000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_3,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>10000 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>1000000 </item_uprice>
+    <item_reputation>100000 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>12 </item_id>
+    <item_name>item_name_3,item_param1</item_name>
+    <item_icon>12 </item_icon>
+    <item_func>3 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>1200000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_3,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>100000 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>13 </item_id>
+    <item_name>item_name_4,item_param1</item_name>
+    <item_icon>13 </item_icon>
+    <item_func>4 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>500 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_4,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>100 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>10000 </item_uprice>
+    <item_reputation>27000 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>14 </item_id>
+    <item_name>item_name_4,item_param1</item_name>
+    <item_icon>14 </item_icon>
+    <item_func>4 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>5250 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_4,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>1000 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>15 </item_id>
+    <item_name>item_name_4,item_param1</item_name>
+    <item_icon>15 </item_icon>
+    <item_func>4 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>55000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_4,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>10000 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>1000000 </item_uprice>
+    <item_reputation>1000000 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>16 </item_id>
+    <item_name>item_name_4,item_param1</item_name>
+    <item_icon>16 </item_icon>
+    <item_func>4 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>600000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_4,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>1 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>100000 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>2 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>17 </item_id>
+    <item_name>item_name_6,item_param1</item_name>
+    <item_icon>17 </item_icon>
+    <item_func>6 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>60 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_6,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>0 </item_inventoryuse>
+    <item_isgoods>0 </item_isgoods>
+    <item_price>1 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>18 </item_id>
+    <item_name>item_name_6,item_param1</item_name>
+    <item_icon>18 </item_icon>
+    <item_func>6 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>300 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_6,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>0 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>5 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>500 </item_uprice>
+    <item_reputation>1000 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>19 </item_id>
+    <item_name>item_name_6,item_param1</item_name>
+    <item_icon>19 </item_icon>
+    <item_func>6 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>900 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_6,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>0 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>15 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>20 </item_id>
+    <item_name>item_name_6,item_param1</item_name>
+    <item_icon>20 </item_icon>
+    <item_func>6 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>3600 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_6,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>0 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>55 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>5500 </item_uprice>
+    <item_reputation>343000 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>21 </item_id>
+    <item_name>item_name_6,item_param1</item_name>
+    <item_icon>21 </item_icon>
+    <item_func>6 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>10800 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_6,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>0 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>155 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>22 </item_id>
+    <item_name>item_name_6,item_param1</item_name>
+    <item_icon>22 </item_icon>
+    <item_func>6 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>28800 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_6,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>0 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>400 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>40000 </item_uprice>
+    <item_reputation>729000 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>23 </item_id>
+    <item_name>item_name_6,item_param1</item_name>
+    <item_icon>23 </item_icon>
+    <item_func>6 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>86400 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_6,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>0 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>1150 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>24 </item_id>
+    <item_name>item_name_6,item_param1</item_name>
+    <item_icon>24 </item_icon>
+    <item_func>6 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>259200 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_6,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>0 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>3250 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>25 </item_id>
+    <item_name>item_name_6,item_param1</item_name>
+    <item_icon>25 </item_icon>
+    <item_func>6 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>864000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_6,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>0 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>10000 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>26 </item_id>
+    <item_name>item_name_7,item_param1</item_name>
+    <item_icon>26 </item_icon>
+    <item_func>7 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>50 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_7,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>0 </item_inventoryuse>
+    <item_isgoods>0 </item_isgoods>
+    <item_price>100 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>27 </item_id>
+    <item_name>item_name_7,item_param1</item_name>
+    <item_icon>27 </item_icon>
+    <item_func>7 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>100 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_7,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>0 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>360 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>36000 </item_uprice>
+    <item_reputation>1728000 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>28 </item_id>
+    <item_name>item_name_7,item_param1</item_name>
+    <item_icon>28 </item_icon>
+    <item_func>7 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>200 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_7,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>0 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>1280 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>29 </item_id>
+    <item_name>item_name_8,item_param1</item_name>
+    <item_icon>29 </item_icon>
+    <item_func>8 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>1000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_8,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>0 </item_isgoods>
+    <item_price>40 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>30 </item_id>
+    <item_name>item_name_8,item_param1</item_name>
+    <item_icon>30 </item_icon>
+    <item_func>8 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>2000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_8,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>60 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>6000 </item_uprice>
+    <item_reputation>27000 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>31 </item_id>
+    <item_name>item_name_8,item_param1</item_name>
+    <item_icon>31 </item_icon>
+    <item_func>8 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>5000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_8,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>120 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>32 </item_id>
+    <item_name>item_name_8,item_param1</item_name>
+    <item_icon>32 </item_icon>
+    <item_func>8 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>10000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_8,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>200 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>33 </item_id>
+    <item_name>item_name_9</item_name>
+    <item_icon>33 </item_icon>
+    <item_func>9 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>0 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_9</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>500 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>34 </item_id>
+    <item_name>item_name_10,item_param1</item_name>
+    <item_icon>34 </item_icon>
+    <item_func>10 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>1000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_10,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>0 </item_isgoods>
+    <item_price>10 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>35 </item_id>
+    <item_name>item_name_10,item_param1</item_name>
+    <item_icon>35 </item_icon>
+    <item_func>10 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>3000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_10,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>0 </item_isgoods>
+    <item_price>30 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>36 </item_id>
+    <item_name>item_name_10,item_param1</item_name>
+    <item_icon>36 </item_icon>
+    <item_func>10 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>10000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_10,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>100 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>10000 </item_uprice>
+    <item_reputation>512000 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>37 </item_id>
+    <item_name>item_name_10,item_param1</item_name>
+    <item_icon>37 </item_icon>
+    <item_func>10 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>30000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_10,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>300 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>38 </item_id>
+    <item_name>item_name_10,item_param1</item_name>
+    <item_icon>38 </item_icon>
+    <item_func>10 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>100000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_10,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>1000 </item_price>
+    <item_isugoods>1 </item_isugoods>
+    <item_uprice>100000 </item_uprice>
+    <item_reputation>3375000 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>39 </item_id>
+    <item_name>item_name_10,item_param1</item_name>
+    <item_icon>39 </item_icon>
+    <item_func>10 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>300000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_10,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>3000 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+<ItemsData version="1">
+    <item_id>40 </item_id>
+    <item_name>item_name_10,item_param1</item_name>
+    <item_icon>40 </item_icon>
+    <item_func>10 </item_func>
+    <item_functofunc>0 </item_functofunc>
+    <item_funcparam>0 </item_funcparam>
+    <item_param1>1000000 </item_param1>
+    <item_duration>0 </item_duration>
+    <item_desc>item_desc_10,item_param1</item_desc>
+    <item_show></item_show>
+    <item_class>2 </item_class>
+    <item_uselevel>0 </item_uselevel>
+    <item_inventoryuse>1 </item_inventoryuse>
+    <item_isgoods>1 </item_isgoods>
+    <item_price>10000 </item_price>
+    <item_isugoods>0 </item_isugoods>
+    <item_uprice>0 </item_uprice>
+    <item_reputation>0 </item_reputation>
+    <item_type>3 </item_type>
+</ItemsData>
+</ItemsData_Tab>
