@@ -1,8 +1,8 @@
 # Reinforcement learning for SLG game
 
-麻辣星空的Agent工程，seraphli编写。
+麻辣星空的Agent工程，[seraphli][1]编写。
 
-2017年12月21日由[seraphli](https://github.com/Seraphli)整理代码。
+2017年12月21日由[seraphli][1]整理代码。
 
 ## 目录结构设置
 
@@ -38,3 +38,5 @@ Install Command
 ### 其他环境
 
 运行`python run_all_test.py`
+
+[1]: https://github.com/Seraphli
