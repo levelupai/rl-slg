@@ -1,8 +1,6 @@
 # Reinforcement learning for SLG game
 
-麻辣星空的Agent工程，[seraphli][1]编写。
-
-2017年12月21日由[seraphli][1]整理代码。
+麻辣星空的Agent工程，Agent部分由[seraphli][1]编写，Env部分由liyuan编写。
 
 ## 目录结构设置
 
